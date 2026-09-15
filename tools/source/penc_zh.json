@@ -1,0 +1,1572 @@
+{
+ "Bubbmon": {
+  "zh": "泡泡獸",
+  "jp": "バブモン",
+  "sure": false
+ },
+ "Mochimon": {
+  "zh": "麻糬獸",
+  "jp": "モチモン",
+  "sure": false
+ },
+ "Tentomon": {
+  "zh": "甲蟲獸",
+  "jp": "テントモン",
+  "sure": true
+ },
+ "Gottsumon": {
+  "zh": "岩石獸",
+  "jp": "ゴツモン",
+  "sure": false
+ },
+ "Otamamon": {
+  "zh": "蝌蚪獸",
+  "jp": "オタマモン",
+  "sure": true
+ },
+ "Kabuterimon": {
+  "zh": "大甲蟲獸",
+  "jp": "カブテリモン",
+  "sure": true
+ },
+ "Tortamon": {
+  "zh": "陸龜獸",
+  "jp": "トータモン",
+  "sure": false
+ },
+ "Monochromon": {
+  "zh": "單角龍獸",
+  "jp": "モノクロモン",
+  "sure": false
+ },
+ "Starmon": {
+  "zh": "星星獸",
+  "jp": "スターモン",
+  "sure": false
+ },
+ "Gekomon": {
+  "zh": "青蛙獸",
+  "jp": "ゲコモン",
+  "sure": false
+ },
+ "Kuwagamon": {
+  "zh": "鍬形蟲獸",
+  "jp": "クワガーモン",
+  "sure": true
+ },
+ "Tailmon": {
+  "zh": "迪路獸",
+  "jp": "テイルモン",
+  "sure": true
+ },
+ "Atlur Kabuterimon": {
+  "zh": "超甲蟲獸",
+  "jp": "アトラーカブテリモン",
+  "sure": true
+ },
+ "Jyagamon": {
+  "zh": "馬鈴薯獸",
+  "jp": "ジャガモン",
+  "sure": false
+ },
+ "Triceramon": {
+  "zh": "三角龍獸",
+  "jp": "トリケラモン",
+  "sure": false
+ },
+ "Piccolomon": {
+  "zh": "比高獸",
+  "jp": "ピッコロモン",
+  "sure": false
+ },
+ "Tonosama Gekomon": {
+  "zh": "青蛙王獸",
+  "jp": "トノサマゲコモン",
+  "sure": false
+ },
+ "Okuwamon": {
+  "zh": "大鍬形蟲獸",
+  "jp": "オオクワモン",
+  "sure": true
+ },
+ "Angewomon": {
+  "zh": "天女獸",
+  "jp": "エンジェウーモン",
+  "sure": true
+ },
+ "Herakle Kabuterimon": {
+  "zh": "赫拉克勒甲蟲獸",
+  "jp": "ヘラクルカブテリモン",
+  "sure": true
+ },
+ "Saber Leomon": {
+  "zh": "劍齒獅子獸",
+  "jp": "サーベルレオモン",
+  "sure": true
+ },
+ "Metal Etemon": {
+  "zh": "鋼鐵猴子獸",
+  "jp": "メタルエテモン",
+  "sure": false
+ },
+ "Holydramon": {
+  "zh": "神聖龍獸",
+  "jp": "ホーリードラモン",
+  "sure": false
+ },
+ "Blastmon": {
+  "zh": "爆晶獸",
+  "jp": "ブラストモン",
+  "sure": false
+ },
+ "El Doradimon": {
+  "zh": "黃金鄉獸",
+  "jp": "エルドラディモン",
+  "sure": false
+ },
+ "Gran Kuwagamon": {
+  "zh": "巨鍬形蟲獸",
+  "jp": "グランクワガーモン",
+  "sure": true
+ },
+ "Tlalocmon": {
+  "zh": "特拉洛克獸",
+  "jp": "トラロックモン",
+  "sure": false
+ },
+ "Mastemon": {
+  "zh": "瑪斯提馬獸",
+  "jp": "マステモン",
+  "sure": false
+ },
+ "Angoramon": {
+  "zh": "安哥拉獸",
+  "jp": "アンゴラモン",
+  "sure": false
+ },
+ "Symbare Angoramon": {
+  "zh": "鐃鈸安哥拉獸",
+  "jp": "シンバルアンゴラモン",
+  "sure": false
+ },
+ "Lamortmon": {
+  "zh": "拉莫爾獸",
+  "jp": "ラモールモン",
+  "sure": false
+ },
+ "Diarbbitmon": {
+  "zh": "鑽石兔獸",
+  "jp": "ディアビットモン",
+  "sure": false
+ },
+ "Pitchmon": {
+  "zh": "魚苗獸",
+  "jp": "ピチモン",
+  "sure": false
+ },
+ "Pukamon": {
+  "zh": "浮浮獸",
+  "jp": "プカモン",
+  "sure": false
+ },
+ "Gomamon": {
+  "zh": "哥瑪獸",
+  "jp": "ゴマモン",
+  "sure": true
+ },
+ "Ganimon": {
+  "zh": "螃蟹獸",
+  "jp": "ガニモン",
+  "sure": false
+ },
+ "Shakomon": {
+  "zh": "蚌殼獸",
+  "jp": "シャコモン",
+  "sure": false
+ },
+ "Rukamon": {
+  "zh": "海豚獸",
+  "jp": "ルカモン",
+  "sure": false
+ },
+ "Ikkakumon": {
+  "zh": "獨角獸",
+  "jp": "イッカクモン",
+  "sure": true
+ },
+ "Seadramon": {
+  "zh": "海龍獸",
+  "jp": "シードラモン",
+  "sure": true
+ },
+ "Coelamon": {
+  "zh": "腔棘魚獸",
+  "jp": "シーラモン",
+  "sure": false
+ },
+ "Octmon": {
+  "zh": "章魚獸",
+  "jp": "オクタモン",
+  "sure": false
+ },
+ "Gesomon": {
+  "zh": "烏賊獸",
+  "jp": "ゲソモン",
+  "sure": false
+ },
+ "Ebidramon": {
+  "zh": "蝦龍獸",
+  "jp": "エビドラモン",
+  "sure": false
+ },
+ "Whamon": {
+  "zh": "鯨魚獸",
+  "jp": "ホエーモン",
+  "sure": true
+ },
+ "Zudomon": {
+  "zh": "祖頓獸",
+  "jp": "ズドモン",
+  "sure": true
+ },
+ "Mega Seadramon": {
+  "zh": "超海龍獸",
+  "jp": "メガシードラモン",
+  "sure": true
+ },
+ "Anomalocarimon": {
+  "zh": "奇蝦獸",
+  "jp": "アノマロカリモン",
+  "sure": false
+ },
+ "Dagomon": {
+  "zh": "大袞獸",
+  "jp": "ダゴモン",
+  "sure": false
+ },
+ "Marin Devimon": {
+  "zh": "海洋惡魔獸",
+  "jp": "マリンデビモン",
+  "sure": false
+ },
+ "Hangyomon": {
+  "zh": "半魚人獸",
+  "jp": "ハンギョモン",
+  "sure": false
+ },
+ "Marin Angemon": {
+  "zh": "海洋天使獸",
+  "jp": "マリンエンジェモン",
+  "sure": false
+ },
+ "Metal Seadramon": {
+  "zh": "鋼鐵海龍獸",
+  "jp": "メタルシードラモン",
+  "sure": true
+ },
+ "Pukumon": {
+  "zh": "河豚獸",
+  "jp": "プクモン",
+  "sure": false
+ },
+ "Plesiomon": {
+  "zh": "蛇頸龍獸",
+  "jp": "プレシオモン",
+  "sure": false
+ },
+ "Vikemon": {
+  "zh": "維京獸",
+  "jp": "ヴァイクモン",
+  "sure": true
+ },
+ "Jumbo Gamemon": {
+  "zh": "巨龜獸",
+  "jp": "ジャンボガメモン",
+  "sure": false
+ },
+ "Cthyllamon": {
+  "zh": "克蘇魯獸",
+  "jp": "クトゥーラモン",
+  "sure": false
+ },
+ "Mitamamon": {
+  "zh": "御魂獸",
+  "jp": "ミタマモン",
+  "sure": false
+ },
+ "Aegisdramon": {
+  "zh": "神盾龍獸",
+  "jp": "イージスドラモン",
+  "sure": false
+ },
+ "Jellymon": {
+  "zh": "水母獸",
+  "jp": "ジェリーモン",
+  "sure": false
+ },
+ "Tesla Jellymon": {
+  "zh": "特斯拉水母獸",
+  "jp": "テスラジェリーモン",
+  "sure": false
+ },
+ "Thetismon": {
+  "zh": "忒提斯獸",
+  "jp": "テティスモン",
+  "sure": false
+ },
+ "Amphimon": {
+  "zh": "安菲獸",
+  "jp": "アンフィモン",
+  "sure": false
+ },
+ "Mokumon": {
+  "zh": "煙霧獸",
+  "jp": "モクモン",
+  "sure": false
+ },
+ "Peti Meramon": {
+  "zh": "小火焰獸",
+  "jp": "プチメラモン",
+  "sure": false
+ },
+ "Bakumon": {
+  "zh": "貘獸",
+  "jp": "バクモン",
+  "sure": false
+ },
+ "Candmon": {
+  "zh": "蠟燭獸",
+  "jp": "キャンドモン",
+  "sure": false
+ },
+ "Pico Devimon": {
+  "zh": "小惡魔獸",
+  "jp": "ピコデビモン",
+  "sure": false
+ },
+ "Hanumon": {
+  "zh": "哈奴獸",
+  "jp": "ハヌモン",
+  "sure": false
+ },
+ "Garurumon": {
+  "zh": "加魯魯獸",
+  "jp": "ガルルモン",
+  "sure": true
+ },
+ "Meramon": {
+  "zh": "火焰獸",
+  "jp": "メラモン",
+  "sure": true
+ },
+ "Wizarmon": {
+  "zh": "巫師獸",
+  "jp": "ウィザーモン",
+  "sure": true
+ },
+ "Devimon": {
+  "zh": "惡魔獸",
+  "jp": "デビモン",
+  "sure": true
+ },
+ "Bakemon": {
+  "zh": "幽靈獸",
+  "jp": "バケモン",
+  "sure": true
+ },
+ "Dokugumon": {
+  "zh": "毒蜘蛛獸",
+  "jp": "ドクグモン",
+  "sure": false
+ },
+ "Mammon": {
+  "zh": "長毛象獸",
+  "jp": "マンモン",
+  "sure": false
+ },
+ "Were Garurumon": {
+  "zh": "狼人加魯魯獸",
+  "jp": "ワーガルルモン",
+  "sure": true
+ },
+ "Death Meramon": {
+  "zh": "死亡火焰獸",
+  "jp": "デスメラモン",
+  "sure": false
+ },
+ "Pumpmon": {
+  "zh": "南瓜獸",
+  "jp": "パンプモン",
+  "sure": false
+ },
+ "Vamdemon": {
+  "zh": "吸血魔獸",
+  "jp": "ヴァンデモン",
+  "sure": true
+ },
+ "Fantomon": {
+  "zh": "幻影獸",
+  "jp": "ファントモン",
+  "sure": false
+ },
+ "Lady Devimon": {
+  "zh": "女惡魔獸",
+  "jp": "レディーデビモン",
+  "sure": false
+ },
+ "Skull Mammon": {
+  "zh": "骷髏長毛象獸",
+  "jp": "スカルマンモン",
+  "sure": false
+ },
+ "Boltmon": {
+  "zh": "螺栓獸",
+  "jp": "ボルトモン",
+  "sure": false
+ },
+ "Demon": {
+  "zh": "魔王獸",
+  "jp": "デーモン",
+  "sure": false
+ },
+ "Piemon": {
+  "zh": "小丑皇",
+  "jp": "ピエモン",
+  "sure": true
+ },
+ "Anubimon": {
+  "zh": "阿努比斯獸",
+  "jp": "アヌビモン",
+  "sure": false
+ },
+ "Noble Pumpmon": {
+  "zh": "貴族南瓜獸",
+  "jp": "ノーブルパンプモン",
+  "sure": false
+ },
+ "Callismon": {
+  "zh": "卡利斯獸",
+  "jp": "カリスモン",
+  "sure": false
+ },
+ "Voltobautamon": {
+  "zh": "伏特鮑塔獸",
+  "jp": "ヴォルトバウタモン",
+  "sure": false
+ },
+ "Loogamon": {
+  "zh": "露加獸",
+  "jp": "ルガモン",
+  "sure": false
+ },
+ "Loogarmon": {
+  "zh": "露加爾獸",
+  "jp": "ルガルモン",
+  "sure": false
+ },
+ "Soloogarmon": {
+  "zh": "索露加爾獸",
+  "jp": "ソルガルモン",
+  "sure": false
+ },
+ "Fenriloogamon": {
+  "zh": "芬里爾露加獸",
+  "jp": "フェンリルガモン",
+  "sure": false
+ },
+ "Nyokimon": {
+  "zh": "芽芽獸",
+  "jp": "ニョキモン",
+  "sure": false
+ },
+ "Pyocomon": {
+  "zh": "小苗獸",
+  "jp": "ピョコモン",
+  "sure": false
+ },
+ "Piyomon": {
+  "zh": "比丘獸",
+  "jp": "ピヨモン",
+  "sure": true
+ },
+ "Floramon": {
+  "zh": "花仙獸",
+  "jp": "フローラモン",
+  "sure": false
+ },
+ "Mushmon": {
+  "zh": "蘑菇獸",
+  "jp": "マッシュモン",
+  "sure": false
+ },
+ "Palmon": {
+  "zh": "巴魯獸",
+  "jp": "パルモン",
+  "sure": true
+ },
+ "V-dramon": {
+  "zh": "V仔獸",
+  "jp": "ブイドラモン",
+  "sure": true
+ },
+ "Birdramon": {
+  "zh": "巨鳥獸",
+  "jp": "バードラモン",
+  "sure": true
+ },
+ "Togemon": {
+  "zh": "仙人掌獸",
+  "jp": "トゲモン",
+  "sure": true
+ },
+ "Kiwimon": {
+  "zh": "奇異鳥獸",
+  "jp": "キウイモン",
+  "sure": false
+ },
+ "Woodmon": {
+  "zh": "樹木獸",
+  "jp": "ウッドモン",
+  "sure": false
+ },
+ "Red Vegimon": {
+  "zh": "紅蔬菜獸",
+  "jp": "レッドベジーモン",
+  "sure": false
+ },
+ "Aero V-dramon": {
+  "zh": "空中V龍獸",
+  "jp": "エアロブイドラモン",
+  "sure": false
+ },
+ "Garudamon": {
+  "zh": "迦樓羅獸",
+  "jp": "ガルダモン",
+  "sure": true
+ },
+ "Blossomon": {
+  "zh": "繁花獸",
+  "jp": "ブロッサモン",
+  "sure": false
+ },
+ "Delumon": {
+  "zh": "德魯獸",
+  "jp": "デルモン",
+  "sure": false
+ },
+ "Jyureimon": {
+  "zh": "樹靈獸",
+  "jp": "ジュレイモン",
+  "sure": false
+ },
+ "Gerbemon": {
+  "zh": "非洲菊獸",
+  "jp": "ゲルベモン",
+  "sure": false
+ },
+ "Lilimon": {
+  "zh": "百合獸",
+  "jp": "リリモン",
+  "sure": true
+ },
+ "Hououmon": {
+  "zh": "鳳凰獸",
+  "jp": "ホウオウモン",
+  "sure": true
+ },
+ "Griffomon": {
+  "zh": "獅鷲獸",
+  "jp": "グリフォモン",
+  "sure": false
+ },
+ "Pinochimon": {
+  "zh": "木偶獸",
+  "jp": "ピノッキモン",
+  "sure": true
+ },
+ "Rosemon": {
+  "zh": "玫瑰獸",
+  "jp": "ロゼモン",
+  "sure": true
+ },
+ "Ulforce V-dramon": {
+  "zh": "奧法斯V龍獸",
+  "jp": "アルフォースブイドラモン",
+  "sure": false
+ },
+ "Rafflesimon": {
+  "zh": "大王花獸",
+  "jp": "ラフレシモン",
+  "sure": false
+ },
+ "Hydramon": {
+  "zh": "九頭蛇獸",
+  "jp": "ヒドラモン",
+  "sure": false
+ },
+ "Cernumon": {
+  "zh": "刻爾努獸",
+  "jp": "ケルヌモン",
+  "sure": false
+ },
+ "Pteromon": {
+  "zh": "翼龍獸",
+  "jp": "プテロモン",
+  "sure": false
+ },
+ "Galemon": {
+  "zh": "疾風獸",
+  "jp": "ゲイルモン",
+  "sure": false
+ },
+ "Grand Galemon": {
+  "zh": "大疾風獸",
+  "jp": "グランドゲイルモン",
+  "sure": false
+ },
+ "Zephagamon": {
+  "zh": "西風獸",
+  "jp": "ゼファガモン",
+  "sure": false
+ },
+ "Choromon": {
+  "zh": "滑溜獸",
+  "jp": "チョロモン",
+  "sure": false
+ },
+ "Caprimon": {
+  "zh": "卡普利獸",
+  "jp": "カプリモン",
+  "sure": false
+ },
+ "Toy Agumon": {
+  "zh": "玩具亞古獸",
+  "jp": "トイアグモン",
+  "sure": false
+ },
+ "Kokuwamon": {
+  "zh": "小鍬形蟲獸",
+  "jp": "コクワモン",
+  "sure": false
+ },
+ "Hagurumon": {
+  "zh": "齒輪獸",
+  "jp": "ハグルモン",
+  "sure": true
+ },
+ "Greymon": {
+  "zh": "暴龍獸",
+  "jp": "グレイモン",
+  "sure": true
+ },
+ "Revolmon": {
+  "zh": "左輪獸",
+  "jp": "リボルモン",
+  "sure": false
+ },
+ "Tankmon": {
+  "zh": "坦克獸",
+  "jp": "タンクモン",
+  "sure": false
+ },
+ "Clockmon": {
+  "zh": "時鐘獸",
+  "jp": "クロックモン",
+  "sure": false
+ },
+ "Guardromon": {
+  "zh": "守衛獸",
+  "jp": "ガードロモン",
+  "sure": true
+ },
+ "Mechanorimon": {
+  "zh": "機械乘騎獸",
+  "jp": "メカノリモン",
+  "sure": false
+ },
+ "Thunderballmon": {
+  "zh": "雷球獸",
+  "jp": "サンダーボールモン",
+  "sure": false
+ },
+ "Metal Greymon (Vaccine)": {
+  "zh": "機械暴龍獸(疫苗種)",
+  "jp": "メタルグレイモン（ワクチン種）",
+  "sure": true
+ },
+ "Andromon": {
+  "zh": "機械獸",
+  "jp": "アンドロモン",
+  "sure": true
+ },
+ "Knightmon": {
+  "zh": "騎士獸",
+  "jp": "ナイトモン",
+  "sure": false
+ },
+ "Big Mamemon": {
+  "zh": "大豆豆獸",
+  "jp": "ビッグマメモン",
+  "sure": false
+ },
+ "Megadramon": {
+  "zh": "巨龍獸",
+  "jp": "メガドラモン",
+  "sure": true
+ },
+ "Waru Monzaemon": {
+  "zh": "惡玩偶熊獸",
+  "jp": "ワルもんざえモン",
+  "sure": false
+ },
+ "Cyberdramon": {
+  "zh": "電子龍獸",
+  "jp": "サイバードラモン",
+  "sure": true
+ },
+ "War Greymon": {
+  "zh": "戰鬥暴龍獸",
+  "jp": "ウォーグレイモン",
+  "sure": true
+ },
+ "Metal Garurumon": {
+  "zh": "鋼鐵加魯魯獸",
+  "jp": "メタルガルルモン",
+  "sure": true
+ },
+ "Mugendramon": {
+  "zh": "無限龍獸",
+  "jp": "ムゲンドラモン",
+  "sure": true
+ },
+ "Venom Vamdemon": {
+  "zh": "毒液吸血魔獸",
+  "jp": "ヴェノムヴァンデモン",
+  "sure": false
+ },
+ "Hi Andromon": {
+  "zh": "高級機械獸",
+  "jp": "ハイアンドロモン",
+  "sure": true
+ },
+ "Ragnamon": {
+  "zh": "拉格納獸",
+  "jp": "ラグナモン",
+  "sure": false
+ },
+ "Zeke Greymon": {
+  "zh": "齊格暴龍獸",
+  "jp": "ジークグレイモン",
+  "sure": false
+ },
+ "Omegamon": {
+  "zh": "奧米加獸",
+  "jp": "オメガモン",
+  "sure": true
+ },
+ "Chaosdramon": {
+  "zh": "混沌龍獸",
+  "jp": "カオスドラモン",
+  "sure": true
+ },
+ "Commandramon": {
+  "zh": "突擊龍獸",
+  "jp": "コマンドラモン",
+  "sure": false
+ },
+ "Hi-Commandramon": {
+  "zh": "高級突擊龍獸",
+  "jp": "ハイコマンドラモン",
+  "sure": false
+ },
+ "Cargodramon": {
+  "zh": "貨運龍獸",
+  "jp": "カーゴドラモン",
+  "sure": false
+ },
+ "Brigadramon": {
+  "zh": "旅團龍獸",
+  "jp": "ブリガドラモン",
+  "sure": false
+ },
+ "Yukimibotamon": {
+  "zh": "雪見球獸",
+  "jp": "ユキミボタモン",
+  "sure": false
+ },
+ "Nyaromon": {
+  "zh": "喵囉獸",
+  "jp": "ニャロモン",
+  "sure": false
+ },
+ "Agumon": {
+  "zh": "亞古獸",
+  "jp": "アグモン",
+  "sure": true
+ },
+ "Gabumon": {
+  "zh": "加布獸",
+  "jp": "ガブモン",
+  "sure": true
+ },
+ "Plotmon": {
+  "zh": "小狗獸",
+  "jp": "プロットモン",
+  "sure": true
+ },
+ "Leomon": {
+  "zh": "獅子獸",
+  "jp": "レオモン",
+  "sure": true
+ },
+ "Igamon": {
+  "zh": "伊賀獸",
+  "jp": "イガモン",
+  "sure": false
+ },
+ "Angemon": {
+  "zh": "天使獸",
+  "jp": "エンジェモン",
+  "sure": true
+ },
+ "Asuramon": {
+  "zh": "阿修羅獸",
+  "jp": "アシュラモン",
+  "sure": false
+ },
+ "Metal Mamemon": {
+  "zh": "鋼鐵豆豆獸",
+  "jp": "メタルマメモン",
+  "sure": false
+ },
+ "Holy Angemon": {
+  "zh": "神聖天使獸",
+  "jp": "ホーリーエンジェモン",
+  "sure": true
+ },
+ "Dominimon": {
+  "zh": "杜米尼獸",
+  "jp": "ドミニモン",
+  "sure": true
+ },
+ "Quantumon": {
+  "zh": "量子獸",
+  "jp": "クオンタモン",
+  "sure": false
+ },
+ "Gammamon": {
+  "zh": "伽瑪獸",
+  "jp": "ガンマモン",
+  "sure": false
+ },
+ "Betel Gammamon": {
+  "zh": "參宿伽瑪獸",
+  "jp": "ベテルガンマモン",
+  "sure": false
+ },
+ "Kaus Gammamon": {
+  "zh": "箕宿伽瑪獸",
+  "jp": "カウスガンマモン",
+  "sure": false
+ },
+ "Wezen Gammamon": {
+  "zh": "弧矢伽瑪獸",
+  "jp": "ウェズンガンマモン",
+  "sure": false
+ },
+ "Gulus Gammamon": {
+  "zh": "格魯斯伽瑪獸",
+  "jp": "グルスガンマモン",
+  "sure": false
+ },
+ "Canoweissmon": {
+  "zh": "老人星獸",
+  "jp": "カノヴァイスモン",
+  "sure": false
+ },
+ "Regulusmon": {
+  "zh": "軒轅星獸",
+  "jp": "レグルスモン",
+  "sure": false
+ },
+ "Siriusmon": {
+  "zh": "天狼星獸",
+  "jp": "シリウスモン",
+  "sure": true
+ },
+ "Arcturusmon": {
+  "zh": "大角星獸",
+  "jp": "アークトゥルスモン",
+  "sure": false
+ },
+ "Proximamon": {
+  "zh": "比鄰星獸",
+  "jp": "プロキシマモン",
+  "sure": false
+ },
+ "Fukamon": {
+  "zh": "軟絨獸",
+  "jp": "フカモン",
+  "sure": false
+ },
+ "Mococomon": {
+  "zh": "毛毛球獸",
+  "jp": "モココモン",
+  "sure": false
+ },
+ "Kakamon": {
+  "zh": "卡卡獸",
+  "jp": "カカモン",
+  "sure": false
+ },
+ "Kamemon": {
+  "zh": "烏龜獸",
+  "jp": "カメモン",
+  "sure": false
+ },
+ "Fujamon": {
+  "zh": "伏蛇獸",
+  "jp": "フジャモン",
+  "sure": false
+ },
+ "Takinmon": {
+  "zh": "羚牛獸",
+  "jp": "ターキンモン",
+  "sure": false
+ },
+ "Xiquemon": {
+  "zh": "喜鵲獸",
+  "jp": "シーチューモン",
+  "sure": false
+ },
+ "Gawappamon": {
+  "zh": "河童獸",
+  "jp": "ガワッパモン",
+  "sure": false
+ },
+ "Lianpumon": {
+  "zh": "蓮蒲獸",
+  "jp": "リアンプモン",
+  "sure": false
+ },
+ "Ginkakumon": {
+  "zh": "銀角獸",
+  "jp": "ギンカクモン",
+  "sure": false
+ },
+ "Kinkakumon": {
+  "zh": "金角獸",
+  "jp": "キンカクモン",
+  "sure": false
+ },
+ "Hakubamon": {
+  "zh": "白馬獸",
+  "jp": "ハクバモン",
+  "sure": false
+ },
+ "Turuiemon": {
+  "zh": "圖魯伊獸",
+  "jp": "トゥルイエモン",
+  "sure": false
+ },
+ "Sanzomon": {
+  "zh": "三藏獸",
+  "jp": "サンゾモン",
+  "sure": false
+ },
+ "Huankunmon": {
+  "zh": "幻坤獸",
+  "jp": "ファンクンモン",
+  "sure": false
+ },
+ "Cho-Hakkaimon": {
+  "zh": "豬八戒獸",
+  "jp": "チョ・ハッカイモン",
+  "sure": false
+ },
+ "Pandamon": {
+  "zh": "熊貓獸",
+  "jp": "パンダモン",
+  "sure": false
+ },
+ "Gokuwmon": {
+  "zh": "悟空獸",
+  "jp": "ゴクウモン",
+  "sure": false
+ },
+ "Xingtianmon": {
+  "zh": "刑天獸",
+  "jp": "シンテンモン",
+  "sure": false
+ },
+ "Sagomon": {
+  "zh": "沙悟淨獸",
+  "jp": "サゴモン",
+  "sure": false
+ },
+ "Andiramon (Deva)": {
+  "zh": "安提拉獸(十二神將)",
+  "jp": "アンティラモン（デーヴァ）",
+  "sure": false
+ },
+ "Erlangmon": {
+  "zh": "二郎神獸",
+  "jp": "アーランモン",
+  "sure": false
+ },
+ "Erlangmon: Blast Mode": {
+  "zh": "二郎神獸：爆發模式",
+  "jp": "アーランモン ブラストモード",
+  "sure": false
+ },
+ "Xiangpengmon": {
+  "zh": "翔鵬獸",
+  "jp": "シャンペンモン",
+  "sure": false
+ },
+ "Shagaramon": {
+  "zh": "娑伽羅獸",
+  "jp": "シャガラモン",
+  "sure": false
+ },
+ "Nezhamon": {
+  "zh": "哪吒獸",
+  "jp": "ナーザモン",
+  "sure": false
+ },
+ "Nezhamon: Crimson Mode": {
+  "zh": "哪吒獸：真紅模式",
+  "jp": "ナーザモン クリムゾンモード",
+  "sure": false
+ },
+ "Seiten Gokuwmon": {
+  "zh": "齊天大聖悟空獸",
+  "jp": "セイテンゴクウモン",
+  "sure": false
+ },
+ "Dijiangmon": {
+  "zh": "帝江獸",
+  "jp": "ディージャンモン",
+  "sure": false
+ },
+ "Takutoumon": {
+  "zh": "托塔獸",
+  "jp": "タクトウモン",
+  "sure": false
+ },
+ "Takutoumon: Wrath Mode": {
+  "zh": "托塔獸：憤怒模式",
+  "jp": "タクトウモン ラースモード",
+  "sure": false
+ },
+ "Jougamon": {
+  "zh": "嫦娥獸",
+  "jp": "ジョウガモン",
+  "sure": false
+ },
+ "Shakamon": {
+  "zh": "釋迦獸",
+  "jp": "シャカモン",
+  "sure": false
+ },
+ "Tomorimon": {
+  "zh": "小燈獸",
+  "jp": "トモリモン",
+  "sure": false
+ },
+ "Onibimon": {
+  "zh": "鬼火獸",
+  "jp": "オニビモン",
+  "sure": false
+ },
+ "Wankomon": {
+  "zh": "汪汪獸",
+  "jp": "ワンコモン",
+  "sure": false
+ },
+ "Hanimon": {
+  "zh": "埴輪獸",
+  "jp": "ハニモン",
+  "sure": false
+ },
+ "Gasamon": {
+  "zh": "傘妖獸",
+  "jp": "ガサモン",
+  "sure": false
+ },
+ "Renamon": {
+  "zh": "狐狸獸",
+  "jp": "レナモン",
+  "sure": true
+ },
+ "Siesamon": {
+  "zh": "石獅獸",
+  "jp": "シーサモン",
+  "sure": false
+ },
+ "Peckmon": {
+  "zh": "啄啄獸",
+  "jp": "ペックモン",
+  "sure": false
+ },
+ "Kokeshimon": {
+  "zh": "木芥子獸",
+  "jp": "コケシモン",
+  "sure": false
+ },
+ "Shellmon": {
+  "zh": "海螺獸",
+  "jp": "シェルモン",
+  "sure": false
+ },
+ "Musyamon": {
+  "zh": "武者獸",
+  "jp": "ムシャモン",
+  "sure": false
+ },
+ "Fugamon": {
+  "zh": "風牙獸",
+  "jp": "フーガモン",
+  "sure": false
+ },
+ "Manekimon": {
+  "zh": "招財貓獸",
+  "jp": "マネキモン",
+  "sure": false
+ },
+ "Tenkomon": {
+  "zh": "天狐獸",
+  "jp": "テンコモン",
+  "sure": false
+ },
+ "Shishimamon": {
+  "zh": "舞獅獸",
+  "jp": "シシマモン",
+  "sure": false
+ },
+ "Yatagaramon (2006)": {
+  "zh": "八咫烏獸(2006)",
+  "jp": "ヤタガラモン",
+  "sure": false
+ },
+ "Karakurumon": {
+  "zh": "機關人偶獸",
+  "jp": "カラクリモン",
+  "sure": false
+ },
+ "Marin Bullmon": {
+  "zh": "海洋鬥牛獸",
+  "jp": "マリンブルモン",
+  "sure": false
+ },
+ "Oboromon": {
+  "zh": "朧獸",
+  "jp": "オボロモン",
+  "sure": false
+ },
+ "Karatenmon": {
+  "zh": "烏天狗獸",
+  "jp": "カラテンモン",
+  "sure": false
+ },
+ "Darumamon": {
+  "zh": "達摩獸",
+  "jp": "ダルマモン",
+  "sure": false
+ },
+ "Sekkamon": {
+  "zh": "雪花獸",
+  "jp": "セッカモン",
+  "sure": false
+ },
+ "Amaterasumon": {
+  "zh": "天照獸",
+  "jp": "アマテラスモン",
+  "sure": false
+ },
+ "Ravmon": {
+  "zh": "渡鴉獸",
+  "jp": "レイヴモン",
+  "sure": false
+ },
+ "Ravmon: Burst Mode": {
+  "zh": "渡鴉獸：爆裂模式",
+  "jp": "レイヴモン バーストモード",
+  "sure": false
+ },
+ "Kaguyamon": {
+  "zh": "輝夜獸",
+  "jp": "カグヤモン",
+  "sure": false
+ },
+ "Ryugumon": {
+  "zh": "龍宮獸",
+  "jp": "リュウグウモン",
+  "sure": false
+ },
+ "Zanbamon": {
+  "zh": "斬馬獸",
+  "jp": "ザンバモン",
+  "sure": false
+ },
+ "Tengumon": {
+  "zh": "天狗獸",
+  "jp": "テングモン",
+  "sure": false
+ },
+ "Ariemon": {
+  "zh": "牡羊獸",
+  "jp": "アリエモン",
+  "sure": false
+ },
+ "Yukinamon": {
+  "zh": "雪名獸",
+  "jp": "ユキナモン",
+  "sure": false
+ },
+ "Enmamon": {
+  "zh": "閻魔獸",
+  "jp": "エンマモン",
+  "sure": false
+ },
+ "Yihumon": {
+  "zh": "翼虎獸",
+  "jp": "イーフーモン",
+  "sure": false
+ },
+ "Taotiemon": {
+  "zh": "饕餮獸",
+  "jp": "タオティエモン",
+  "sure": false
+ },
+ "Taowumon": {
+  "zh": "檮杌獸",
+  "jp": "タオウーモン",
+  "sure": false
+ },
+ "Sunmon": {
+  "zh": "太陽獸",
+  "jp": "サンモン",
+  "sure": false
+ },
+ "Coronamon": {
+  "zh": "日冕獸",
+  "jp": "コロナモン",
+  "sure": false
+ },
+ "Elecmon": {
+  "zh": "電氣獸",
+  "jp": "エレキモン",
+  "sure": false
+ },
+ "Snakemon": {
+  "zh": "蛇獸",
+  "jp": "",
+  "sure": false
+ },
+ "Firamon": {
+  "zh": "火獅獸",
+  "jp": "ファイラモン",
+  "sure": false
+ },
+ "Aegiomon": {
+  "zh": "埃吉歐獸",
+  "jp": "エイジオモン",
+  "sure": false
+ },
+ "Blimpmon": {
+  "zh": "飛艇獸",
+  "jp": "ブリンプモン",
+  "sure": false
+ },
+ "Vipemon": {
+  "zh": "維佩獸",
+  "jp": "ヴァイペモン",
+  "sure": false
+ },
+ "Tylomon": {
+  "zh": "滄龍獸",
+  "jp": "タイロモン",
+  "sure": false
+ },
+ "Garurumon (Black)": {
+  "zh": "加魯魯獸(黑)",
+  "jp": "ガルルモン（黒）",
+  "sure": true
+ },
+ "Ogremon": {
+  "zh": "食人鬼獸",
+  "jp": "オーガモン",
+  "sure": false
+ },
+ "Flaremon": {
+  "zh": "閃焰獸",
+  "jp": "フレアモン",
+  "sure": false
+ },
+ "Aegiochusmon": {
+  "zh": "埃吉歐卡斯獸",
+  "jp": "エイギオカスモン",
+  "sure": false
+ },
+ "Master Blimpmon": {
+  "zh": "大師飛艇獸",
+  "jp": "マスターブリンプモン",
+  "sure": false
+ },
+ "Skull Seadramon": {
+  "zh": "骷髏海龍獸",
+  "jp": "スカルシードラモン",
+  "sure": false
+ },
+ "Ambromon": {
+  "zh": "安布羅獸",
+  "jp": "アンブロモン",
+  "sure": false
+ },
+ "Sharkmon": {
+  "zh": "鯊魚獸",
+  "jp": "シャークモン",
+  "sure": false
+ },
+ "Were Garurumon (Black)": {
+  "zh": "狼人加魯魯獸(黑)",
+  "jp": "ワーガルルモン（黒）",
+  "sure": true
+ },
+ "Digitamamon": {
+  "zh": "數碼蛋獸",
+  "jp": "デジタマモン",
+  "sure": false
+ },
+ "Apollomon": {
+  "zh": "阿波羅獸",
+  "jp": "アポロモン",
+  "sure": false
+ },
+ "Apollomon Whispered": {
+  "zh": "耳語阿波羅獸",
+  "jp": "アポロモン ウィスパード",
+  "sure": false
+ },
+ "Jupitermon": {
+  "zh": "朱庇特獸",
+  "jp": "ユピテルモン",
+  "sure": false
+ },
+ "Jupitermon: Wrath Mode": {
+  "zh": "朱庇特獸：憤怒模式",
+  "jp": "ユピテルモン ラースモード",
+  "sure": false
+ },
+ "Vulcanusmon": {
+  "zh": "伏爾甘獸",
+  "jp": "ウルカヌスモン",
+  "sure": false
+ },
+ "King Whamon": {
+  "zh": "鯨魚王獸",
+  "jp": "キングホエーモン",
+  "sure": false
+ },
+ "Bacchusmon": {
+  "zh": "巴克斯獸",
+  "jp": "バッカスモン",
+  "sure": false
+ },
+ "Bacchusmon: Drunk Mode": {
+  "zh": "巴克斯獸：醉酒模式",
+  "jp": "バッカスモン ドランクモード",
+  "sure": false
+ },
+ "Neptunemon": {
+  "zh": "尼普頓獸",
+  "jp": "ネプトゥーンモン",
+  "sure": false
+ },
+ "Mercurymon": {
+  "zh": "墨丘利獸",
+  "jp": "メルクリモン",
+  "sure": false
+ },
+ "Titamon": {
+  "zh": "泰坦獸",
+  "jp": "ティタモン",
+  "sure": false
+ },
+ "Grace Novamon": {
+  "zh": "恩典新星獸",
+  "jp": "グレイスノヴァモン",
+  "sure": false
+ },
+ "Titamon + Skull Baluchimon": {
+  "zh": "泰坦獸＋骷髏巨犀獸",
+  "jp": "ティタモン＋スカルバルキモン",
+  "sure": false
+ },
+ "Relemon": {
+  "zh": "樂樂獸",
+  "jp": "レレモン",
+  "sure": false
+ },
+ "Moonmon": {
+  "zh": "月亮獸",
+  "jp": "ムーンモン",
+  "sure": false
+ },
+ "Bearmon": {
+  "zh": "小熊獸",
+  "jp": "ベアモン",
+  "sure": false
+ },
+ "Lunamon": {
+  "zh": "露娜獸",
+  "jp": "ルナモン",
+  "sure": false
+ },
+ "Gagamon": {
+  "zh": "嘎嘎獸",
+  "jp": "",
+  "sure": false
+ },
+ "Gryzmon": {
+  "zh": "灰熊獸",
+  "jp": "グリズモン",
+  "sure": false
+ },
+ "Darcmon": {
+  "zh": "聖女獸",
+  "jp": "ダルクモン",
+  "sure": false
+ },
+ "Lekismon": {
+  "zh": "雷基斯獸",
+  "jp": "レキスモン",
+  "sure": false
+ },
+ "Corvumon": {
+  "zh": "烏鴉獸",
+  "jp": "",
+  "sure": false
+ },
+ "Coatlmon": {
+  "zh": "羽蛇獸",
+  "jp": "",
+  "sure": false
+ },
+ "Centaurmon": {
+  "zh": "半人馬獸",
+  "jp": "ケンタルモン",
+  "sure": false
+ },
+ "Dobermon": {
+  "zh": "杜賓獸",
+  "jp": "ドーベルモン",
+  "sure": false
+ },
+ "Great Gryzmon": {
+  "zh": "巨灰熊獸",
+  "jp": "",
+  "sure": false
+ },
+ "Luminamon": {
+  "zh": "光明獸",
+  "jp": "",
+  "sure": false
+ },
+ "Crescemon": {
+  "zh": "新月獸",
+  "jp": "クレシェモン",
+  "sure": false
+ },
+ "Sirenmon": {
+  "zh": "塞壬獸",
+  "jp": "セイレーンモン",
+  "sure": false
+ },
+ "Panoptemon": {
+  "zh": "全視獸",
+  "jp": "",
+  "sure": false
+ },
+ "Lamiamon": {
+  "zh": "拉彌亞獸",
+  "jp": "",
+  "sure": false
+ },
+ "Enbarrmon": {
+  "zh": "恩巴爾獸",
+  "jp": "エンバーモン",
+  "sure": false
+ },
+ "Cerberumon": {
+  "zh": "地獄犬獸",
+  "jp": "ケルベロモン",
+  "sure": false
+ },
+ "Cerberumon: Werewolf Mode": {
+  "zh": "地獄犬獸：狼人模式",
+  "jp": "ケルベロモン ウェアウルフモード",
+  "sure": false
+ },
+ "Marsmon": {
+  "zh": "瑪爾斯獸",
+  "jp": "マルスモン",
+  "sure": false
+ },
+ "Venusmon": {
+  "zh": "維納斯獸",
+  "jp": "ヴィーナスモン",
+  "sure": false
+ },
+ "Dianamon": {
+  "zh": "黛安娜獸",
+  "jp": "ディアナモン",
+  "sure": false
+ },
+ "Ceresmon": {
+  "zh": "刻瑞斯獸",
+  "jp": "ケレスモン",
+  "sure": false
+ },
+ "Ceresmon: Medium": {
+  "zh": "刻瑞斯獸：靈媒",
+  "jp": "ケレスモン メディウム",
+  "sure": false
+ },
+ "Junomon": {
+  "zh": "朱諾獸",
+  "jp": "ユノモン",
+  "sure": false
+ },
+ "Junomon: Hysteric Mode": {
+  "zh": "朱諾獸：歇斯底里模式",
+  "jp": "ユノモン ヒステリックモード",
+  "sure": false
+ },
+ "Minervamon": {
+  "zh": "密涅瓦獸",
+  "jp": "ミネルヴァモン",
+  "sure": false
+ },
+ "Mervamon": {
+  "zh": "梅爾瓦獸",
+  "jp": "メルヴァモン",
+  "sure": false
+ },
+ "Dullahamon": {
+  "zh": "無頭騎士獸",
+  "jp": "デュラハモン",
+  "sure": false
+ },
+ "Plutomon": {
+  "zh": "普魯托獸",
+  "jp": "プルートモン",
+  "sure": false
+ },
+ "Zombie Plutomon": {
+  "zh": "殭屍普魯托獸",
+  "jp": "ゾンビプルートモン",
+  "sure": false
+ }
+}

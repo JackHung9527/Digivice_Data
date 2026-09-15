@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>彩色超代 速查</title>
+<meta name="description" content="Digimon Pendulum COLOR 中文攻略速查（可離線）">
+<meta name="theme-color" content="#0E1F3D">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Digivice">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+TC:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="band">
+  <div class="wrap band-in">
+    <nav class="devsw" aria-label="切換機型"><a href="dmgz.html">哥吉拉彩元祖</a><a href="pengz.html">哥吉拉彩色超代</a><a href="penc.html" aria-current="page">彩色超代</a><a href="dm20.html">元祖20th</a><a href="index.html">選機型</a></nav>
+    <p class="mark">DIGIMON PENDULUM COLOR</p>
+    <h1>彩色超代 速查</h1>
+    <div class="gcap" aria-hidden="true"><span>10 個版本・努力／狀態愛心・合體</span></div>
+  </div>
+</header>
+<div class="top">
+  <div class="wrap">
+    <div class="verbar"><label for="verSel">版本</label><select id="verSel" class="verSel"></select></div>
+    <div class="search">
+      <input id="q" type="search" placeholder="搜尋：怪獸名、合體、努力、欄位、第5關…" autocomplete="off" enterkeyhint="search">
+      <button id="qclear" type="button" aria-label="清除" hidden>×</button>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button data-tab="t-evo" role="tab">進化條件</button>
+      <button data-tab="t-jog" role="tab">合體速查</button>
+      <button data-tab="t-op" role="tab">操作手順</button>
+      <button data-tab="t-bg" role="tab">背景獲得</button>
+      <button data-tab="t-quest" role="tab">關卡</button>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+<div id="noresult" hidden>找不到符合的內容，換個關鍵字或切換版本試試</div>
+
+<!-- ================= 進化條件 ================= -->
+<section class="panel" id="t-evo">
+  <h2 class="ptitle">進化條件</h2>
+
+  <details class="card tool si" id="evoTool" open data-sonly data-alias="進化試算 模擬 計算 判斷 會進化成誰">
+    <summary>進化試算 <span class="hint">輸入目前狀態，看時間到會進化成誰</span></summary>
+    <div class="form">
+      <label class="full">目前怪獸<select id="et-cur"></select></label>
+      <label>狀態愛心剩下（顆）<input id="et-ch" type="number" min="0" max="4" inputmode="numeric" value="1"></label>
+      <label>努力愛心（顆）<input id="et-ef" type="number" min="0" max="4" inputmode="numeric" value="0"></label>
+      <label class="cm-f" hidden>本階段照顧失誤（次）<input id="et-cm" type="number" min="0" max="30" inputmode="numeric" value="0"></label>
+      <label class="bt-f">本階段對戰場數<input id="et-bt" type="number" min="0" inputmode="numeric" value="0"></label>
+      <label class="bt-f">勝率（%）<input id="et-win" type="number" min="0" max="100" inputmode="numeric" value="100"></label>
+      <label class="chk full"><input type="checkbox" id="et-slot"> 已經跟其他版本通信對戰過（欄位已解鎖）</label>
+    </div>
+    <div id="et-out"></div>
+  </details>
+
+  <details class="card si" data-alias="狀態愛心 努力愛心 Condition Effort 欄位解鎖">
+    <summary>進化基本規則</summary>
+    <h4>進化時間（從上次進化起算，睡覺也算）</h4>
+    <div class="tw"><table>
+      <tr><th>目前階段</th><th>到下一階段</th></tr>
+      <tr><td>蛋</td><td>約 1 分鐘</td></tr>
+      <tr><td>幼年期Ⅰ</td><td>10 分鐘</td></tr>
+      <tr><td>幼年期Ⅱ</td><td>12 小時</td></tr>
+      <tr><td>成長期</td><td>24 小時</td></tr>
+      <tr><td>成熟期</td><td>32 小時</td></tr>
+      <tr><td>完全體</td><td>40 小時</td></tr>
+    </table></div>
+    <p class="small">究極體不會自然進化。超究極體只能靠合體，或西遊戰士、東方勇士用究極體通關最終關 F 取得。</p>
+
+    <h4>狀態愛心（Condition）</h4>
+    <ul class="small">
+      <li>每次照顧失誤扣 1 顆，<b>不能回復</b>。</li>
+      <li>每次進化會重新給固定數量（見卡片上的「狀態愛心」）。</li>
+      <li>成長期、成熟期的路線看「還有沒有剩」。</li>
+      <li>完全體、究極體要<b>自然進化</b>，一定要還有狀態愛心；扣光了只能靠合體。</li>
+    </ul>
+
+    <h4>努力愛心（Effort）</h4>
+    <ul class="small">
+      <li>每訓練 <b>4 次</b>得 1 顆，成功失敗都算。</li>
+      <li>不會減少，進化後歸零。</li>
+    </ul>
+
+    <h4>勝率 → 進化機率（需本階段對戰 15 場以上）</h4>
+    <div class="tw"><table>
+      <tr><th>勝率</th><th>進化機率</th></tr>
+      <tr><td>80% 以上</td><td>100%</td></tr>
+      <tr><td>70–79%</td><td>70%</td></tr>
+      <tr><td>40–69%</td><td>40%</td></tr>
+      <tr><td>未滿 40%</td><td>不會自然進化（仍可合體）</td></tr>
+    </table></div>
+
+    <h4>欄位解鎖</h4>
+    <p class="small">跟<b>其他版本</b>的 Pendulum COLOR 通信對戰一次，就會解鎖欄位 6（風之守護者是欄位 7），多出一條新的成長期路線。除非整台重置，否則會一直保持。</p>
+
+    <h4>例外</h4>
+    <p class="small">風之守護者的 Floramon、Mushmon 雖然只有 2 顆狀態愛心，卻要照顧失誤 <b>3 次</b>才會換路線。不確定時就多失誤一次。</p>
+
+    <h4>進化後</h4>
+    <p class="small">重置：狀態、努力、受傷與生病次數、體重、飢餓計數、本階段對戰場數。<br>保留：勝率、戰敗受傷率。</p>
+
+    <h4>形態變化（西遊戰士、東方勇士）</h4>
+    <p class="small">特定究極體在戰鬥中，力量愛心全滿、並在正確顏色停下搖晃，就會暫時變身。只換外觀，數值不變。</p>
+
+    <h4>天界行者、星界哨兵</h4>
+    <p class="small">攻略站目前只有名單，還沒整理進化條件。</p>
+  </details>
+
+  <details class="card si" id="dex" data-sonly data-alias="我的圖鑑 收集 圖片 照片 相簿">
+    <summary>我的圖鑑 <span class="hint" id="dexCount">0 / 0</span></summary>
+    <div class="dex-bar"><span id="dexBar" style="width:0%"></span></div>
+    <p class="small sub">只顯示目前選的版本。點空格從相簿選圖；圖片只存在這支手機的瀏覽器裡，清除瀏覽器資料會一起刪掉。</p>
+    <div class="dex-grid" id="dexGrid"></div>
+  </details>
+
+  <div class="filters" id="stageFilter">
+    <button data-st="all" class="on">全部</button>
+    <button data-st="baby">幼年期</button>
+    <button data-st="III">成長期</button>
+    <button data-st="IV">成熟期</button>
+    <button data-st="V">完全體</button>
+    <button data-st="VI">究極體</button>
+  </div>
+  <div class="filters" id="collFilter" style="margin-top:0">
+    <button data-coll="all" class="on">不限</button>
+    <button data-coll="have">已收集</button>
+    <button data-coll="need">未收集</button>
+  </div>
+  <div id="monList"></div>
+</section>
+
+<!-- ================= 合體速查 ================= -->
+<section class="panel" id="t-jog" hidden>
+  <h2 class="ptitle">合體速查</h2>
+
+  <div class="card tool si" data-sonly data-alias="查合體 合體結果 夥伴 屬性 ジョグレス jogress">
+    <h3>查合體</h3>
+    <div class="form">
+      <label class="full">目前養的怪獸<select id="jq-me"></select></label>
+      <label class="full">合體夥伴<select id="jq-partner"></select></label>
+    </div>
+    <div id="jq-out"></div>
+  </div>
+
+  <details class="card si" data-alias="合體規則 ジョグレス BACK UP CONNECT MIS MATCH 屬性">
+    <summary>合體（ジョグレス）規則</summary>
+    <ul>
+      <li><b>成熟期、完全體</b>都能合體，部分究極體也可以。狀態畫面「J○」代表可以合體。</li>
+      <li>結果看<b>夥伴的屬性</b>（疫苗種／資料種／病毒種），而且夥伴必須是<b>同一個階段</b>：成熟期配成熟期、完全體配完全體。</li>
+      <li>究極體以上的合體要<b>指定怪獸</b>，常常要另一個版本的機器。</li>
+      <li>D 對戰 → JOGRES → <b>BACK UP</b>（跟備份的怪獸合體，備份會消失）或 <b>CONNECT</b>（跟另一台連線，兩台各自依自己的組合進化）。</li>
+      <li>組合不對會顯示「MIS MATCH」。</li>
+      <li>不消耗 DP。夥伴不會影響進化後的數值，只決定變成誰。</li>
+      <li>合體只能跟 Pendulum COLOR 系列連線。</li>
+    </ul>
+  </details>
+
+  <div id="jogTables"></div>
+</section>
+
+<!-- ================= 操作手順 ================= -->
+<section class="panel" id="t-op" hidden>
+  <h2 class="ptitle">操作手順</h2>
+
+  <details class="card si" open>
+    <summary>按鍵速查</summary>
+    <p>螢幕右側由上到下是 <span class="key">A</span> <span class="key">B</span> <span class="key">C</span>。</p>
+    <div class="tw"><table>
+      <tr><th>操作</th><th>效果</th></tr>
+      <tr><td><span class="key">A</span></td><td class="wrap-cell">切換選擇圖示／選項；時鐘畫面切換 12／24 小時制</td></tr>
+      <tr><td><span class="key">B</span></td><td class="wrap-cell">決定；主畫面（沒選圖示）按 B＝看時鐘</td></tr>
+      <tr><td><span class="key">C</span></td><td class="wrap-cell">取消／返回</td></tr>
+      <tr><td><span class="key">C</span> 長按 3 秒</td><td class="wrap-cell">開機</td></tr>
+      <tr><td><span class="key">C</span> 長按 2 秒（主畫面）</td><td class="wrap-cell">設定畫面（BG・BRIGHT・SOUND・POWER）</td></tr>
+      <tr><td><span class="key">C</span> 長按 10 秒</td><td class="wrap-cell">強制關機（5 秒會響警告音）。<b>不會存檔</b>，平常請用 POWER</td></tr>
+      <tr><td><span class="key">A</span>+<span class="key">C</span>（主畫面）</td><td class="wrap-cell">聲音開／關</td></tr>
+      <tr><td><span class="key">A</span>+<span class="key">C</span>（時鐘畫面）</td><td class="wrap-cell">修改時間（改時間不會加快成長）</td></tr>
+      <tr><td><span class="key">A</span>+<span class="key">B</span>（死亡的電腦畫面）</td><td class="wrap-cell">選新蛋</td></tr>
+      <tr><td>重置孔</td><td class="wrap-cell">當機時用細棒按；之後出現 LOAD／RESET</td></tr>
+    </table></div>
+  </details>
+
+  <details class="card si" data-alias="ペンデュラム 搖 振 孵化">
+    <summary>搖晃（ペンデュラム）與孵化</summary>
+    <ul>
+      <li>訓練、任務、和 Pendulum 通信對戰前都要搖。鏈子朝下<b>上下</b>搖，左右搖不算。</li>
+      <li>「READY!」時記住背景顏色 → 「COUNT!」約 3 秒內搖到同樣顏色。顏色依序是 藍 → 黃 → 紅。</li>
+      <li><b>孵化前多搖</b>：蛋在畫面上的約 1 分鐘內搖 100 下以上，孵出來的怪獸力量 <b>+10</b>。</li>
+    </ul>
+  </details>
+
+  <details class="card si">
+    <summary>開機・設定時間・充電</summary>
+    <ol>
+      <li>先用附的線充電。長按 <span class="key">C</span> 約 3 秒開機。</li>
+      <li>出現商品 Logo → 按 A／B／C 任一鍵。</li>
+      <li>設定時間：<span class="key">A</span> 調「時」、<span class="key">B</span> 調「分」、<span class="key">C</span> 確定。</li>
+      <li>約 1 分鐘後怪獸誕生（這段時間記得搖）。</li>
+    </ol>
+    <ul class="small">
+      <li>底部 USB-C。充電中黃色閃電、充飽綠色。主畫面長按 C 2 秒看電量。</li>
+      <li>超過約 4 小時沒充完、發燙或有異味 → 立刻拔線。</li>
+      <li>建議用 USB-C 轉 USB-A 線，避開 PD 快充。會自動存檔，沒電後選 LOAD 接續。</li>
+    </ul>
+  </details>
+
+  <details class="card si">
+    <summary>圖示選單（A～H）</summary>
+    <h4>A. 狀態（STATUS／ALBUM）</h4>
+    <ul class="small">
+      <li>STATUS：年齡・體重 → Hungry → Strength → <b>Effort（努力）</b> → <b>Condition（狀態）</b> → DP → TYPE（屬性、B 對戰／J 合體可否）→ 勝率。</li>
+      <li>ALBUM：養過的怪獸；沒養過的只顯示編號。</li>
+      <li>體重到 99G 會生病。</li>
+    </ul>
+    <h4>B. 食物</h4>
+    <ul class="small">
+      <li><b>肉</b>：飢餓 +1、體重 +1G。滿心不能再餵；餵滿 4 心掉心暫停 60 分鐘。</li>
+      <li><b>蛋白質</b>：力量 +1、體重 +2G。每 4 個：DP +1、戰敗受傷率 +2%。</li>
+    </ul>
+    <h4>C. 訓練</h4>
+    <p class="small">怪獸連發 5 次攻擊，5 次都是 Super Hit＝MEGA HIT。<b>每次訓練都算努力（4 次＝1 顆）</b>，成功失敗都算。</p>
+    <div class="tw"><table>
+      <tr><th>Super Hit</th><th>力量</th><th>體重</th><th>戰敗受傷率</th></tr>
+      <tr><td>5（MEGA HIT）</td><td>+4</td><td>−20G</td><td>−2%</td></tr>
+      <tr><td>3–4</td><td>+2</td><td>−10G</td><td>−2%</td></tr>
+      <tr><td>2</td><td>+1</td><td>−4G</td><td>−2%</td></tr>
+      <tr><td>0–1</td><td>0</td><td>−2G</td><td>0</td></tr>
+    </table></div>
+    <h4>要搖到的顏色／次數（依屬性）</h4>
+    <div class="tw"><table>
+      <tr><th>屬性</th><th>MEGA HIT</th><th>3–4 次</th><th>2 次</th></tr>
+      <tr><td>幼年期</td><td><span class="chip gr">紅</span>12 下</td><td><span class="chip gy">黃</span>7 下</td><td><span class="chip gb">藍</span>2 下</td></tr>
+      <tr><td>疫苗種</td><td><span class="chip gr">紅</span>12 下</td><td><span class="chip gy">黃</span>7 下</td><td><span class="chip gb">藍</span>2 下</td></tr>
+      <tr><td>資料種</td><td><span class="chip gy">黃</span>6 下</td><td><span class="chip gr">紅</span>11 下</td><td><span class="chip gb">藍</span>2 下</td></tr>
+      <tr><td>病毒種</td><td><span class="chip gb">藍</span>2 下</td><td><span class="chip gy">黃</span>7 下</td><td><span class="chip gr">紅</span>12 下</td></tr>
+      <tr><td>自由種</td><td><span class="chip gr">紅</span>11 下</td><td><span class="chip gy">黃</span>7 下</td><td><span class="chip gb">藍</span>2 下</td></tr>
+    </table></div>
+    <p class="small sub">搖不到 2 下只會有 0～1 次 Super Hit。</p>
+    <h4>D. 對戰（BATTLE／JOGRES）</h4>
+    <ul class="small">
+      <li>BATTLE → QUEST（任務）／CONNECT → PENDULUM（跟 Pendulum COLOR，要搖）或 DIGIMON（跟 Digital Monster COLOR，不用搖）。</li>
+      <li>JOGRES → 合體，見「合體速查」。</li>
+      <li>DP 或飢餓為 0 不能對戰。每場體重 −4G。</li>
+    </ul>
+    <h4>E. 廁所</h4>
+    <p class="small">累積 8 坨會生病。幼年期Ⅰ 每 3 分鐘、幼年期Ⅱ 每 60 分鐘、之後每 120 分鐘拉一次。</p>
+    <h4>F. 電燈（LIGHT／COLD／CHANGE）</h4>
+    <ul class="small">
+      <li>LIGHT：開關燈。COLD：冷凍暫停（解凍後掉心、便便計時從頭算）。CHANGE：備份／替換（幼年期Ⅰ不能備份）。</li>
+      <li class="warn" style="list-style:none;margin-left:-1.3em">冷凍中又備份、按重置孔或關機，飢餓與力量會變 0。</li>
+    </ul>
+    <h4>G. 治療</h4>
+    <p class="small">對話框「…」＝生病、骷髏＝受傷，選對應的圖示治療。</p>
+    <h4>H. 呼叫燈</h4>
+    <p class="small">不能選。沒處理完燈就熄＝照顧失誤（扣 1 顆狀態愛心）。</p>
+  </details>
+
+  <details class="card si">
+    <summary>睡覺・照顧失誤</summary>
+    <ul class="small">
+      <li>睡著後 <b>1 小時內關燈</b>，否則照顧失誤。早上 7:00 自動起床。</li>
+      <li>連續睡 8 小時 DP 全滿。</li>
+      <li>吵醒睡著的怪獸：約 15 分鐘後再睡，不算失誤，但戰敗受傷率 +2%。</li>
+      <li>飢餓、力量空了要在 10 分鐘內補；兩個同時空＝2 次失誤。</li>
+      <li>不算失誤：便便、受傷、生病、吵醒。</li>
+    </ul>
+  </details>
+
+  <details class="card si" data-alias="戰敗受傷率 生病 性格蛋 瀕死 搖">
+    <summary>受傷・生病・死亡・遺留的蛋</summary>
+    <ul class="small">
+      <li>戰敗受傷率起始 10%；每 4 個蛋白質 +2%、每吵醒一次 +2%；每次勝利或訓練 −2%，最高 50%。</li>
+      <li>生病：便便 8 坨或體重 99G。生病時仍可對戰。</li>
+    </ul>
+    <h4>死亡條件（同一形態內）</h4>
+    <ul class="small">
+      <li>生病 12 次或受傷 12 次（分開計算）</li>
+      <li>生病或受傷持續 6 小時</li>
+      <li>飢餓空掉累計 20 次</li>
+      <li>成熟期／完全體進化時間到沒達成條件，且失誤 ≥ 5</li>
+      <li>究極體以上待滿 48 小時時失誤 ≥ 5</li>
+    </ul>
+    <p class="small">快死時會停住哀叫約 1 分鐘，<b>30 秒內搖 50 下以上</b>可能救回。死亡後出現電腦，按 A+B 選新蛋。</p>
+    <h4>遺留的蛋（性格蛋）</h4>
+    <p class="small">完全體以上＋（完全體進化失敗，或究極體以上待滿 48 小時）＋勝率 60% 以上，死亡時會留下蛋，孵出的怪獸力量有加成。</p>
+  </details>
+
+  <details class="card si">
+    <summary>通信對戰・設定</summary>
+    <ul class="small">
+      <li>PENDULUM：搖晃 → 出現 BATTLE 時接上接頭，一台按 A 或 B → OK! 開始。雙方 3 HP，一般命中 −1、Super Hit −2。</li>
+      <li>DIGIMON（Digital Monster COLOR）：不用搖，前 3 下必中，第 4 下決勝負。屬性相剋為 ±5。</li>
+      <li>可連 Digital Monster COLOR、Pendulum COLOR、Digivice COLOR 系列（含聯名），不能連舊的非 COLOR 機種。</li>
+      <li>設定：BG（背景）／BRIGHT（亮度 5 段）／SOUND（大・中・關）／POWER（存檔關機）。</li>
+      <li>LOAD／RESET：RESET → OK 會全部刪除。</li>
+    </ul>
+    <p class="small">屬性相剋：疫苗種 ＞ 病毒種 ＞ 資料種 ＞ 疫苗種，Pendulum 對戰有利 +10、不利 −10。</p>
+  </details>
+</section>
+
+<!-- ================= 背景獲得 ================= -->
+<section class="panel" id="t-bg" hidden>
+  <h2 class="ptitle">背景獲得</h2>
+  <div class="card si">
+    <h3>怎麼換背景</h3>
+    <p>主畫面長按 <span class="key">C</span> 2 秒 → BG → <span class="key">A</span> 選 → <span class="key">B</span> 決定。</p>
+    <p class="small">部分背景會隨時間變色：06:00 白天、16:00 黃昏、19:00 夜晚。以下是攻略站整理的前 8 個版本。</p>
+  </div>
+  <div class="bg-list">
+    <div class="card si" data-alias="Lakeside"><b>湖畔</b><span class="chip ok">版本</span>
+      <div class="cond">自然之靈預設；其他版本跟自然之靈通信對戰取得</div></div>
+    <div class="card si" data-alias="Underwater"><b>水中</b><span class="chip ok">版本</span>
+      <div class="cond">深海救兵預設；其他版本跟深海救兵對戰取得</div></div>
+    <div class="card si" data-alias="Castle"><b>城堡</b><span class="chip ok">版本</span>
+      <div class="cond">夢魘士兵預設；其他版本跟夢魘士兵對戰取得</div></div>
+    <div class="card si" data-alias="Flower Field"><b>花田</b><span class="chip ok">版本</span>
+      <div class="cond">風之守護者預設；其他版本跟風之守護者對戰取得</div></div>
+    <div class="card si" data-alias="Factories"><b>工廠</b><span class="chip ok">版本</span>
+      <div class="cond">金屬帝國預設；其他版本跟金屬帝國對戰取得</div></div>
+    <div class="card si" data-alias="Sky"><b>天空</b><span class="chip ok">版本</span>
+      <div class="cond">病毒剋星預設；其他版本跟病毒剋星對戰取得</div></div>
+    <div class="card si" data-alias="Grasslands Desert Forest Mountains Beach"><b>草原／沙漠／森林／山岳／海灘</b><span class="chip gb">通信</span>
+      <div class="cond">分別跟 Digital Monster COLOR Ver.1／2／3／4／5 對戰（西遊戰士、東方勇士沒有）</div></div>
+    <div class="card si" data-alias="File Island"><b>檔案島</b><span class="chip gb">通信</span>
+      <div class="cond">跟 Digital Monster COLOR 5 個版本全部連線過（西遊戰士、東方勇士沒有）</div></div>
+    <div class="card si" data-alias="Folder Continent"><b>資料夾大陸</b><span class="chip gb">通信</span>
+      <div class="cond">跟其他 5 個版本的 Pendulum COLOR 全部連線過（西遊戰士、東方勇士沒有）</div></div>
+    <div class="card si" data-alias="Living Quarters"><b>生活區</b><span class="chip bt">任務</span>
+      <div class="cond">一般版本預設；西遊戰士、東方勇士要通關任務第 5 關</div></div>
+    <div class="card si" data-alias="The Net"><b>網路空間</b><span class="chip bt">任務</span>
+      <div class="cond">通關任務第 1 關（西遊戰士、東方勇士沒有）</div></div>
+    <div class="card si" data-alias="Box Art"><b>包裝盒圖</b><span class="chip bt">任務</span>
+      <div class="cond">通關任務第 5 關（西遊戰士、東方勇士是第 1 關），圖依版本不同</div></div>
+    <div class="card si" data-alias="Field Alt"><b>場景變化版</b><span class="chip bt">任務</span>
+      <div class="cond">通關任務最終關 F，圖依版本不同</div></div>
+    <div class="card si" data-alias="D-1 Grand Prix"><b>D-1 大獎賽</b><span class="chip gb">通信</span>
+      <div class="cond">西遊戰士、東方勇士：通信對戰勝利 10 場</div></div>
+    <div class="card si" data-alias="D-1 Grand Prix Gold Diamond"><b>D-1 大獎賽 金／鑽石</b><span class="chip gb">通信</span>
+      <div class="cond">西遊戰士、東方勇士：通信對戰勝利 100 場</div></div>
+    <div class="card si" data-alias="Pendulum Swimmers"><b>Pendulum Swimmers</b><span class="chip gy">圖鑑</span>
+      <div class="cond">西遊戰士、東方勇士：相簿登錄 10 隻</div></div>
+    <div class="card si" data-alias="Genshi Continent"><b>原始大陸</b><span class="chip ok">版本</span>
+      <div class="cond">西遊戰士預設；東方勇士跟西遊戰士對戰取得</div></div>
+    <div class="card si" data-alias="Ashino Island"><b>芦野島</b><span class="chip ok">版本</span>
+      <div class="cond">東方勇士預設；西遊戰士跟東方勇士對戰取得</div></div>
+    <div class="card si" data-alias="Shambala"><b>香巴拉</b><span class="chip ok">預設</span>
+      <div class="cond">西遊戰士、東方勇士預設</div></div>
+    <div class="card si" data-alias="Shambala Sky"><b>香巴拉天空</b><span class="chip gb">通信</span>
+      <div class="cond">西遊戰士跟東方勇士互相對戰</div></div>
+  </div>
+</section>
+
+<!-- ================= 關卡 ================= -->
+<section class="panel" id="t-quest" hidden>
+  <h2 class="ptitle">關卡</h2>
+
+  <div class="card si" data-alias="任務模式 QUEST 規則 HP 攻擊模式 命中減">
+    <h3>任務模式規則</h3>
+    <ul>
+      <li>每個版本 10 關（第 1～9 關、最終關 F），只顯示目前選的版本。</li>
+      <li>每回合開打前要搖晃；雙方各 3 HP，一般命中 −1、Super Hit −2。</li>
+      <li>輸一場＝整關失敗，要從頭再來。每一回合算 1 場對戰、消耗 1 DP。</li>
+      <li><b>攻擊模式</b>：灰色＝1 發、<span style="color:var(--gr)">紅色</span>＝2 發。<b>命中減</b>直接扣你的命中率。</li>
+      <li>西遊戰士、東方勇士：用<b>究極體</b>通關最終關 F，打完會立刻進化。</li>
+    </ul>
+  </div>
+
+  <div id="questList"></div>
+
+  <div class="card tool si" data-sonly data-alias="命中率 計算機 hitrate 力量 屬性 打得贏">
+    <h3>命中率計算</h3>
+    <div class="form">
+      <label class="full">我的怪獸<select id="hc-mon"></select></label>
+      <label class="chk"><input type="checkbox" id="hc-full" checked> 力量愛心全滿</label>
+      <label class="chk"><input type="checkbox" id="hc-egg"> 性格蛋孵化</label>
+      <label class="chk"><input type="checkbox" id="hc-shake"> 孵化前搖 100 下</label>
+      <label class="full">對手<select id="hc-opp"></select></label>
+      <label class="hc-c">對手力量<input id="hc-cp" type="number" min="0" inputmode="numeric" value="50"></label>
+      <label class="hc-c">對手屬性<select id="hc-ca"><option value="Vaccine">疫苗種</option><option value="Data">資料種</option><option value="Virus">病毒種</option><option value="Free">自由種</option></select></label>
+    </div>
+    <div id="hc-out"></div>
+  </div>
+
+  <div class="card si" data-alias="力量加成 公式 性格蛋 搖蛋">
+    <h3>力量加成・命中公式</h3>
+    <div class="tw"><table>
+      <tr><th>階段</th><th>力量滿心</th><th>性格蛋</th><th>搖蛋</th><th>三者</th></tr>
+      <tr><td>成長期</td><td>+5</td><td>+5</td><td>+10</td><td>+20</td></tr>
+      <tr><td>成熟期</td><td>+8</td><td>+8</td><td>+10</td><td>+26</td></tr>
+      <tr><td>完全體</td><td>+15</td><td>+15</td><td>+10</td><td>+40</td></tr>
+      <tr><td>究極體以上</td><td>+20</td><td>+20</td><td>+10</td><td>+50</td></tr>
+    </table></div>
+    <p class="small">命中率 ＝ 我方力量 × 100 ÷（我方力量＋對手力量）＋ 屬性修正（±10）－ 命中減。最高 99%。</p>
+  </div>
+</section>
+
+<footer>
+  非官方整理。資料來源：BANDAI 官方說明書、humulos.com 攻略站。<br>
+  Digimon © 本鄉あきよし・東映動畫・BANDAI
+</footer>
+</main>
+
+<input type="file" id="phFile" accept="image/*" hidden>
+<dialog id="phView">
+  <div class="pv-img"><img id="pvImg" alt=""></div>
+  <div class="pv-body">
+    <h3 id="pvName"></h3>
+    <div class="pv-actions">
+      <button type="button" class="btn pri" id="pvChange">換一張</button>
+      <button type="button" class="btn" id="pvGo">看進化條件</button>
+      <button type="button" class="btn danger" id="pvDel">刪除</button>
+      <button type="button" class="btn" id="pvClose">關閉</button>
+    </div>
+  </div>
+</dialog>
+<div id="toast" role="status" hidden></div>
+
+<script src="data/penc.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

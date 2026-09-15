@@ -420,6 +420,298 @@ def build_pengz():
     })
 
 
+# =====================================================================
+# 彩色超代（Digimon Pendulum COLOR，非哥吉拉版，共 10 個版本）
+# =====================================================================
+# (humulos 版本代碼, 簡碼, 中文名, 英文名)
+PENC_VERS = [
+    ("164", "NSp", "自然之靈", "Nature Spirits"),
+    ("165", "DSa", "深海救兵", "Deep Savers"),
+    ("166", "NSo", "夢魘士兵", "Nightmare Soldiers"),
+    ("167", "WGu", "風之守護者", "Wind Guardians"),
+    ("168", "MEm", "金屬帝國", "Metal Empire"),
+    ("169", "VBu", "病毒剋星", "Virus Busters"),
+    ("183", "SWa", "西遊戰士", "Saiyu Warriors"),
+    ("184", "TBr", "東方勇士", "Toho Braves"),
+    ("196", "CWa", "天界行者", "Celestial Walker"),
+    ("197", "ASe", "星界哨兵", "Astral Sentinel"),
+]
+
+PENC_UNLOCK_ZH = {
+    "The Net": "背景「網路空間」",
+    "Box Art": "背景「包裝盒圖」",
+    "Field Alt": "背景「場景變化版」",
+    "Living Quarters": "背景「生活區」",
+}
+
+
+def build_penc():
+    vkey = {c: k for c, k, _, _ in PENC_VERS}
+    ven = {en: c for c, _, _, en in PENC_VERS}
+    raw = [d for d in json.load(open(os.path.join(SRC, "penc_en.json"), encoding="utf-8")) if d["ver"] in vkey]
+    zh_path = os.path.join(SRC, "penc_zh.json")
+    zhm = json.load(open(zh_path, encoding="utf-8")) if os.path.exists(zh_path) else {}
+    nidx = {(d["ver"], d["name"].lower()): d["id"] for d in raw}
+    uid = lambda code, sid: f"{vkey[code]}-{sid}"
+    uids = {uid(d["ver"], d["id"]) for d in raw}
+
+    def zh_of(en):
+        z = zhm.get(en) or {}
+        return z.get("zh") or en, z.get("jp", "")
+
+    def rng_of(m):
+        lo = int(m[1])
+        return [lo, int(m[2]) if m[2] else (99 if m[3] else lo)]
+
+    def parse(text, code):
+        r = {}
+        for part in [p.strip() for p in text.split(",")]:
+            if part in ("No requirements", ""):
+                r["none"] = 1
+            elif part == "Mode Change":
+                r["mode"] = 1
+            elif m := re.fullmatch(r"(\d+)(?:-(\d+)|(\+))? Condition Hearts", part):
+                r["ch"] = rng_of(m)
+            elif m := re.fullmatch(r"(\d+)(?:-(\d+)|(\+))? Effort Hearts", part):
+                r["ef"] = rng_of(m)
+            elif m := re.fullmatch(r"(\d+)(?:-(\d+)|(\+))? Care Mistakes", part):
+                r["cm"] = rng_of(m)
+            elif m := re.fullmatch(r"(\d+)\+ Battles", part):
+                r["bt"] = int(m[1])
+            elif m := re.fullmatch(r"(\d+)%\+ Win Ratio", part):
+                r["win"] = int(m[1])
+            elif m := re.fullmatch(r"Slot (\d+) (not )?unlocked", part):
+                r["slot"] = {"n": int(m[1]), "on": 0 if m[2] else 1}
+            elif m := re.fullmatch(r"Jogress with ((?:Vaccine|Data|Virus)(?: or (?:Vaccine|Data|Virus))*) Stage (IV|V)", part):
+                r["jogA"] = {"a": m[1].split(" or "), "st": m[2]}
+            elif m := re.fullmatch(r"Jogress with (.+?) from the (.+?) Pendulum Color", part):
+                vs = [ven[v.strip()] for v in m[2].replace("Soliders", "Soldiers").split(" or ")]
+                ids = [uid(c, nidx[(c, m[1].lower())]) for c in vs if (c, m[1].lower()) in nidx]
+                if not ids:
+                    raise ValueError("找不到合體對象：" + part)
+                r["jog"] = ids
+            elif re.fullmatch(r"Clear Area F of Quest Mode(?: as .+)?", part):
+                r["areaF"] = 1
+            else:
+                raise ValueError("無法解析的條件：" + part)
+        return r
+
+    monsters = []
+    for d in raw:
+        code = d["ver"]
+        st = re.match(r"Stage (\S+)", d["stage"])
+        stage = st[1] if st else "M"
+        zh, jp = zh_of(d["name"])
+        loss = re.match(r"(\d+)", d.get("Hunger / Strength Loss", ""))
+        power = num(d.get("Power"))
+
+        def links(lst):
+            out = []
+            for x in lst:
+                c2 = x.get("v2") or code
+                if c2 not in vkey or uid(c2, x["id"]) not in uids:
+                    continue
+                out.append({"id": uid(c2, x["id"]), "req": [parse(s, code) for s in x["req"]]})
+            return out
+
+        monsters.append({
+            "id": uid(code, d["id"]), "ver": vkey[code], "zh": zh, "en": d["name"], "alias": jp,
+            "stage": stage, "attr": d["attr"],
+            "power": power if (power or stage not in ("I", "II")) else None,
+            "energy": num(d.get("DP")) if stage != "I" else None,
+            "minWeight": num(d.get("Min Weight")), "sleep": to24(d.get("Sleep Time")),
+            "loss": int(loss[1]) if loss else None,
+            "chMax": num(d.get("Condition Hearts")),
+            "canJog": d.get("Jogress") == "Yes",
+            "noData": not d["from"] and not d["to"] and stage not in ("I",),
+            "from": links(d["from"]), "to": links(d["to"]),
+        })
+
+    quest, extra = {}, {}
+    for code, areas in json.load(open(os.path.join(SRC, "penc_quest.json"), encoding="utf-8")).items():
+        out = []
+        for a in areas:
+            rounds = []
+            for r in a["rounds"]:
+                u = uid(code, r["id"])
+                if u not in uids:
+                    u = "Q-" + r["id"]
+                    if u not in extra:
+                        zh, jp = zh_of(r["name"])
+                        extra[u] = {"id": u, "ver": "Q", "zh": zh, "en": r["name"], "alias": jp, "stage": "VI",
+                                    "attr": r["attr"], "questOnly": True, "power": None, "from": [], "to": []}
+                rounds.append({"id": u, "attr": r["attr"], "p": r["p"], "pat": r["pat"], "hc": r["hc"]})
+            out.append({"no": a["no"], "unlock": PENC_UNLOCK_ZH.get(a["unlock"], a["unlock"]), "rounds": rounds})
+        quest[vkey[code]] = out
+    monsters += list(extra.values())
+
+    missing = sorted({m["en"] for m in monsters if m["en"] not in zhm})
+    if missing:
+        print(f"  （{len(missing)} 個名稱尚無中文，暫用英文）")
+    write_js("penc.js", {
+        "kind": "penc", "device": "penc", "title": "彩色超代",
+        "versions": [{"key": k, "zh": zh, "en": en} for _, k, zh, en in PENC_VERS],
+        "monsters": monsters,
+        "quest": quest,
+    })
+
+
+# =====================================================================
+# 元祖20th（Digimon Original / Digital Monster Ver.20th）
+# =====================================================================
+# 蛋卡名稱: (中文名, 取得方式, 限定版本, 幼年期Ⅰ)
+DM20_EGGS = {
+    "Digital Monster Ver.1": ("Ver.1 蛋", "一開始就有", "", "bota"),
+    "Digital Monster Ver.2": ("Ver.2 蛋", "第一隻養到成長期後就能選", "", "puni"),
+    "Digital Monster Ver.3": ("Ver.3 蛋", "第一隻養到成長期後就能選", "", "poyo"),
+    "Digital Monster Ver.4": ("Ver.4 蛋", "第一隻養到成長期後就能選", "", "yura"),
+    "Digital Monster Ver.5": ("Ver.5 蛋", "第一隻養到成長期後就能選", "", "zuru"),
+    "Slayerdra": ("青蛋（斬龍獸）", "相簿登錄 5 隻", "", "petit"),
+    "Breakdra": ("綠蛋（破壞龍獸）", "相簿登錄 25 隻", "", "petit"),
+    "Zuba": ("20 週年蛋（茲巴獸）", "累計對戰 50 場（中文資料集寫「勝利 50 場」）", "", "saku"),
+    "Hack": ("15 週年蛋（哈克獸）", "累計對戰 100 場（中文資料集寫「勝利 100 場」）", "", "saku"),
+    "Taichi": ("太一的蛋", "和 5 台不同馴獸師名字的機器通信", "A 版限定", "bota"),
+    "Yamato": ("大和的蛋", "和 5 台不同馴獸師名字的機器通信", "B 版限定", "puni"),
+    "Corona": ("日冕獸蛋", "和 5 台不同馴獸師名字的機器通信", "C 版限定", "pitch"),
+    "Luna": ("露娜獸蛋", "和 5 台不同馴獸師名字的機器通信", "D 版限定", "pitch"),
+    "Meicoo": ("緬因貓獸蛋", "和 5 台不同馴獸師名字的機器通信", "E 版限定", "yukimibota"),
+    "DORU": ("多路獸蛋（阿爾法獸）", "原始配色（A／B 版）和特殊配色（C／D／E 版）互相通信", "", "dodo"),
+}
+DM20_VER_TITLE = {
+    "Version A (English and Japanese)": "A 版",
+    "Version B (English and Japanese)": "B 版",
+    "Version C": "C 版",
+    "Version D": "D 版",
+    "Version E": "E 版",
+    "Versions A, B (English), C, D and E": "A、B（英文版）、C、D、E 版共通",
+    "Versions A (English), B, C, D and E": "A（英文版）、B、C、D、E 版共通",
+    "Versions C and D": "C、D 版共通",
+}
+
+
+def rng_match(m):
+    lo = int(m[1])
+    return [lo, int(m[2]) if m[2] else (99 if m[3] else lo)]
+
+
+def build_dm20():
+    raw = json.load(open(os.path.join(SRC, "dm20_en.json"), encoding="utf-8"))
+    extra = json.load(open(os.path.join(SRC, "dm20_extra.json"), encoding="utf-8"))
+    zh_path = os.path.join(SRC, "dm20_zh.json")
+    zhm = json.load(open(zh_path, encoding="utf-8")) if os.path.exists(zh_path) else {}
+    egg_cards = {d["name"]: d["id"] for d in raw if d["id"].startswith("digitama_")}
+    mons = [d for d in raw if not d["id"].startswith("digitama_")]
+    nidx = {d["name"].lower(): d["id"] for d in mons}
+    ids = {d["id"] for d in mons}
+
+    def egg_key(n):
+        n = re.sub(r"^Version (\d)$", r"Digital Monster Ver.\1", n)
+        return egg_cards[re.sub(r"'s$", "", n)]
+
+    def parse(text):
+        r = {}
+        for part in [p.strip() for p in text.split(",")]:
+            if part == "No requirements":
+                r["none"] = 1
+            elif part == "Only appears as an enemy in the Colosseum":
+                r["enemy"] = 1
+            elif m := re.fullmatch(r"Wait (\d+) Minutes", part):
+                r["wait"] = int(m[1])
+            elif m := re.fullmatch(r"(\d+)(?:-(\d+)|(\+))? Care Mistakes", part):
+                r["cm"] = rng_match(m)
+            elif m := re.fullmatch(r"(\d+)(?:-(\d+)|(\+))? Training", part):
+                r["tr"] = rng_match(m)
+            elif m := re.fullmatch(r"(\d+)(?:-(\d+)|(\+))? Overfeed", part):
+                r["of"] = rng_match(m)
+            elif m := re.fullmatch(r"(\d+) Battles", part):
+                r["bt"] = int(m[1])
+            elif m := re.fullmatch(r"(\d+)-(\d+) Victories\*", part):
+                r["vic"] = [int(m[1]), int(m[2])]
+            elif m := re.fullmatch(r"hatched from (.+) Egg", part):
+                r["egg"] = egg_key(m[1])
+            elif m := re.fullmatch(r"Battle (\d+)\+ times \(Not possible on Japanese Versions A or B\)", part):
+                r["life"] = int(m[1])
+                r["noJpAB"] = 1
+            elif m := re.fullmatch(r"Tag Battle (\d+) times with (.+)", part):
+                r["tag"] = {"n": int(m[1]), "id": nidx[m[2].lower()]}
+            else:
+                raise ValueError("無法解析的條件：" + part)
+        return r
+
+    def links(lst):
+        out = []
+        for x in lst:
+            if not x.get("id") or x["id"] not in ids:
+                continue
+            reqs = [parse(s) for s in x["req"]]
+            if any(r.get("enemy") for r in reqs):
+                continue
+            out.append({"id": x["id"], "req": reqs})
+        return out
+
+    to_links = {d["id"]: links(d["to"]) for d in mons}
+
+    # 每顆蛋能養出的怪獸：從幼年期Ⅰ沿進化路線走，遇到「限定某顆蛋孵化」的分支時只走自己的
+    eggs_of = {d["id"]: [] for d in mons}
+    egg_list = []
+    for name, (zh, unlock, ver, baby) in DM20_EGGS.items():
+        key = egg_cards[name]
+        egg_list.append({"key": key, "zh": zh, "en": name, "unlock": unlock, "ver": ver})
+        seen, stack = set(), [baby]
+        while stack:
+            cur = stack.pop()
+            if cur in seen:
+                continue
+            seen.add(cur)
+            for t in to_links[cur]:
+                if any("egg" not in r or r["egg"] == key for r in t["req"]):
+                    stack.append(t["id"])
+        for i in seen:
+            eggs_of[i].append(key)
+
+    vers, ver_label = [], {}
+    for g, v in extra["exclusives"].items():
+        if g not in DM20_VER_TITLE:
+            continue
+        title = DM20_VER_TITLE[g]
+        mids = [nidx[n.lower()] for n in v["mons"] if n.lower() in nidx]
+        vers.append({"key": g, "title": title, "colors": v["colors"], "mons": mids})
+        for i in mids:
+            ver_label[i] = title + "限定" if "、" not in title else title
+
+    monsters = []
+    for d in mons:
+        st = re.match(r"Stage (\S+)", d["stage"])
+        zh, jp = zhm.get(d["id"], [d["name"], ""])
+        enemy = any("Only appears as an enemy" in r for x in d["from"] for r in x["req"])
+        monsters.append({
+            "id": d["id"], "zh": zh, "en": d["name"], "alias": jp,
+            "stage": st[1] if st else "?", "attr": d["attr"],
+            "power": num(d.get("Power")), "sleep": to24(d.get("Sleep Time")),
+            "eggs": eggs_of[d["id"]], "verLabel": ver_label.get(d["id"]),
+            "enemyOnly": True if enemy else None,
+            "from": [] if enemy else links(d["from"]), "to": to_links[d["id"]],
+        })
+
+    def cx(x):
+        return {"id": x["id"] if x["id"] in ids else None, "name": x["name"], "attr": x["attr"], "p": x["p"]}
+
+    missing = [m["en"] for m in monsters if m["id"] not in zhm]
+    if missing:
+        print("  （尚無中文：" + "、".join(missing) + "）")
+    write_js("dm20.js", {
+        "kind": "dm20", "device": "dm20", "title": "元祖20th",
+        "eggs": egg_list, "vers": vers,
+        "monsters": monsters,
+        "colo": {
+            "single": [dict(no=r["no"], **cx(r)) for r in extra["single"]],
+            "tag": [{"no": r["no"], "l": cx(r["l"]), "r": cx(r["r"])} for r in extra["tag"]],
+        },
+    })
+
+
 if __name__ == "__main__":
     build_dmgz()
     build_pengz()
+    build_penc()
+    build_dm20()

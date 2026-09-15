@@ -1,0 +1,2428 @@
+{
+ "single": [
+  {
+   "no": 1,
+   "id": "kune",
+   "name": "Kunemon",
+   "attr": "Virus",
+   "p": 10
+  },
+  {
+   "no": 2,
+   "id": "pal",
+   "name": "Palmon",
+   "attr": "Data",
+   "p": 10
+  },
+  {
+   "no": 3,
+   "id": "beta",
+   "name": "Betamon",
+   "attr": "Virus",
+   "p": 10
+  },
+  {
+   "no": 4,
+   "id": "pata",
+   "name": "Patamon",
+   "attr": "Data",
+   "p": 18
+  },
+  {
+   "no": 5,
+   "id": "plot",
+   "name": "Plotmon",
+   "attr": "Vaccine",
+   "p": 27
+  },
+  {
+   "no": 6,
+   "id": "elec",
+   "name": "Elecmon",
+   "attr": "Data",
+   "p": 10
+  },
+  {
+   "no": 7,
+   "id": "piyo",
+   "name": "Piyomon",
+   "attr": "Vaccine",
+   "p": 18
+  },
+  {
+   "no": 8,
+   "id": "giza",
+   "name": "Gizamon",
+   "attr": "Virus",
+   "p": 10
+  },
+  {
+   "no": 9,
+   "id": "gabu",
+   "name": "Gabumon",
+   "attr": "Data",
+   "p": 18
+  },
+  {
+   "no": 10,
+   "id": "gazi",
+   "name": "Gazimon",
+   "attr": "Virus",
+   "p": 18
+  },
+  {
+   "no": 11,
+   "id": "agu",
+   "name": "Agumon",
+   "attr": "Vaccine",
+   "p": 18
+  },
+  {
+   "no": 12,
+   "id": "nume",
+   "name": "Numemon",
+   "attr": "Virus",
+   "p": 40
+  },
+  {
+   "no": 13,
+   "id": "vegi",
+   "name": "Vegimon",
+   "attr": "Virus",
+   "p": 40
+  },
+  {
+   "no": 14,
+   "id": "scu",
+   "name": "Scumon",
+   "attr": "Virus",
+   "p": 40
+  },
+  {
+   "no": 15,
+   "id": "nani",
+   "name": "Nanimon",
+   "attr": "Virus",
+   "p": 40
+  },
+  {
+   "no": 16,
+   "id": "rare",
+   "name": "Raremon",
+   "attr": "Virus",
+   "p": 40
+  },
+  {
+   "no": 17,
+   "id": "birdra",
+   "name": "Birdramon",
+   "attr": "Vaccine",
+   "p": 55
+  },
+  {
+   "no": 18,
+   "id": "shell",
+   "name": "Shellmon",
+   "attr": "Data",
+   "p": 55
+  },
+  {
+   "no": 19,
+   "id": "fly",
+   "name": "Flymon",
+   "attr": "Virus",
+   "p": 55
+  },
+  {
+   "no": 20,
+   "id": "airdra",
+   "name": "Airdramon",
+   "attr": "Vaccine",
+   "p": 55
+  },
+  {
+   "no": 21,
+   "id": "coela",
+   "name": "Coelamon",
+   "attr": "Data",
+   "p": 55
+  },
+  {
+   "no": 22,
+   "id": "corona",
+   "name": "Coronamon",
+   "attr": "Vaccine",
+   "p": 27
+  },
+  {
+   "no": 23,
+   "id": "luna",
+   "name": "Lunamon",
+   "attr": "Data",
+   "p": 27
+  },
+  {
+   "no": 24,
+   "id": "seadra",
+   "name": "Seadramon",
+   "attr": "Data",
+   "p": 50
+  },
+  {
+   "no": 25,
+   "id": "wha",
+   "name": "Whamon",
+   "attr": "Vaccine",
+   "p": 50
+  },
+  {
+   "no": 26,
+   "id": "drimoge",
+   "name": "Drimogemon",
+   "attr": "Data",
+   "p": 50
+  },
+  {
+   "no": 27,
+   "id": "mojya",
+   "name": "Mojyamon",
+   "attr": "Vaccine",
+   "p": 50
+  },
+  {
+   "no": 28,
+   "id": "delta",
+   "name": "Deltamon",
+   "attr": "Virus",
+   "p": 50
+  },
+  {
+   "no": 29,
+   "id": "yukidaru",
+   "name": "Yukidarumon",
+   "attr": "Vaccine",
+   "p": 60
+  },
+  {
+   "no": 30,
+   "id": "bake",
+   "name": "Bakemon",
+   "attr": "Virus",
+   "p": 60
+  },
+  {
+   "no": 31,
+   "id": "mera",
+   "name": "Meramon",
+   "attr": "Data",
+   "p": 60
+  },
+  {
+   "no": 32,
+   "id": "kuwaga",
+   "name": "Kuwagamon",
+   "attr": "Virus",
+   "p": 60
+  },
+  {
+   "no": 33,
+   "id": "tusk",
+   "name": "Tuskmon",
+   "attr": "Virus",
+   "p": 60
+  },
+  {
+   "no": 34,
+   "id": "uni",
+   "name": "Unimon",
+   "attr": "Vaccine",
+   "p": 75
+  },
+  {
+   "no": 35,
+   "id": "devidra",
+   "name": "Devidramon",
+   "attr": "Virus",
+   "p": 65
+  },
+  {
+   "no": 36,
+   "id": "devi",
+   "name": "Devimon",
+   "attr": "Virus",
+   "p": 65
+  },
+  {
+   "no": 37,
+   "id": "monochro",
+   "name": "Monochromon",
+   "attr": "Data",
+   "p": 75
+  },
+  {
+   "no": 38,
+   "id": "darktyrano",
+   "name": "Dark Tyranomon",
+   "attr": "Virus",
+   "p": 75
+  },
+  {
+   "no": 39,
+   "id": "hack",
+   "name": "Hackmon",
+   "attr": "Data",
+   "p": 34
+  },
+  {
+   "no": 40,
+   "id": "draco",
+   "name": "Dracomon",
+   "attr": "Data",
+   "p": 34
+  },
+  {
+   "no": 41,
+   "id": "ogre",
+   "name": "Ogremon",
+   "attr": "Virus",
+   "p": 65
+  },
+  {
+   "no": 42,
+   "id": "leo",
+   "name": "Leomon",
+   "attr": "Vaccine",
+   "p": 65
+  },
+  {
+   "no": 43,
+   "id": "doru",
+   "name": "DORUmon",
+   "attr": "Data",
+   "p": 27
+  },
+  {
+   "no": 44,
+   "id": "zuba",
+   "name": "Zubamon",
+   "attr": "Vaccine",
+   "p": 34
+  },
+  {
+   "no": 45,
+   "id": "kabuteri",
+   "name": "Kabuterimon",
+   "attr": "Vaccine",
+   "p": 75
+  },
+  {
+   "no": 46,
+   "id": "ange",
+   "name": "Angemon",
+   "attr": "Vaccine",
+   "p": 65
+  },
+  {
+   "no": 47,
+   "id": "giro",
+   "name": "Giromon",
+   "attr": "Vaccine",
+   "p": 118
+  },
+  {
+   "no": 48,
+   "id": "nano",
+   "name": "Nanomon",
+   "attr": "Virus",
+   "p": 118
+  },
+  {
+   "no": 49,
+   "id": "tyrano",
+   "name": "Tyranomon",
+   "attr": "Data",
+   "p": 70
+  },
+  {
+   "no": 50,
+   "id": "garuru",
+   "name": "Garurumon",
+   "attr": "Vaccine",
+   "p": 70
+  },
+  {
+   "no": 51,
+   "id": "cental",
+   "name": "Centalmon",
+   "attr": "Data",
+   "p": 70
+  },
+  {
+   "no": 52,
+   "id": "cockatri",
+   "name": "Cockatrimon",
+   "attr": "Data",
+   "p": 70
+  },
+  {
+   "no": 53,
+   "id": "cyclo",
+   "name": "Cyclomon",
+   "attr": "Virus",
+   "p": 70
+  },
+  {
+   "no": 54,
+   "id": "mame",
+   "name": "Mamemon",
+   "attr": "Data",
+   "p": 118
+  },
+  {
+   "no": 55,
+   "id": "metalmame",
+   "name": "Metal Mamemon",
+   "attr": "Data",
+   "p": 118
+  },
+  {
+   "no": 56,
+   "id": "piccolo",
+   "name": "Piccolomon",
+   "attr": "Data",
+   "p": 118
+  },
+  {
+   "no": 57,
+   "id": "meicoo",
+   "name": "Meicoomon",
+   "attr": "Free",
+   "p": 80
+  },
+  {
+   "no": 58,
+   "id": "vade",
+   "name": "Vademon",
+   "attr": "Virus",
+   "p": 107
+  },
+  {
+   "no": 59,
+   "id": "ete",
+   "name": "Etemon",
+   "attr": "Virus",
+   "p": 107
+  },
+  {
+   "no": 60,
+   "id": "baohack",
+   "name": "Bao Hackmon",
+   "attr": "Data",
+   "p": 90
+  },
+  {
+   "no": 61,
+   "id": "monzae",
+   "name": "Monzaemon",
+   "attr": "Vaccine",
+   "p": 107
+  },
+  {
+   "no": 62,
+   "id": "digitama",
+   "name": "Digitamamon",
+   "attr": "Data",
+   "p": 107
+  },
+  {
+   "no": 63,
+   "id": "extyrano",
+   "name": "Ex-Tyranomon",
+   "attr": "Vaccine",
+   "p": 107
+  },
+  {
+   "no": 64,
+   "id": "megadra",
+   "name": "Megadramon",
+   "attr": "Virus",
+   "p": 126
+  },
+  {
+   "no": 65,
+   "id": "metaltyrano",
+   "name": "Metal Tyranomon",
+   "attr": "Virus",
+   "p": 126
+  },
+  {
+   "no": 66,
+   "id": "wingdra",
+   "name": "Wingdramon",
+   "attr": "Vaccine",
+   "p": 143
+  },
+  {
+   "no": 67,
+   "id": "groundra",
+   "name": "Groundramon",
+   "attr": "Virus",
+   "p": 143
+  },
+  {
+   "no": 68,
+   "id": "pinochi",
+   "name": "Pinochimon",
+   "attr": "Virus",
+   "p": 176
+  },
+  {
+   "no": 69,
+   "id": "dorugure",
+   "name": "DORUguremon",
+   "attr": "Data",
+   "p": 143
+  },
+  {
+   "no": 70,
+   "id": "skullmam",
+   "name": "Skull Mammon",
+   "attr": "Vaccine",
+   "p": 169
+  },
+  {
+   "no": 71,
+   "id": "kingete",
+   "name": "King Etemon",
+   "attr": "Virus",
+   "p": 169
+  },
+  {
+   "no": 72,
+   "id": "magna",
+   "name": "Magnamon",
+   "attr": "Free",
+   "p": null
+  },
+  {
+   "no": 73,
+   "id": "saviorhack",
+   "name": "Savior Hackmon",
+   "attr": "Data",
+   "p": 155
+  },
+  {
+   "no": 74,
+   "id": "banchomame",
+   "name": "Bancho Mamemon",
+   "attr": "Data",
+   "p": 176
+  },
+  {
+   "no": 75,
+   "id": "meicrack",
+   "name": "Meicrackmon",
+   "attr": "Vaccine",
+   "p": 143
+  },
+  {
+   "no": 76,
+   "id": "wargrey_a",
+   "name": "Taichi's War Greymon",
+   "attr": "Vaccine",
+   "p": 199
+  },
+  {
+   "no": 77,
+   "id": "metalgaruru_a",
+   "name": "Yamato's Metal Garurumon",
+   "attr": "Data",
+   "p": 199
+  },
+  {
+   "no": 78,
+   "id": "mugendra",
+   "name": "Mugendramon",
+   "attr": "Virus",
+   "p": 188
+  },
+  {
+   "no": 79,
+   "id": "aegisdra",
+   "name": "Aegisdramon",
+   "attr": "Vaccine",
+   "p": 188
+  },
+  {
+   "no": 80,
+   "id": "slayerdra",
+   "name": "Slayerdramon",
+   "attr": "Vaccine",
+   "p": 199
+  },
+  {
+   "no": 81,
+   "id": "breakdra",
+   "name": "Breakdramon",
+   "attr": "Virus",
+   "p": 199
+  },
+  {
+   "no": 82,
+   "id": "dura",
+   "name": "Duramon",
+   "attr": "Vaccine",
+   "p": 155
+  },
+  {
+   "no": 83,
+   "id": "duke",
+   "name": "Dukemon",
+   "attr": "Virus",
+   "p": null
+  },
+  {
+   "no": 84,
+   "id": "sleip",
+   "name": "Sleipmon",
+   "attr": "Vaccine",
+   "p": null
+  },
+  {
+   "no": 85,
+   "id": "duft",
+   "name": "Duftmon",
+   "attr": "Data",
+   "p": null
+  },
+  {
+   "no": 86,
+   "id": "blitzgrey",
+   "name": "Blitz Greymon",
+   "attr": "Virus",
+   "p": 188
+  },
+  {
+   "no": 87,
+   "id": "cresgaruru",
+   "name": "Cres Garurumon",
+   "attr": "Data",
+   "p": 188
+  },
+  {
+   "no": 88,
+   "id": "lordknight",
+   "name": "Lord Knightmon",
+   "attr": "Virus",
+   "p": null
+  },
+  {
+   "no": 89,
+   "id": "ulforcevdra",
+   "name": "Ulforce V-dramon",
+   "attr": "Vaccine",
+   "p": null
+  },
+  {
+   "no": 90,
+   "id": "alpha",
+   "name": "Alphamon",
+   "attr": "Vaccine",
+   "p": 210
+  },
+  {
+   "no": 91,
+   "id": "murmukus",
+   "name": "Murmukusmon",
+   "attr": "Virus",
+   "p": null
+  },
+  {
+   "no": 92,
+   "id": "death",
+   "name": "Deathmon",
+   "attr": "Virus",
+   "p": null
+  },
+  {
+   "no": 93,
+   "id": "levia",
+   "name": "Leviamon",
+   "attr": "Virus",
+   "p": null
+  },
+  {
+   "no": 94,
+   "id": "barba",
+   "name": "Barbamon",
+   "attr": "Virus",
+   "p": null
+  },
+  {
+   "no": 95,
+   "id": "lilith",
+   "name": "Lilithmon",
+   "attr": "Virus",
+   "p": null
+  },
+  {
+   "no": 96,
+   "id": "beelzebu",
+   "name": "Beelzebumon",
+   "attr": "Virus",
+   "p": null
+  },
+  {
+   "no": 97,
+   "id": "belialvamde",
+   "name": "Belial Vamdemon",
+   "attr": "Virus",
+   "p": null
+  },
+  {
+   "no": 98,
+   "id": "belphe_r",
+   "name": "Belphemon: Rage Mode",
+   "attr": "Virus",
+   "p": null
+  },
+  {
+   "no": 99,
+   "id": "de",
+   "name": "Demon",
+   "attr": "Virus",
+   "p": null
+  },
+  {
+   "no": 100,
+   "id": "luce_f",
+   "name": "Lucemon: Falldown Mode",
+   "attr": "Virus",
+   "p": null
+  }
+ ],
+ "tag": [
+  {
+   "no": 1,
+   "l": {
+    "id": "pal",
+    "name": "Palmon",
+    "attr": "Data",
+    "p": 10
+   },
+   "r": {
+    "id": "kune",
+    "name": "Kunemon",
+    "attr": "Virus",
+    "p": 10
+   }
+  },
+  {
+   "no": 2,
+   "l": {
+    "id": "pata",
+    "name": "Patamon",
+    "attr": "Data",
+    "p": 18
+   },
+   "r": {
+    "id": "beta",
+    "name": "Betamon",
+    "attr": "Virus",
+    "p": 10
+   }
+  },
+  {
+   "no": 3,
+   "l": {
+    "id": "elec",
+    "name": "Elecmon",
+    "attr": "Data",
+    "p": 10
+   },
+   "r": {
+    "id": "plot",
+    "name": "Plotmon",
+    "attr": "Vaccine",
+    "p": 27
+   }
+  },
+  {
+   "no": 4,
+   "l": {
+    "id": "giza",
+    "name": "Gizamon",
+    "attr": "Virus",
+    "p": 10
+   },
+   "r": {
+    "id": "piyo",
+    "name": "Piyomon",
+    "attr": "Vaccine",
+    "p": 18
+   }
+  },
+  {
+   "no": 5,
+   "l": {
+    "id": "gazi",
+    "name": "Gazimon",
+    "attr": "Virus",
+    "p": 18
+   },
+   "r": {
+    "id": "gabu",
+    "name": "Gabumon",
+    "attr": "Data",
+    "p": 18
+   }
+  },
+  {
+   "no": 6,
+   "l": {
+    "id": "beta",
+    "name": "Betamon",
+    "attr": "Virus",
+    "p": 10
+   },
+   "r": {
+    "id": "agu",
+    "name": "Agumon",
+    "attr": "Vaccine",
+    "p": 18
+   }
+  },
+  {
+   "no": 7,
+   "l": {
+    "id": "elec",
+    "name": "Elecmon",
+    "attr": "Data",
+    "p": 10
+   },
+   "r": {
+    "id": "gabu",
+    "name": "Gabumon",
+    "attr": "Data",
+    "p": 18
+   }
+  },
+  {
+   "no": 8,
+   "l": {
+    "id": "kune",
+    "name": "Kunemon",
+    "attr": "Virus",
+    "p": 10
+   },
+   "r": {
+    "id": "pata",
+    "name": "Patamon",
+    "attr": "Data",
+    "p": 18
+   }
+  },
+  {
+   "no": 9,
+   "l": {
+    "id": "pata",
+    "name": "Patamon",
+    "attr": "Data",
+    "p": 18
+   },
+   "r": {
+    "id": "piyo",
+    "name": "Piyomon",
+    "attr": "Vaccine",
+    "p": 18
+   }
+  },
+  {
+   "no": 10,
+   "l": {
+    "id": "giza",
+    "name": "Gizamon",
+    "attr": "Virus",
+    "p": 10
+   },
+   "r": {
+    "id": "gazi",
+    "name": "Gazimon",
+    "attr": "Virus",
+    "p": 18
+   }
+  },
+  {
+   "no": 11,
+   "l": {
+    "id": "beta",
+    "name": "Betamon",
+    "attr": "Virus",
+    "p": 10
+   },
+   "r": {
+    "id": "elec",
+    "name": "Elecmon",
+    "attr": "Data",
+    "p": 10
+   }
+  },
+  {
+   "no": 12,
+   "l": {
+    "id": "gabu",
+    "name": "Gabumon",
+    "attr": "Data",
+    "p": 18
+   },
+   "r": {
+    "id": "agu",
+    "name": "Agumon",
+    "attr": "Vaccine",
+    "p": 18
+   }
+  },
+  {
+   "no": 13,
+   "l": {
+    "id": "vegi",
+    "name": "Vegimon",
+    "attr": "Virus",
+    "p": 40
+   },
+   "r": {
+    "id": "pal",
+    "name": "Palmon",
+    "attr": "Data",
+    "p": 10
+   }
+  },
+  {
+   "no": 14,
+   "l": {
+    "id": "birdra",
+    "name": "Birdramon",
+    "attr": "Vaccine",
+    "p": 55
+   },
+   "r": {
+    "id": "piyo",
+    "name": "Piyomon",
+    "attr": "Vaccine",
+    "p": 18
+   }
+  },
+  {
+   "no": 15,
+   "l": {
+    "id": "rare",
+    "name": "Raremon",
+    "attr": "Virus",
+    "p": 40
+   },
+   "r": {
+    "id": "elec",
+    "name": "Elecmon",
+    "attr": "Data",
+    "p": 10
+   }
+  },
+  {
+   "no": 16,
+   "l": {
+    "id": "fly",
+    "name": "Flymon",
+    "attr": "Virus",
+    "p": 55
+   },
+   "r": {
+    "id": "kune",
+    "name": "Kunemon",
+    "attr": "Virus",
+    "p": 10
+   }
+  },
+  {
+   "no": 17,
+   "l": {
+    "id": "pata",
+    "name": "Patamon",
+    "attr": "Data",
+    "p": 18
+   },
+   "r": {
+    "id": "plot",
+    "name": "Plotmon",
+    "attr": "Vaccine",
+    "p": 27
+   }
+  },
+  {
+   "no": 18,
+   "l": {
+    "id": "bake",
+    "name": "Bakemon",
+    "attr": "Virus",
+    "p": 60
+   },
+   "r": {
+    "id": "gazi",
+    "name": "Gazimon",
+    "attr": "Virus",
+    "p": 18
+   }
+  },
+  {
+   "no": 19,
+   "l": {
+    "id": "tusk",
+    "name": "Tuskmon",
+    "attr": "Virus",
+    "p": 60
+   },
+   "r": {
+    "id": "giza",
+    "name": "Gizamon",
+    "attr": "Virus",
+    "p": 10
+   }
+  },
+  {
+   "no": 20,
+   "l": {
+    "id": "shell",
+    "name": "Shellmon",
+    "attr": "Data",
+    "p": 55
+   },
+   "r": {
+    "id": "birdra",
+    "name": "Birdramon",
+    "attr": "Vaccine",
+    "p": 55
+   }
+  },
+  {
+   "no": 21,
+   "l": {
+    "id": "luna",
+    "name": "Lunamon",
+    "attr": "Data",
+    "p": 27
+   },
+   "r": {
+    "id": "corona",
+    "name": "Coronamon",
+    "attr": "Vaccine",
+    "p": 27
+   }
+  },
+  {
+   "no": 22,
+   "l": {
+    "id": "ange",
+    "name": "Angemon",
+    "attr": "Vaccine",
+    "p": 65
+   },
+   "r": {
+    "id": "pata",
+    "name": "Patamon",
+    "attr": "Data",
+    "p": 18
+   }
+  },
+  {
+   "no": 23,
+   "l": {
+    "id": "scu",
+    "name": "Scumon",
+    "attr": "Virus",
+    "p": 40
+   },
+   "r": {
+    "id": "nume",
+    "name": "Numemon",
+    "attr": "Virus",
+    "p": 40
+   }
+  },
+  {
+   "no": 24,
+   "l": {
+    "id": "nani",
+    "name": "Nanimon",
+    "attr": "Virus",
+    "p": 40
+   },
+   "r": {
+    "id": "vegi",
+    "name": "Vegimon",
+    "attr": "Virus",
+    "p": 40
+   }
+  },
+  {
+   "no": 25,
+   "l": {
+    "id": "wha",
+    "name": "Whamon",
+    "attr": "Vaccine",
+    "p": 50
+   },
+   "r": {
+    "id": "coela",
+    "name": "Coelamon",
+    "attr": "Data",
+    "p": 55
+   }
+  },
+  {
+   "no": 26,
+   "l": {
+    "id": "mera",
+    "name": "Meramon",
+    "attr": "Data",
+    "p": 60
+   },
+   "r": {
+    "id": "yukidaru",
+    "name": "Yukidarumon",
+    "attr": "Vaccine",
+    "p": 60
+   }
+  },
+  {
+   "no": 27,
+   "l": {
+    "id": "meicoo",
+    "name": "Meicoomon",
+    "attr": "Free",
+    "p": 80
+   },
+   "r": {
+    "id": "plot",
+    "name": "Plotmon",
+    "attr": "Vaccine",
+    "p": 27
+   }
+  },
+  {
+   "no": 28,
+   "l": {
+    "id": "coela",
+    "name": "Coelamon",
+    "attr": "Data",
+    "p": 55
+   },
+   "r": {
+    "id": "doru",
+    "name": "DORUmon",
+    "attr": "Data",
+    "p": 27
+   }
+  },
+  {
+   "no": 29,
+   "l": {
+    "id": "cockatri",
+    "name": "Cockatrimon",
+    "attr": "Data",
+    "p": 70
+   },
+   "r": {
+    "id": "piyo",
+    "name": "Piyomon",
+    "attr": "Vaccine",
+    "p": 18
+   }
+  },
+  {
+   "no": 30,
+   "l": {
+    "id": "hack",
+    "name": "Hackmon",
+    "attr": "Data",
+    "p": 34
+   },
+   "r": {
+    "id": "zuba",
+    "name": "Zubamon",
+    "attr": "Vaccine",
+    "p": 34
+   }
+  },
+  {
+   "no": 31,
+   "l": {
+    "id": "airdra",
+    "name": "Airdramon",
+    "attr": "Vaccine",
+    "p": 55
+   },
+   "r": {
+    "id": "seadra",
+    "name": "Seadramon",
+    "attr": "Data",
+    "p": 50
+   }
+  },
+  {
+   "no": 32,
+   "l": {
+    "id": "ete",
+    "name": "Etemon",
+    "attr": "Virus",
+    "p": 107
+   },
+   "r": {
+    "id": "gazi",
+    "name": "Gazimon",
+    "attr": "Virus",
+    "p": 18
+   }
+  },
+  {
+   "no": 33,
+   "l": {
+    "id": "devi",
+    "name": "Devimon",
+    "attr": "Virus",
+    "p": 65
+   },
+   "r": {
+    "id": "ange",
+    "name": "Angemon",
+    "attr": "Vaccine",
+    "p": 65
+   }
+  },
+  {
+   "no": 34,
+   "l": {
+    "id": "tyrano",
+    "name": "Tyranomon",
+    "attr": "Data",
+    "p": 70
+   },
+   "r": {
+    "id": "darktyrano",
+    "name": "Dark Tyranomon",
+    "attr": "Virus",
+    "p": 75
+   }
+  },
+  {
+   "no": 35,
+   "l": {
+    "id": "leo",
+    "name": "Leomon",
+    "attr": "Vaccine",
+    "p": 65
+   },
+   "r": {
+    "id": "ogre",
+    "name": "Ogremon",
+    "attr": "Virus",
+    "p": 65
+   }
+  },
+  {
+   "no": 36,
+   "l": {
+    "id": "draco",
+    "name": "Dracomon",
+    "attr": "Data",
+    "p": 34
+   },
+   "r": {
+    "id": "monochro",
+    "name": "Monochromon",
+    "attr": "Data",
+    "p": 75
+   }
+  },
+  {
+   "no": 37,
+   "l": {
+    "id": "kuwaga",
+    "name": "Kuwagamon",
+    "attr": "Virus",
+    "p": 60
+   },
+   "r": {
+    "id": "kabuteri",
+    "name": "Kabuterimon",
+    "attr": "Vaccine",
+    "p": 75
+   }
+  },
+  {
+   "no": 38,
+   "l": {
+    "id": "nume",
+    "name": "Numemon",
+    "attr": "Virus",
+    "p": 40
+   },
+   "r": {
+    "id": "monzae",
+    "name": "Monzaemon",
+    "attr": "Vaccine",
+    "p": 107
+   }
+  },
+  {
+   "no": 39,
+   "l": {
+    "id": "vegi",
+    "name": "Vegimon",
+    "attr": "Virus",
+    "p": 40
+   },
+   "r": {
+    "id": "vade",
+    "name": "Vademon",
+    "attr": "Virus",
+    "p": 107
+   }
+  },
+  {
+   "no": 40,
+   "l": {
+    "id": "scu",
+    "name": "Scumon",
+    "attr": "Virus",
+    "p": 40
+   },
+   "r": {
+    "id": "ete",
+    "name": "Etemon",
+    "attr": "Virus",
+    "p": 107
+   }
+  },
+  {
+   "no": 41,
+   "l": {
+    "id": "nani",
+    "name": "Nanimon",
+    "attr": "Virus",
+    "p": 40
+   },
+   "r": {
+    "id": "digitama",
+    "name": "Digitamamon",
+    "attr": "Data",
+    "p": 107
+   }
+  },
+  {
+   "no": 42,
+   "l": {
+    "id": "rare",
+    "name": "Raremon",
+    "attr": "Virus",
+    "p": 40
+   },
+   "r": {
+    "id": "extyrano",
+    "name": "Ex-Tyranomon",
+    "attr": "Vaccine",
+    "p": 107
+   }
+  },
+  {
+   "no": 43,
+   "l": {
+    "id": "nano",
+    "name": "Nanomon",
+    "attr": "Virus",
+    "p": 118
+   },
+   "r": {
+    "id": "giro",
+    "name": "Giromon",
+    "attr": "Vaccine",
+    "p": 118
+   }
+  },
+  {
+   "no": 44,
+   "l": {
+    "id": "garuru",
+    "name": "Garurumon",
+    "attr": "Vaccine",
+    "p": 70
+   },
+   "r": {
+    "id": "meicoo",
+    "name": "Meicoomon",
+    "attr": "Free",
+    "p": 80
+   }
+  },
+  {
+   "no": 45,
+   "l": {
+    "id": "coredra_g",
+    "name": "Coredramon (Green)",
+    "attr": "Virus",
+    "p": 80
+   },
+   "r": {
+    "id": "coredra_b",
+    "name": "Coredramon (Blue)",
+    "attr": "Vaccine",
+    "p": 80
+   }
+  },
+  {
+   "no": 46,
+   "l": {
+    "id": "metalmame",
+    "name": "Metal Mamemon",
+    "attr": "Data",
+    "p": 118
+   },
+   "r": {
+    "id": "mame",
+    "name": "Mamemon",
+    "attr": "Data",
+    "p": 118
+   }
+  },
+  {
+   "no": 47,
+   "l": {
+    "id": "hack",
+    "name": "Hackmon",
+    "attr": "Data",
+    "p": 34
+   },
+   "r": {
+    "id": "doru",
+    "name": "DORUmon",
+    "attr": "Data",
+    "p": 27
+   }
+  },
+  {
+   "no": 48,
+   "l": {
+    "id": "lekis",
+    "name": "Lekismon",
+    "attr": "Data",
+    "p": 80
+   },
+   "r": {
+    "id": "fira",
+    "name": "Firamon",
+    "attr": "Vaccine",
+    "p": 80
+   }
+  },
+  {
+   "no": 49,
+   "l": {
+    "id": "metalgrey_vi",
+    "name": "Metal Greymon",
+    "attr": "Virus",
+    "p": 126
+   },
+   "r": {
+    "id": "grey",
+    "name": "Greymon",
+    "attr": "Vaccine",
+    "p": 75
+   }
+  },
+  {
+   "no": 50,
+   "l": {
+    "id": "weregaruru_a",
+    "name": "Yamato's Were Garurumon",
+    "attr": "Vaccine",
+    "p": 135
+   },
+   "r": {
+    "id": "garuru",
+    "name": "Garurumon",
+    "attr": "Vaccine",
+    "p": 70
+   }
+  },
+  {
+   "no": 51,
+   "l": {
+    "id": "ete",
+    "name": "Etemon",
+    "attr": "Virus",
+    "p": 107
+   },
+   "r": {
+    "id": "monzae",
+    "name": "Monzaemon",
+    "attr": "Vaccine",
+    "p": 107
+   }
+  },
+  {
+   "no": 52,
+   "l": {
+    "id": "hack",
+    "name": "Hackmon",
+    "attr": "Data",
+    "p": 34
+   },
+   "r": {
+    "id": "gankoo",
+    "name": "Gankoomon",
+    "attr": "Data",
+    "p": null
+   }
+  },
+  {
+   "no": 53,
+   "l": {
+    "id": "skullmam",
+    "name": "Skull Mammon",
+    "attr": "Vaccine",
+    "p": 169
+   },
+   "r": {
+    "id": "uni",
+    "name": "Unimon",
+    "attr": "Vaccine",
+    "p": 75
+   }
+  },
+  {
+   "no": 54,
+   "l": {
+    "id": "metaltyrano",
+    "name": "Metal Tyranomon",
+    "attr": "Virus",
+    "p": 126
+   },
+   "r": {
+    "id": "megadra",
+    "name": "Megadramon",
+    "attr": "Virus",
+    "p": 126
+   }
+  },
+  {
+   "no": 55,
+   "l": {
+    "id": "vade",
+    "name": "Vademon",
+    "attr": "Virus",
+    "p": 107
+   },
+   "r": {
+    "id": "nano",
+    "name": "Nanomon",
+    "attr": "Virus",
+    "p": 118
+   }
+  },
+  {
+   "no": 56,
+   "l": {
+    "id": "monzae",
+    "name": "Monzaemon",
+    "attr": "Vaccine",
+    "p": 107
+   },
+   "r": {
+    "id": "pinochi",
+    "name": "Pinochimon",
+    "attr": "Virus",
+    "p": 176
+   }
+  },
+  {
+   "no": 57,
+   "l": {
+    "id": "ete",
+    "name": "Etemon",
+    "attr": "Virus",
+    "p": 107
+   },
+   "r": {
+    "id": "kingete",
+    "name": "King Etemon",
+    "attr": "Virus",
+    "p": 169
+   }
+  },
+  {
+   "no": 58,
+   "l": {
+    "id": "coredra_b",
+    "name": "Coredramon (Blue)",
+    "attr": "Vaccine",
+    "p": 80
+   },
+   "r": {
+    "id": "wingdra",
+    "name": "Wingdramon",
+    "attr": "Vaccine",
+    "p": 143
+   }
+  },
+  {
+   "no": 59,
+   "l": {
+    "id": "coredra_g",
+    "name": "Coredramon (Green)",
+    "attr": "Virus",
+    "p": 80
+   },
+   "r": {
+    "id": "groundra",
+    "name": "Groundramon",
+    "attr": "Virus",
+    "p": 143
+   }
+  },
+  {
+   "no": 60,
+   "l": {
+    "id": "skullgrey",
+    "name": "Skull Greymon",
+    "attr": "Virus",
+    "p": 126
+   },
+   "r": {
+    "id": "metalgrey_vi",
+    "name": "Metal Greymon",
+    "attr": "Virus",
+    "p": 126
+   }
+  },
+  {
+   "no": 61,
+   "l": {
+    "id": "piccolo",
+    "name": "Piccolomon",
+    "attr": "Data",
+    "p": 118
+   },
+   "r": {
+    "id": "andro",
+    "name": "Andromon",
+    "attr": "Vaccine",
+    "p": 126
+   }
+  },
+  {
+   "no": 62,
+   "l": {
+    "id": "weregaruru_a",
+    "name": "Yamato's Were Garurumon",
+    "attr": "Vaccine",
+    "p": 135
+   },
+   "r": {
+    "id": "metalgrey_a",
+    "name": "Taichi's Metal Greymon",
+    "attr": "Vaccine",
+    "p": 135
+   }
+  },
+  {
+   "no": 63,
+   "l": {
+    "id": "extyrano",
+    "name": "Ex-Tyranomon",
+    "attr": "Vaccine",
+    "p": 107
+   },
+   "r": {
+    "id": "digitama",
+    "name": "Digitamamon",
+    "attr": "Data",
+    "p": 107
+   }
+  },
+  {
+   "no": 64,
+   "l": {
+    "id": "gabu",
+    "name": "Gabumon",
+    "attr": "Data",
+    "p": 18
+   },
+   "r": {
+    "id": "metalgaruru_a",
+    "name": "Yamato's Metal Garurumon",
+    "attr": "Data",
+    "p": 199
+   }
+  },
+  {
+   "no": 65,
+   "l": {
+    "id": "agu",
+    "name": "Agumon",
+    "attr": "Vaccine",
+    "p": 18
+   },
+   "r": {
+    "id": "wargrey_a",
+    "name": "Taichi's War Greymon",
+    "attr": "Vaccine",
+    "p": 199
+   }
+  },
+  {
+   "no": 66,
+   "l": {
+    "id": "andro",
+    "name": "Andromon",
+    "attr": "Vaccine",
+    "p": 126
+   },
+   "r": {
+    "id": "hiandro",
+    "name": "Hi Andromon",
+    "attr": "Vaccine",
+    "p": 176
+   }
+  },
+  {
+   "no": 67,
+   "l": {
+    "id": "pinochi",
+    "name": "Pinochimon",
+    "attr": "Virus",
+    "p": 176
+   },
+   "r": {
+    "id": "ete",
+    "name": "Etemon",
+    "attr": "Virus",
+    "p": 107
+   }
+  },
+  {
+   "no": 68,
+   "l": {
+    "id": "baohack",
+    "name": "Bao Hackmon",
+    "attr": "Data",
+    "p": 90
+   },
+   "r": {
+    "id": "saviorhack",
+    "name": "Savior Hackmon",
+    "attr": "Data",
+    "p": 155
+   }
+  },
+  {
+   "no": 69,
+   "l": {
+    "id": "dorugure",
+    "name": "DORUguremon",
+    "attr": "Data",
+    "p": 143
+   },
+   "r": {
+    "id": "doruga",
+    "name": "DORUgamon",
+    "attr": "Data",
+    "p": 90
+   }
+  },
+  {
+   "no": 70,
+   "l": {
+    "id": "banchomame",
+    "name": "Bancho Mamemon",
+    "attr": "Data",
+    "p": 176
+   },
+   "r": {
+    "id": "mame",
+    "name": "Mamemon",
+    "attr": "Data",
+    "p": 118
+   }
+  },
+  {
+   "no": 71,
+   "l": {
+    "id": "flare",
+    "name": "Flaremon",
+    "attr": "Vaccine",
+    "p": 135
+   },
+   "r": {
+    "id": "cresce",
+    "name": "Crescemon",
+    "attr": "Data",
+    "p": 135
+   }
+  },
+  {
+   "no": 72,
+   "l": {
+    "id": "hiandro",
+    "name": "Hi Andromon",
+    "attr": "Vaccine",
+    "p": 176
+   },
+   "r": {
+    "id": "metalgrey_vi",
+    "name": "Metal Greymon",
+    "attr": "Virus",
+    "p": 126
+   }
+  },
+  {
+   "no": 73,
+   "l": {
+    "id": "nani",
+    "name": "Nanimon",
+    "attr": "Virus",
+    "p": 40
+   },
+   "r": {
+    "id": "gankoo",
+    "name": "Gankoomon",
+    "attr": "Data",
+    "p": null
+   }
+  },
+  {
+   "no": 74,
+   "l": {
+    "id": "metalgaruru_a",
+    "name": "Yamato's Metal Garurumon",
+    "attr": "Data",
+    "p": 199
+   },
+   "r": {
+    "id": "wargrey_a",
+    "name": "Taichi's War Greymon",
+    "attr": "Vaccine",
+    "p": 199
+   }
+  },
+  {
+   "no": 75,
+   "l": {
+    "id": "tyrano",
+    "name": "Tyranomon",
+    "attr": "Data",
+    "p": 70
+   },
+   "r": {
+    "id": "rusttyrano",
+    "name": "Rust Tyranomon",
+    "attr": "Virus",
+    "p": 238
+   }
+  },
+  {
+   "no": 76,
+   "l": {
+    "id": "apollo",
+    "name": "Apollomon",
+    "attr": "Vaccine",
+    "p": 199
+   },
+   "r": {
+    "id": "flare",
+    "name": "Flaremon",
+    "attr": "Vaccine",
+    "p": 135
+   }
+  },
+  {
+   "no": 77,
+   "l": {
+    "id": "diana",
+    "name": "Dianamon",
+    "attr": "Data",
+    "p": 199
+   },
+   "r": {
+    "id": "cresce",
+    "name": "Crescemon",
+    "attr": "Data",
+    "p": 135
+   }
+  },
+  {
+   "no": 78,
+   "l": {
+    "id": "saviorhack",
+    "name": "Savior Hackmon",
+    "attr": "Data",
+    "p": 155
+   },
+   "r": {
+    "id": "jes",
+    "name": "Jesmon",
+    "attr": "Data",
+    "p": 210
+   }
+  },
+  {
+   "no": 79,
+   "l": {
+    "id": "extyrano",
+    "name": "Ex-Tyranomon",
+    "attr": "Vaccine",
+    "p": 107
+   },
+   "r": {
+    "id": "rusttyrano",
+    "name": "Rust Tyranomon",
+    "attr": "Virus",
+    "p": 238
+   }
+  },
+  {
+   "no": 80,
+   "l": {
+    "id": "aegisdra",
+    "name": "Aegisdramon",
+    "attr": "Vaccine",
+    "p": 188
+   },
+   "r": {
+    "id": "tita",
+    "name": "Titamon",
+    "attr": "Virus",
+    "p": 176
+   }
+  },
+  {
+   "no": 81,
+   "l": {
+    "id": "meicoo",
+    "name": "Meicoomon",
+    "attr": "Free",
+    "p": 80
+   },
+   "r": {
+    "id": "rasiel",
+    "name": "Rasielmon",
+    "attr": "Vaccine",
+    "p": 210
+   }
+  },
+  {
+   "no": 82,
+   "l": {
+    "id": "metalgaruru_a",
+    "name": "Yamato's Metal Garurumon",
+    "attr": "Data",
+    "p": 199
+   },
+   "r": {
+    "id": "weregaruru_a",
+    "name": "Yamato's Were Garurumon",
+    "attr": "Vaccine",
+    "p": 135
+   }
+  },
+  {
+   "no": 83,
+   "l": {
+    "id": "wargrey_a",
+    "name": "Taichi's War Greymon",
+    "attr": "Vaccine",
+    "p": 199
+   },
+   "r": {
+    "id": "metalgrey_a",
+    "name": "Taichi's Metal Greymon",
+    "attr": "Vaccine",
+    "p": 135
+   }
+  },
+  {
+   "no": 84,
+   "l": {
+    "id": "groundra",
+    "name": "Groundramon",
+    "attr": "Virus",
+    "p": 143
+   },
+   "r": {
+    "id": "wingdra",
+    "name": "Wingdramon",
+    "attr": "Vaccine",
+    "p": 143
+   }
+  },
+  {
+   "no": 85,
+   "l": {
+    "id": "mugendra",
+    "name": "Mugendramon",
+    "attr": "Virus",
+    "p": 188
+   },
+   "r": {
+    "id": "aegisdra",
+    "name": "Aegisdramon",
+    "attr": "Vaccine",
+    "p": 188
+   }
+  },
+  {
+   "no": 86,
+   "l": {
+    "id": "breakdra",
+    "name": "Breakdramon",
+    "attr": "Virus",
+    "p": 199
+   },
+   "r": {
+    "id": "slayerdra",
+    "name": "Slayerdramon",
+    "attr": "Vaccine",
+    "p": 199
+   }
+  },
+  {
+   "no": 87,
+   "l": {
+    "id": "duke",
+    "name": "Dukemon",
+    "attr": "Virus",
+    "p": null
+   },
+   "r": {
+    "id": "dynas",
+    "name": "Dynasmon",
+    "attr": "Data",
+    "p": null
+   }
+  },
+  {
+   "no": 88,
+   "l": {
+    "id": "cranium",
+    "name": "Craniummon",
+    "attr": "Vaccine",
+    "p": null
+   },
+   "r": {
+    "id": "lordknight",
+    "name": "Lord Knightmon",
+    "attr": "Virus",
+    "p": null
+   }
+  },
+  {
+   "no": 89,
+   "l": {
+    "id": "magna",
+    "name": "Magnamon",
+    "attr": "Free",
+    "p": null
+   },
+   "r": {
+    "id": "ulforcevdra",
+    "name": "Ulforce V-dramon",
+    "attr": "Vaccine",
+    "p": null
+   }
+  },
+  {
+   "no": 90,
+   "l": {
+    "id": "sleip",
+    "name": "Sleipmon",
+    "attr": "Vaccine",
+    "p": null
+   },
+   "r": {
+    "id": "duft",
+    "name": "Duftmon",
+    "attr": "Data",
+    "p": null
+   }
+  },
+  {
+   "no": 91,
+   "l": {
+    "id": "imperialdra_p",
+    "name": "Imperialdramon: Paladin Mode",
+    "attr": "Free",
+    "p": null
+   },
+   "r": {
+    "id": "ulforcevdra",
+    "name": "Ulforce V-dramon",
+    "attr": "Vaccine",
+    "p": null
+   }
+  },
+  {
+   "no": 92,
+   "l": {
+    "id": "belphe_r",
+    "name": "Belphemon: Rage Mode",
+    "attr": "Virus",
+    "p": null
+   },
+   "r": {
+    "id": "belialvamde",
+    "name": "Belial Vamdemon",
+    "attr": "Virus",
+    "p": null
+   }
+  },
+  {
+   "no": 93,
+   "l": {
+    "id": "luce_f",
+    "name": "Lucemon: Falldown Mode",
+    "attr": "Virus",
+    "p": null
+   },
+   "r": {
+    "id": "de",
+    "name": "Demon",
+    "attr": "Virus",
+    "p": null
+   }
+  },
+  {
+   "no": 94,
+   "l": {
+    "id": "duft",
+    "name": "Duftmon",
+    "attr": "Data",
+    "p": null
+   },
+   "r": {
+    "id": "sleip",
+    "name": "Sleipmon",
+    "attr": "Vaccine",
+    "p": null
+   }
+  },
+  {
+   "no": 95,
+   "l": {
+    "id": "cresgaruru",
+    "name": "Cres Garurumon",
+    "attr": "Data",
+    "p": 188
+   },
+   "r": {
+    "id": "blitzgrey",
+    "name": "Blitz Greymon",
+    "attr": "Virus",
+    "p": 188
+   }
+  },
+  {
+   "no": 96,
+   "l": {
+    "id": "exa",
+    "name": "Examon",
+    "attr": "Data",
+    "p": 238
+   },
+   "r": {
+    "id": "duranda",
+    "name": "Durandamon",
+    "attr": "Vaccine",
+    "p": 210
+   }
+  },
+  {
+   "no": 97,
+   "l": {
+    "id": "omega",
+    "name": "Omegamon",
+    "attr": "Vaccine",
+    "p": 238
+   },
+   "r": {
+    "id": "omega_a",
+    "name": "Omegamon Alter S",
+    "attr": "Virus",
+    "p": 238
+   }
+  },
+  {
+   "no": 98,
+   "l": {
+    "id": "jes",
+    "name": "Jesmon",
+    "attr": "Data",
+    "p": 210
+   },
+   "r": {
+    "id": "gankoo",
+    "name": "Gankoomon",
+    "attr": "Data",
+    "p": null
+   }
+  },
+  {
+   "no": 99,
+   "l": {
+    "id": "rasiel",
+    "name": "Rasielmon",
+    "attr": "Vaccine",
+    "p": 210
+   },
+   "r": {
+    "id": "meicrack",
+    "name": "Meicrackmon",
+    "attr": "Vaccine",
+    "p": 143
+   }
+  },
+  {
+   "no": 100,
+   "l": {
+    "id": "omega",
+    "name": "Omegamon",
+    "attr": "Vaccine",
+    "p": 238
+   },
+   "r": {
+    "id": "alpha",
+    "name": "Alphamon",
+    "attr": "Vaccine",
+    "p": 210
+   }
+  }
+ ],
+ "exclusives": {
+  "Version A (English and Japanese)": {
+   "colors": [
+    "Original Brown",
+    "Brick",
+    "Blue",
+    "Black",
+    "Dino Camouflage",
+    "Ver.Metal Greymon",
+    "Diagonal Orange",
+    "Digivolution Agumon",
+    "Graffiti Agumon"
+   ],
+   "mons": [
+    "Taichi's Agumon",
+    "Taichi's Greymon",
+    "Taichi's Metal Greymon"
+   ]
+  },
+  "Version B (English and Japanese)": {
+   "colors": [
+    "Original Gray",
+    "Gray",
+    "Yellow",
+    "White",
+    "Ver.Numemon",
+    "Mosaic Blue",
+    "Digital Camouflage",
+    "Pixel Protein"
+   ],
+   "mons": [
+    "Yamato's Gabumon",
+    "Yamato's Garurumon",
+    "Yamato's Were Garurumon"
+   ]
+  },
+  "Version C": {
+   "colors": [
+    "Omegamon Color",
+    "Translucent Green",
+    "Translucent Blue",
+    "Purple",
+    "Blue Camouflage",
+    "Graffiti Coronamon",
+    "Illustration Champion Ver.1-5"
+   ],
+   "mons": [
+    "Coronamon",
+    "Firamon",
+    "Flaremon",
+    "Apollomon"
+   ]
+  },
+  "Version D": {
+   "colors": [
+    "Alphamon Color",
+    "Translucent Purple",
+    "Translucent Yellow",
+    "Neon Red",
+    "Dark Camouflage",
+    "Logo Black",
+    "Pixel Heart"
+   ],
+   "mons": [
+    "Lunamon",
+    "Lekismon",
+    "Crescemon",
+    "Dianamon"
+   ]
+  },
+  "Version E": {
+   "colors": [
+    "Zubamon Color",
+    "Translucent Orange",
+    "Glow in the Dark",
+    "Translucent Neon Green",
+    "Tie Dye"
+   ],
+   "mons": [
+    "Yukimibotamon",
+    "Nyaromon",
+    "Plotmon",
+    "Meicoomon",
+    "Meicrackmon",
+    "Rasielmon"
+   ]
+  },
+  "Versions A, B (English), C, D and E": {
+   "colors": [],
+   "mons": [
+    "Taichi's War Greymon"
+   ]
+  },
+  "Versions A (English), B, C, D and E": {
+   "colors": [],
+   "mons": [
+    "Yamato's Metal Garurumon"
+   ]
+  },
+  "Versions C and D": {
+   "colors": [],
+   "mons": [
+    "Pitchmon",
+    "Pukamon",
+    "Grace Novamon"
+   ]
+  },
+  "All Versions": {
+   "colors": [],
+   "mons": [
+    "Botamon",
+    "Koromon",
+    "Agumon",
+    "Betamon",
+    "Greymon",
+    "Tyranomon",
+    "Devimon",
+    "Meramon",
+    "Airdramon",
+    "Seadramon",
+    "Numemon",
+    "Metal Greymon",
+    "Mamemon",
+    "Monzaemon",
+    "Blitz Greymon",
+    "Bancho Mamemon",
+    "Punimon",
+    "Tunomon",
+    "Gabumon",
+    "Elecmon",
+    "Kabuterimon",
+    "Garurumon",
+    "Angemon",
+    "Yukidarumon",
+    "Birdramon",
+    "Whamon",
+    "Vegimon",
+    "Skull Greymon",
+    "Metal Mamemon",
+    "Vademon",
+    "Skull Mammon",
+    "Cres Garurumon",
+    "Poyomon",
+    "Tokomon",
+    "Patamon",
+    "Kunemon",
+    "Unimon",
+    "Centalmon",
+    "Ogremon",
+    "Bakemon",
+    "Shellmon",
+    "Drimogemon",
+    "Scumon",
+    "Andromon",
+    "Giromon",
+    "Etemon",
+    "Hi Andromon",
+    "King Etemon",
+    "Yuramon",
+    "Tanemon",
+    "Piyomon",
+    "Palmon",
+    "Monochromon",
+    "Cockatrimon",
+    "Leomon",
+    "Kuwagamon",
+    "Coelamon",
+    "Mojyamon",
+    "Nanimon",
+    "Megadramon",
+    "Piccolomon",
+    "Digitamamon",
+    "Aegisdramon",
+    "Titamon",
+    "Zurumon",
+    "Pagumon",
+    "Gazimon",
+    "Gizamon",
+    "Dark Tyranomon",
+    "Cyclomon",
+    "Devidramon",
+    "Tuskmon",
+    "Flymon",
+    "Deltamon",
+    "Raremon",
+    "Metal Tyranomon",
+    "Nanomon",
+    "Ex-Tyranomon",
+    "Mugendramon",
+    "Pinochimon",
+    "Sakumon",
+    "Sakuttomon",
+    "Zubamon",
+    "Zubaeagermon",
+    "Duramon",
+    "Durandamon",
+    "Hackmon",
+    "Bao Hackmon",
+    "Savior Hackmon",
+    "Jesmon",
+    "Petitmon",
+    "Babydmon",
+    "Dracomon",
+    "Coredramon (Blue)",
+    "Wingdramon",
+    "Slayerdramon",
+    "Coredramon (Green)",
+    "Groundramon",
+    "Breakdramon",
+    "Dodomon",
+    "Dorimon",
+    "DORUmon",
+    "DORUgamon",
+    "DORUguremon",
+    "Alphamon",
+    "Omegamon Alter S",
+    "Rust Tyranomon",
+    "Examon",
+    "Omegamon"
+   ]
+  }
+ }
+}

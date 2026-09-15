@@ -10,6 +10,8 @@
 |---|---|---|
 | 哥吉拉彩元祖（Digital Monster COLOR ゴジラ 70th Edition） | `dmgz.html` | 34 隻、10 關 |
 | 哥吉拉彩色超代（Digimon Pendulum COLOR ゴジラ Edition） | `pengz.html` | 58 隻、22 關、合體速查 |
+| 彩色超代（Digimon Pendulum COLOR，10 個版本） | `penc.html` | 331 隻、各版本 10 關、依屬性合體速查 |
+| 元祖20th（Digimon Original／Digital Monster Ver.20th） | `dm20.html` | 134 隻、15 顆蛋、競技場單打／雙打各 100 回合 |
 
 ## 內容
 
@@ -32,14 +34,18 @@ docs/                 ← 網站本體（直接部署這個資料夾）
   index.html          選機型首頁
   dmgz.html           哥吉拉彩元祖（Digital Monster COLOR ゴジラ 70th）
   pengz.html          哥吉拉彩色超代（Digimon Pendulum COLOR ゴジラ Edition，含合體速查）
-  app.css / app.js    兩台共用的樣式與功能
-  data/dmgz.js, data/pengz.js   資料（由 tools/build_data.py 產生，勿手改）
+  penc.html           彩色超代（Digimon Pendulum COLOR，10 個版本，含版本切換與合體速查）
+  dm20.html           元祖20th（Digimon Original，含蛋篩選、版本限定、競技場）
+  app.css / app.js    共用的樣式與功能
+  data/dmgz.js, data/pengz.js, data/penc.js, data/dm20.js   資料（由 tools/build_data.py 產生，勿手改）
   sw.js               離線快取
   manifest.webmanifest, icon-*.png
 tools/
   build_data.py       英文原始資料 → 中文資料檔（兩台機型）
   make_icons.py       產生圖示
-  source/             原始資料（dmgz_en.json、pengz_en.json、pengz_jogress.json）
+  source/             原始資料（dmgz_en.json、pengz_en.json、pengz_jogress.json、penc_en.json、penc_quest.json）
+                      penc_zh.json、dm20_zh.json 為中文名稱對照，可直接修改後重新產生
+                      dm20_en.json、dm20_extra.json 為元祖20th 原始資料（進化、競技場、版本限定）
 ```
 
 ## 修改資料
@@ -48,7 +54,7 @@ tools/
 python tools/build_data.py     # 改完中文名稱／關卡／遭遇表後重新產生 data.js
 ```
 
-更新網站內容後，把 `docs/sw.js` 的 `CACHE = 'gz70-v3'` 版本號 +1，手機開啟後才會抓到新版。
+更新網站內容後，把 `docs/sw.js` 的 `CACHE = 'gz70-v5'` 版本號 +1，手機開啟後才會抓到新版。
 
 ## 部署與安裝到手機
 

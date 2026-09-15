@@ -1,0 +1,4152 @@
+[
+ {
+  "id": "bota",
+  "attr": "Free",
+  "name": "Botamon",
+  "stage": "Stage I (Baby I)",
+  "from": [
+   {
+    "id": "digitama_1",
+    "req": []
+   }
+  ],
+  "to": [
+   {
+    "id": "koro",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "NA"
+ },
+ {
+  "id": "koro",
+  "attr": "Free",
+  "name": "Koromon",
+  "stage": "Stage II (Baby II)",
+  "from": [
+   {
+    "id": "bota",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "agu",
+    "req": [
+     "0-2 Care Mistakes, hatched from Version 1 Egg"
+    ]
+   },
+   {
+    "id": "beta",
+    "req": [
+     "3+ Care Mistakes, hatched from Version 1 Egg"
+    ]
+   },
+   {
+    "id": "agu_a",
+    "req": [
+     "No requirements, hatched from Taichi's Egg"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "agu",
+  "attr": "Vaccine",
+  "name": "Agumon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "koro",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "grey",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   },
+   {
+    "id": "tyrano",
+    "req": [
+     "3+ Care Mistakes, 5-15 Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "devi",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   },
+   {
+    "id": "mera",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "nume",
+    "req": [
+     "3+ Care Mistakes, 0-4 Training",
+     "3+ Care Mistakes, 5+ Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "Power": "18",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "beta",
+  "attr": "Virus",
+  "name": "Betamon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "koro",
+    "req": [
+     "3+ Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "devi",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   },
+   {
+    "id": "mera",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   },
+   {
+    "id": "airdra",
+    "req": [
+     "3+ Care Mistakes, 8-15 Training, 0-2 Overfeed"
+    ]
+   },
+   {
+    "id": "seadra",
+    "req": [
+     "3+ Care Mistakes, 8-15 Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "nume",
+    "req": [
+     "3+ Care Mistakes, 0-7 Training",
+     "3+ Care Mistakes, 16+ Training"
+    ]
+   }
+  ],
+  "Power": "10",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "grey",
+  "attr": "Vaccine",
+  "name": "Greymon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "agu",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "metalgrey_vi",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "75",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "tyrano",
+  "attr": "Data",
+  "name": "Tyranomon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "agu",
+    "req": [
+     "3+ Care Mistakes, 5-15 Training, 3+ Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "mame",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "70",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "devi",
+  "attr": "Virus",
+  "name": "Devimon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "agu",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   },
+   {
+    "id": "beta",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "metalgrey_vi",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "65",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "mera",
+  "attr": "Data",
+  "name": "Meramon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "agu",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "beta",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "mame",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "60",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "airdra",
+  "attr": "Vaccine",
+  "name": "Airdramon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "beta",
+    "req": [
+     "3+ Care Mistakes, 8-15 Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "metalgrey_vi",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "55",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "seadra",
+  "attr": "Data",
+  "name": "Seadramon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "beta",
+    "req": [
+     "3+ Care Mistakes, 8-15 Training, 3+ Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "mame",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "50",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "nume",
+  "attr": "Virus",
+  "name": "Numemon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "agu",
+    "req": [
+     "3+ Care Mistakes, 0-4 Training",
+     "3+ Care Mistakes, 5+ Training, 0-2 Overfeed"
+    ]
+   },
+   {
+    "id": "beta",
+    "req": [
+     "3+ Care Mistakes, 0-7 Training",
+     "3+ Care Mistakes, 16+ Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "monzae",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "40",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "metalgrey_vi",
+  "attr": "Virus",
+  "name": "Metal Greymon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "grey",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "devi",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "airdra",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "blitzgrey",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "126",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "mame",
+  "attr": "Data",
+  "name": "Mamemon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "tyrano",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "mera",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "seadra",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "banchomame",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "118",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "monzae",
+  "attr": "Vaccine",
+  "name": "Monzaemon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "nume",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "107",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "blitzgrey",
+  "attr": "Virus",
+  "name": "Blitz Greymon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "metalgrey_vi",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "omega_a",
+    "req": [
+     "Tag Battle 5 times with Cres Garurumon"
+    ]
+   }
+  ],
+  "Power": "188",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "banchomame",
+  "attr": "Data",
+  "name": "Bancho Mamemon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "mame",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "176",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "puni",
+  "attr": "Free",
+  "name": "Punimon",
+  "stage": "Stage I (Baby I)",
+  "from": [
+   {
+    "id": "digitama_2",
+    "req": []
+   }
+  ],
+  "to": [
+   {
+    "id": "tuno",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "NA"
+ },
+ {
+  "id": "tuno",
+  "attr": "Free",
+  "name": "Tunomon",
+  "stage": "Stage II (Baby II)",
+  "from": [
+   {
+    "id": "puni",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "gabu",
+    "req": [
+     "0-2 Care Mistakes, hatched from Version 2 Egg"
+    ]
+   },
+   {
+    "id": "elec",
+    "req": [
+     "3+ Care Mistakes, hatched from Version 2 Egg"
+    ]
+   },
+   {
+    "id": "gabu_a",
+    "req": [
+     "No requirements, hatched from Yamato's Egg"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "gabu",
+  "attr": "Data",
+  "name": "Gabumon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "tuno",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "kabuteri",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   },
+   {
+    "id": "garuru",
+    "req": [
+     "3+ Care Mistakes, 5-15 Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "ange",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   },
+   {
+    "id": "yukidaru",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "vegi",
+    "req": [
+     "3+ Care Mistakes, 0-4 Training",
+     "3+ Care Mistakes, 5+ Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "Power": "18",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "elec",
+  "attr": "Data",
+  "name": "Elecmon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "tuno",
+    "req": [
+     "3+ Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "ange",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   },
+   {
+    "id": "yukidaru",
+    "req": [
+     "3+ Care Mistakes, 8-15 Training, 0-2 Overfeed"
+    ]
+   },
+   {
+    "id": "birdra",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   },
+   {
+    "id": "wha",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "vegi",
+    "req": [
+     "3+ Care Mistakes, 0-7 Training",
+     "3+ Care Mistakes, 8-15 Training, 3+ Overfeed",
+     "3+ Care Mistakes, 16+ Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "Power": "10",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "kabuteri",
+  "attr": "Vaccine",
+  "name": "Kabuterimon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "gabu",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "skullgrey",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "75",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "garuru",
+  "attr": "Vaccine",
+  "name": "Garurumon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "gabu",
+    "req": [
+     "3+ Care Mistakes, 5-15 Training, 3+ Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "metalmame",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "70",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "ange",
+  "attr": "Vaccine",
+  "name": "Angemon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "gabu",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   },
+   {
+    "id": "elec",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "skullgrey",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "65",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "yukidaru",
+  "attr": "Vaccine",
+  "name": "Yukidarumon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "gabu",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "elec",
+    "req": [
+     "3+ Care Mistakes, 8-15 Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "metalmame",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "60",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "birdra",
+  "attr": "Vaccine",
+  "name": "Birdramon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "elec",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "skullgrey",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "55",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "wha",
+  "attr": "Vaccine",
+  "name": "Whamon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "elec",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "metalmame",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "50",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "vegi",
+  "attr": "Virus",
+  "name": "Vegimon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "gabu",
+    "req": [
+     "3+ Care Mistakes, 0-4 Training",
+     "3+ Care Mistakes, 5+ Training, 0-2 Overfeed"
+    ]
+   },
+   {
+    "id": "elec",
+    "req": [
+     "3+ Care Mistakes, 0-7 Training",
+     "3+ Care Mistakes, 8-15 Training, 3+ Overfeed",
+     "3+ Care Mistakes, 16+ Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "vade",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "40",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "skullgrey",
+  "attr": "Virus",
+  "name": "Skull Greymon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "kabuteri",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "ange",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "birdra",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "skullmam",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "126",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "metalmame",
+  "attr": "Data",
+  "name": "Metal Mamemon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "garuru",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "yukidaru",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "wha",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "cresgaruru",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "118",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "vade",
+  "attr": "Virus",
+  "name": "Vademon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "vegi",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "107",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "skullmam",
+  "attr": "Vaccine",
+  "name": "Skull Mammon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "skullgrey",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "169",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "cresgaruru",
+  "attr": "Data",
+  "name": "Cres Garurumon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "metalmame",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "omega_a",
+    "req": [
+     "Tag Battle 5 times with Blitz Greymon"
+    ]
+   }
+  ],
+  "Power": "188",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "poyo",
+  "attr": "Free",
+  "name": "Poyomon",
+  "stage": "Stage I (Baby I)",
+  "from": [
+   {
+    "id": "digitama_3",
+    "req": []
+   }
+  ],
+  "to": [
+   {
+    "id": "toko",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "NA"
+ },
+ {
+  "id": "toko",
+  "attr": "Free",
+  "name": "Tokomon",
+  "stage": "Stage II (Baby II)",
+  "from": [
+   {
+    "id": "poyo",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "pata",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   },
+   {
+    "id": "kune",
+    "req": [
+     "3+ Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "pata",
+  "attr": "Data",
+  "name": "Patamon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "toko",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "uni",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   },
+   {
+    "id": "cental",
+    "req": [
+     "3+ Care Mistakes, 5-15 Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "ogre",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   },
+   {
+    "id": "bake",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "scu",
+    "req": [
+     "3+ Care Mistakes, 0-4 Training",
+     "3+ Care Mistakes, 5+ Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "Power": "18",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "kune",
+  "attr": "Virus",
+  "name": "Kunemon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "toko",
+    "req": [
+     "3+ Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "ogre",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   },
+   {
+    "id": "bake",
+    "req": [
+     "3+ Care Mistakes, 8-15 Training, 0-2 Overfeed"
+    ]
+   },
+   {
+    "id": "shell",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   },
+   {
+    "id": "drimoge",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "scu",
+    "req": [
+     "3+ Care Mistakes, 0-7 Training",
+     "3+ Care Mistakes, 8-15 Training, 3+ Overfeed",
+     "3+ Care Mistakes, 16+ Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "Power": "10",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "uni",
+  "attr": "Vaccine",
+  "name": "Unimon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "pata",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "andro",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "75",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "cental",
+  "attr": "Data",
+  "name": "Centalmon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "pata",
+    "req": [
+     "3+ Care Mistakes, 5-15 Training, 3+ Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "giro",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "70",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "ogre",
+  "attr": "Virus",
+  "name": "Ogremon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "pata",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   },
+   {
+    "id": "kune",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "andro",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "65",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "bake",
+  "attr": "Virus",
+  "name": "Bakemon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "pata",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "kune",
+    "req": [
+     "3+ Care Mistakes, 8-15 Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "giro",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "60",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "shell",
+  "attr": "Data",
+  "name": "Shellmon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "kune",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "andro",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "55",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "drimoge",
+  "attr": "Data",
+  "name": "Drimogemon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "kune",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "giro",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "50",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "scu",
+  "attr": "Virus",
+  "name": "Scumon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "pata",
+    "req": [
+     "3+ Care Mistakes, 0-4 Training",
+     "3+ Care Mistakes, 5+ Training, 0-2 Overfeed"
+    ]
+   },
+   {
+    "id": "kune",
+    "req": [
+     "3+ Care Mistakes, 0-7 Training",
+     "3+ Care Mistakes, 8-15 Training, 3+ Overfeed",
+     "3+ Care Mistakes, 16+ Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "ete",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "40",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "andro",
+  "attr": "Vaccine",
+  "name": "Andromon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "uni",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "ogre",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "shell",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "hiandro",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "126",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "giro",
+  "attr": "Vaccine",
+  "name": "Giromon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "cental",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "bake",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "drimoge",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "118",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "ete",
+  "attr": "Virus",
+  "name": "Etemon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "scu",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "kingete",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "107",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "hiandro",
+  "attr": "Vaccine",
+  "name": "Hi Andromon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "andro",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "176",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "kingete",
+  "attr": "Virus",
+  "name": "King Etemon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "ete",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "169",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "yura",
+  "attr": "Free",
+  "name": "Yuramon",
+  "stage": "Stage I (Baby I)",
+  "from": [
+   {
+    "id": "digitama_4",
+    "req": []
+   }
+  ],
+  "to": [
+   {
+    "id": "tane",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "NA"
+ },
+ {
+  "id": "tane",
+  "attr": "Free",
+  "name": "Tanemon",
+  "stage": "Stage II (Baby II)",
+  "from": [
+   {
+    "id": "yura",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "piyo",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   },
+   {
+    "id": "pal",
+    "req": [
+     "3+ Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "piyo",
+  "attr": "Vaccine",
+  "name": "Piyomon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "tane",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "monochro",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   },
+   {
+    "id": "cockatri",
+    "req": [
+     "3+ Care Mistakes, 5-15 Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "leo",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   },
+   {
+    "id": "kuwaga",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "nani",
+    "req": [
+     "3+ Care Mistakes, 0-4 Training",
+     "3+ Care Mistakes, 5+ Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "Power": "18",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "pal",
+  "attr": "Data",
+  "name": "Palmon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "tane",
+    "req": [
+     "3+ Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "leo",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   },
+   {
+    "id": "kuwaga",
+    "req": [
+     "3+ Care Mistakes, 8-15 Training, 0-2 Overfeed"
+    ]
+   },
+   {
+    "id": "coela",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   },
+   {
+    "id": "mojya",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "nani",
+    "req": [
+     "3+ Care Mistakes, 0-7 Training",
+     "3+ Care Mistakes, 8-15 Training, 3+ Overfeed",
+     "3+ Care Mistakes, 16+ Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "Power": "10",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "monochro",
+  "attr": "Data",
+  "name": "Monochromon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "piyo",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "megadra",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "75",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "cockatri",
+  "attr": "Data",
+  "name": "Cockatrimon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "piyo",
+    "req": [
+     "3+ Care Mistakes, 5-15 Training, 3+ Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "piccolo",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "70",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "leo",
+  "attr": "Vaccine",
+  "name": "Leomon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "piyo",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   },
+   {
+    "id": "pal",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "megadra",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "65",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "kuwaga",
+  "attr": "Virus",
+  "name": "Kuwagamon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "piyo",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "pal",
+    "req": [
+     "3+ Care Mistakes, 8-15 Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "piccolo",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "60",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "coela",
+  "attr": "Data",
+  "name": "Coelamon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "pal",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "megadra",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "55",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "mojya",
+  "attr": "Vaccine",
+  "name": "Mojyamon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "pal",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "piccolo",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "50",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "nani",
+  "attr": "Virus",
+  "name": "Nanimon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "piyo",
+    "req": [
+     "3+ Care Mistakes, 0-4 Training",
+     "3+ Care Mistakes, 5+ Training, 0-2 Overfeed"
+    ]
+   },
+   {
+    "id": "pal",
+    "req": [
+     "3+ Care Mistakes, 0-7 Training",
+     "3+ Care Mistakes, 8-15 Training, 3+ Overfeed",
+     "3+ Care Mistakes, 16+ Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "digitama",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "40",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "megadra",
+  "attr": "Virus",
+  "name": "Megadramon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "monochro",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "leo",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "coela",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "aegisdra",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "126",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "piccolo",
+  "attr": "Data",
+  "name": "Piccolomon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "cockatri",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "kuwaga",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "mojya",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "118",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "digitama",
+  "attr": "Data",
+  "name": "Digitamamon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "nani",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "tita",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "107",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "aegisdra",
+  "attr": "Vaccine",
+  "name": "Aegisdramon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "megadra",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "rusttyrano",
+    "req": [
+     "Tag Battle 5 times with Mugendramon"
+    ]
+   }
+  ],
+  "Power": "188",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "tita",
+  "attr": "Virus",
+  "name": "Titamon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "digitama",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "176",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "zuru",
+  "attr": "Free",
+  "name": "Zurumon",
+  "stage": "Stage I (Baby I)",
+  "from": [
+   {
+    "id": "digitama_5",
+    "req": []
+   }
+  ],
+  "to": [
+   {
+    "id": "pagu",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "NA"
+ },
+ {
+  "id": "pagu",
+  "attr": "Free",
+  "name": "Pagumon",
+  "stage": "Stage II (Baby II)",
+  "from": [
+   {
+    "id": "zuru",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "gazi",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   },
+   {
+    "id": "giza",
+    "req": [
+     "3+ Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "gazi",
+  "attr": "Virus",
+  "name": "Gazimon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "pagu",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "darktyrano",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   },
+   {
+    "id": "cyclo",
+    "req": [
+     "3+ Care Mistakes, 5-15 Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "devidra",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   },
+   {
+    "id": "tusk",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "rare",
+    "req": [
+     "3+ Care Mistakes, 0-4 Training",
+     "3+ Care Mistakes, 5+ Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "Power": "18",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "giza",
+  "attr": "Virus",
+  "name": "Gizamon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "pagu",
+    "req": [
+     "3+ Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "devidra",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   },
+   {
+    "id": "tusk",
+    "req": [
+     "3+ Care Mistakes, 8-15 Training, 0-2 Overfeed"
+    ]
+   },
+   {
+    "id": "fly",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   },
+   {
+    "id": "delta",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "rare",
+    "req": [
+     "3+ Care Mistakes, 0-7 Training",
+     "3+ Care Mistakes, 8-15 Training, 3+ Overfeed",
+     "3+ Care Mistakes, 16+ Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "Power": "10",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "darktyrano",
+  "attr": "Virus",
+  "name": "Dark Tyranomon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "gazi",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "metaltyrano",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "75",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "cyclo",
+  "attr": "Virus",
+  "name": "Cyclomon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "gazi",
+    "req": [
+     "3+ Care Mistakes, 5-15 Training, 3+ Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "nano",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "70",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "devidra",
+  "attr": "Virus",
+  "name": "Devidramon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "gazi",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   },
+   {
+    "id": "giza",
+    "req": [
+     "0-2 Care Mistakes, 16+ Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "metaltyrano",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "65",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "tusk",
+  "attr": "Virus",
+  "name": "Tuskmon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "gazi",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   },
+   {
+    "id": "giza",
+    "req": [
+     "3+ Care Mistakes, 8-15 Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "nano",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "60",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "fly",
+  "attr": "Virus",
+  "name": "Flymon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "giza",
+    "req": [
+     "0-2 Care Mistakes, 0-15 Training"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "metaltyrano",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "55",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "delta",
+  "attr": "Virus",
+  "name": "Deltamon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "giza",
+    "req": [
+     "3+ Care Mistakes, 16+ Training, 3+ Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "nano",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "50",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "rare",
+  "attr": "Virus",
+  "name": "Raremon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "gazi",
+    "req": [
+     "3+ Care Mistakes, 0-4 Training",
+     "3+ Care Mistakes, 5+ Training, 0-2 Overfeed"
+    ]
+   },
+   {
+    "id": "giza",
+    "req": [
+     "3+ Care Mistakes, 0-7 Training",
+     "3+ Care Mistakes, 8-15 Training, 3+ Overfeed",
+     "3+ Care Mistakes, 16+ Training, 0-2 Overfeed"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "extyrano",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "40",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "metaltyrano",
+  "attr": "Virus",
+  "name": "Metal Tyranomon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "darktyrano",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "devidra",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "fly",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "mugendra",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "126",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "nano",
+  "attr": "Virus",
+  "name": "Nanomon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "cyclo",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "tusk",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   },
+   {
+    "id": "delta",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "118",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "extyrano",
+  "attr": "Vaccine",
+  "name": "Ex-Tyranomon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "rare",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "pinochi",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "107",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "mugendra",
+  "attr": "Virus",
+  "name": "Mugendramon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "metaltyrano",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "rusttyrano",
+    "req": [
+     "Tag Battle 5 times with Aegisdramon"
+    ]
+   }
+  ],
+  "Power": "188",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "pinochi",
+  "attr": "Virus",
+  "name": "Pinochimon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "extyrano",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "176",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "saku",
+  "attr": "Free",
+  "name": "Sakumon",
+  "stage": "Stage I (Baby I)",
+  "from": [
+   {
+    "id": "digitama_zuba",
+    "req": []
+   },
+   {
+    "id": "digitama_hack",
+    "req": []
+   }
+  ],
+  "to": [
+   {
+    "id": "sakutto",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "NA"
+ },
+ {
+  "id": "sakutto",
+  "attr": "Free",
+  "name": "Sakuttomon",
+  "stage": "Stage II (Baby II)",
+  "from": [
+   {
+    "id": "saku",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "zuba",
+    "req": [
+     "No requirements, hatched from Zuba Egg"
+    ]
+   },
+   {
+    "id": "hack",
+    "req": [
+     "No requirements, hatched from Hack Egg"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "zuba",
+  "attr": "Vaccine",
+  "name": "Zubamon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "sakutto",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "zubaeager",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "Power": "34",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "zubaeager",
+  "attr": "Vaccine",
+  "name": "Zubaeagermon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "zuba",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "dura",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "90",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "dura",
+  "attr": "Vaccine",
+  "name": "Duramon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "zubaeager",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "duranda",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "155",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "duranda",
+  "attr": "Vaccine",
+  "name": "Durandamon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "dura",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "210",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "hack",
+  "attr": "Data",
+  "name": "Hackmon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "sakutto",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "baohack",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "Power": "34",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "baohack",
+  "attr": "Data",
+  "name": "Bao Hackmon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "hack",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "saviorhack",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "90",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "saviorhack",
+  "attr": "Data",
+  "name": "Savior Hackmon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "baohack",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "jes",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "155",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "jes",
+  "attr": "Data",
+  "name": "Jesmon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "saviorhack",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "210",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "petit",
+  "attr": "Free",
+  "name": "Petitmon",
+  "stage": "Stage I (Baby I)",
+  "from": [
+   {
+    "id": "digitama_slayerdra",
+    "req": []
+   },
+   {
+    "id": "digitama_breakdra",
+    "req": []
+   }
+  ],
+  "to": [
+   {
+    "id": "babyd",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "NA"
+ },
+ {
+  "id": "babyd",
+  "attr": "Free",
+  "name": "Babydmon",
+  "stage": "Stage II (Baby II)",
+  "from": [
+   {
+    "id": "petit",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "draco",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "draco",
+  "attr": "Data",
+  "name": "Dracomon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "babyd",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "coredra_b",
+    "req": [
+     "No requirements, hatched from Slayerdra Egg"
+    ]
+   },
+   {
+    "id": "coredra_g",
+    "req": [
+     "No requirements, hatched from Breakdra Egg"
+    ]
+   }
+  ],
+  "Power": "34",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "coredra_b",
+  "attr": "Vaccine",
+  "name": "Coredramon (Blue)",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "draco",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "wingdra",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "80",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "wingdra",
+  "attr": "Vaccine",
+  "name": "Wingdramon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "coredra_b",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "slayerdra",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   },
+   {
+    "id": "wargrey_a",
+    "req": [
+     "3-4 Care Mistakes, Battle 100+ times (Not possible on Japanese Versions A or B)"
+    ]
+   }
+  ],
+  "Power": "143",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "slayerdra",
+  "attr": "Vaccine",
+  "name": "Slayerdramon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "wingdra",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "exa",
+    "req": [
+     "Tag Battle 5 times with Breakdramon"
+    ]
+   }
+  ],
+  "Power": "199",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "coredra_g",
+  "attr": "Virus",
+  "name": "Coredramon (Green)",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "draco",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "groundra",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "80",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "groundra",
+  "attr": "Virus",
+  "name": "Groundramon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "coredra_g",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "breakdra",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   },
+   {
+    "id": "metalgaruru_a",
+    "req": [
+     "3-4 Care Mistakes, Battle 100+ times (Not possible on Japanese Versions A or B)"
+    ]
+   }
+  ],
+  "Power": "143",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "breakdra",
+  "attr": "Virus",
+  "name": "Breakdramon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "groundra",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "exa",
+    "req": [
+     "Tag Battle 5 times with Slayerdramon"
+    ]
+   }
+  ],
+  "Power": "199",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "pitch",
+  "attr": "Free",
+  "name": "Pitchmon",
+  "stage": "Stage I (Baby I)",
+  "from": [
+   {
+    "id": "digitama_corona",
+    "req": []
+   },
+   {
+    "id": "digitama_luna",
+    "req": []
+   }
+  ],
+  "to": [
+   {
+    "id": "puka",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "NA"
+ },
+ {
+  "id": "puka",
+  "attr": "Free",
+  "name": "Pukamon",
+  "stage": "Stage II (Baby II)",
+  "from": [
+   {
+    "id": "pitch",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "corona",
+    "req": [
+     "No requirements, hatched from Corona Egg"
+    ]
+   },
+   {
+    "id": "luna",
+    "req": [
+     "No requirements, hatched from Luna Egg"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "corona",
+  "attr": "Vaccine",
+  "name": "Coronamon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "puka",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "fira",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "Power": "27",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "fira",
+  "attr": "Vaccine",
+  "name": "Firamon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "corona",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "flare",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "80",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "flare",
+  "attr": "Vaccine",
+  "name": "Flaremon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "fira",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "apollo",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "135",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "apollo",
+  "attr": "Vaccine",
+  "name": "Apollomon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "flare",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "gracenova",
+    "req": [
+     "Tag Battle 5 times with Dianamon"
+    ]
+   }
+  ],
+  "Power": "199",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "luna",
+  "attr": "Data",
+  "name": "Lunamon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "puka",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "lekis",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "Power": "27",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "lekis",
+  "attr": "Data",
+  "name": "Lekismon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "luna",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "cresce",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "80",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "cresce",
+  "attr": "Data",
+  "name": "Crescemon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "lekis",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "diana",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "135",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "diana",
+  "attr": "Data",
+  "name": "Dianamon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "cresce",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "gracenova",
+    "req": [
+     "Tag Battle 5 times with Apollomon"
+    ]
+   }
+  ],
+  "Power": "199",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "agu_a",
+  "attr": "Vaccine",
+  "name": "Taichi's Agumon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "koro",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "grey_a",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "Power": "25",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "grey_a",
+  "attr": "Vaccine",
+  "name": "Taichi's Greymon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "agu_a",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "metalgrey_a",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "83",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "metalgrey_a",
+  "attr": "Vaccine",
+  "name": "Taichi's Metal Greymon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "grey_a",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "wargrey_a",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "135",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "wargrey_a",
+  "attr": "Vaccine",
+  "name": "Taichi's War Greymon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "metalgrey_a",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   },
+   {
+    "id": "wingdra",
+    "req": [
+     "3-4 Care Mistakes, Battle 100+ times (Not possible on Japanese Versions A or B)"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "omega",
+    "req": [
+     "Tag Battle 5 times with Yamato's Metal Garurumon"
+    ]
+   }
+  ],
+  "Power": "199",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "gabu_a",
+  "attr": "Data",
+  "name": "Yamato's Gabumon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "tuno",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "garuru_a",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "Power": "25",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "garuru_a",
+  "attr": "Vaccine",
+  "name": "Yamato's Garurumon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "gabu_a",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "weregaruru_a",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "77",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "weregaruru_a",
+  "attr": "Vaccine",
+  "name": "Yamato's Were Garurumon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "garuru_a",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "metalgaruru_a",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "135",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "metalgaruru_a",
+  "attr": "Data",
+  "name": "Yamato's Metal Garurumon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "weregaruru_a",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   },
+   {
+    "id": "groundra",
+    "req": [
+     "3-4 Care Mistakes, Battle 100+ times (Not possible on Japanese Versions A or B)"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "omega",
+    "req": [
+     "Tag Battle 5 times with Taichi's War Greymon"
+    ]
+   }
+  ],
+  "Power": "199",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "dodo",
+  "attr": "Free",
+  "name": "Dodomon",
+  "stage": "Stage I (Baby I)",
+  "from": [
+   {
+    "id": "digitama_doru",
+    "req": []
+   }
+  ],
+  "to": [
+   {
+    "id": "dori",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "NA"
+ },
+ {
+  "id": "dori",
+  "attr": "Free",
+  "name": "Dorimon",
+  "stage": "Stage II (Baby II)",
+  "from": [
+   {
+    "id": "dodo",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "doru",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "doru",
+  "attr": "Data",
+  "name": "DORUmon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "dori",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "doruga",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "Power": "27",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "doruga",
+  "attr": "Data",
+  "name": "DORUgamon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "doru",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "dorugure",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "90",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "dorugure",
+  "attr": "Data",
+  "name": "DORUguremon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "doruga",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "alpha",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "143",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "alpha",
+  "attr": "Vaccine",
+  "name": "Alphamon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "dorugure",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "210",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "yukimibota",
+  "attr": "Free",
+  "name": "Yukimibotamon",
+  "stage": "Stage I (Baby I)",
+  "from": [
+   {
+    "id": "digitama_meicoo",
+    "req": []
+   }
+  ],
+  "to": [
+   {
+    "id": "nyaro",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "NA"
+ },
+ {
+  "id": "nyaro",
+  "attr": "Free",
+  "name": "Nyaromon",
+  "stage": "Stage II (Baby II)",
+  "from": [
+   {
+    "id": "yukimibota",
+    "req": [
+     "Wait 10 Minutes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "plot",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "Power": "",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "plot",
+  "attr": "Vaccine",
+  "name": "Plotmon",
+  "stage": "Stage III (Child)",
+  "from": [
+   {
+    "id": "nyaro",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "meicoo",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "Power": "27",
+  "Sleep Time": "9:00 PM"
+ },
+ {
+  "id": "meicoo",
+  "attr": "Free",
+  "name": "Meicoomon",
+  "stage": "Stage IV (Adult)",
+  "from": [
+   {
+    "id": "plot",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "meicrack",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "Power": "80",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "meicrack",
+  "attr": "Vaccine",
+  "name": "Meicrackmon",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "meicoo",
+    "req": [
+     "15 Battles, 12-15 Victories*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "rasiel",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "143",
+  "Sleep Time": "10:00 PM"
+ },
+ {
+  "id": "rasiel",
+  "attr": "Vaccine",
+  "name": "Rasielmon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "meicrack",
+    "req": [
+     "0-2 Care Mistakes"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "210",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "omega_a",
+  "attr": "Virus",
+  "name": "Omegamon Alter S",
+  "stage": "Stage VI+ (Super Ultimate)",
+  "from": [
+   {
+    "id": "blitzgrey",
+    "req": [
+     "Tag Battle 5 times with Cres Garurumon"
+    ]
+   },
+   {
+    "id": "cresgaruru",
+    "req": [
+     "Tag Battle 5 times with Blitz Greymon"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "238",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "rusttyrano",
+  "attr": "Virus",
+  "name": "Rust Tyranomon",
+  "stage": "Stage VI+ (Super Ultimate)",
+  "from": [
+   {
+    "id": "aegisdra",
+    "req": [
+     "Tag Battle 5 times with Mugendramon"
+    ]
+   },
+   {
+    "id": "mugendra",
+    "req": [
+     "Tag Battle 5 times with Aegisdramon"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "238",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "exa",
+  "attr": "Data",
+  "name": "Examon",
+  "stage": "Stage VI+ (Super Ultimate)",
+  "from": [
+   {
+    "id": "slayerdra",
+    "req": [
+     "Tag Battle 5 times with Breakdramon"
+    ]
+   },
+   {
+    "id": "breakdra",
+    "req": [
+     "Tag Battle 5 times with Slayerdramon"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "238",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "gracenova",
+  "attr": "Vaccine",
+  "name": "Grace Novamon",
+  "stage": "Stage VI+ (Super Ultimate)",
+  "from": [
+   {
+    "id": "apollo",
+    "req": [
+     "Tag Battle 5 times with Dianamon"
+    ]
+   },
+   {
+    "id": "diana",
+    "req": [
+     "Tag Battle 5 times with Apollomon"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "238",
+  "Sleep Time": "0:00 AM"
+ },
+ {
+  "id": "omega",
+  "attr": "Vaccine",
+  "name": "Omegamon",
+  "stage": "Stage VI+ (Super Ultimate)",
+  "from": [
+   {
+    "id": "wargrey_a",
+    "req": [
+     "Tag Battle 5 times with Yamato's Metal Garurumon"
+    ]
+   },
+   {
+    "id": "metalgaruru_a",
+    "req": [
+     "Tag Battle 5 times with Taichi's War Greymon"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "238",
+  "Sleep Time": "11:00 PM"
+ },
+ {
+  "id": "luce_f",
+  "attr": "Virus",
+  "name": "Lucemon: Falldown Mode",
+  "stage": "Stage V (Perfect)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "beelzebu",
+  "attr": "Virus",
+  "name": "Beelzebumon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "belphe_r",
+  "attr": "Virus",
+  "name": "Belphemon: Rage Mode",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "lilith",
+  "attr": "Virus",
+  "name": "Lilithmon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "de",
+  "attr": "Virus",
+  "name": "Demon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "barba",
+  "attr": "Virus",
+  "name": "Barbamon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "levia",
+  "attr": "Virus",
+  "name": "Leviamon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "belialvamde",
+  "attr": "Virus",
+  "name": "Belial Vamdemon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "death",
+  "attr": "Virus",
+  "name": "Deathmon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "murmukus",
+  "attr": "Virus",
+  "name": "Murmukusmon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "imperialdra_p",
+  "attr": "Free",
+  "name": "Imperialdramon: Paladin Mode",
+  "stage": "Stage VI+ (Super Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "ulforcevdra",
+  "attr": "Vaccine",
+  "name": "Ulforce V-dramon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "sleip",
+  "attr": "Vaccine",
+  "name": "Sleipmon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "duft",
+  "attr": "Data",
+  "name": "Duftmon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "magna",
+  "attr": "Free",
+  "name": "Magnamon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "lordknight",
+  "attr": "Virus",
+  "name": "Lord Knightmon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "cranium",
+  "attr": "Vaccine",
+  "name": "Craniummon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "dynas",
+  "attr": "Data",
+  "name": "Dynasmon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "gankoo",
+  "attr": "Data",
+  "name": "Gankoomon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "duke",
+  "attr": "Virus",
+  "name": "Dukemon",
+  "stage": "Stage VI (Ultimate)",
+  "from": [
+   {
+    "id": "blank",
+    "req": [
+     "Only appears as an enemy in the Colosseum"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "digitama_1",
+  "attr": "",
+  "name": "Digital Monster Ver.1",
+  "stage": "Stage ()",
+  "from": [],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "digitama_2",
+  "attr": "",
+  "name": "Digital Monster Ver.2",
+  "stage": "Stage ()",
+  "from": [],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "digitama_3",
+  "attr": "",
+  "name": "Digital Monster Ver.3",
+  "stage": "Stage ()",
+  "from": [],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "digitama_4",
+  "attr": "",
+  "name": "Digital Monster Ver.4",
+  "stage": "Stage ()",
+  "from": [],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "digitama_5",
+  "attr": "",
+  "name": "Digital Monster Ver.5",
+  "stage": "Stage ()",
+  "from": [],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "digitama_zuba",
+  "attr": "",
+  "name": "Zuba",
+  "stage": "Stage ()",
+  "from": [],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "digitama_hack",
+  "attr": "",
+  "name": "Hack",
+  "stage": "Stage ()",
+  "from": [],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "digitama_breakdra",
+  "attr": "",
+  "name": "Slayerdra",
+  "stage": "Stage ()",
+  "from": [],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "digitama_slayerdra",
+  "attr": "",
+  "name": "Breakdra",
+  "stage": "Stage ()",
+  "from": [],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "digitama_corona",
+  "attr": "",
+  "name": "Corona",
+  "stage": "Stage ()",
+  "from": [],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "digitama_luna",
+  "attr": "",
+  "name": "Luna",
+  "stage": "Stage ()",
+  "from": [],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "digitama_taichi",
+  "attr": "",
+  "name": "Taichi",
+  "stage": "Stage ()",
+  "from": [],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "digitama_yamato",
+  "attr": "",
+  "name": "Yamato",
+  "stage": "Stage ()",
+  "from": [],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "digitama_doru",
+  "attr": "",
+  "name": "DORU",
+  "stage": "Stage ()",
+  "from": [],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ },
+ {
+  "id": "digitama_meicoo",
+  "attr": "",
+  "name": "Meicoo",
+  "stage": "Stage ()",
+  "from": [],
+  "to": [],
+  "Power": "",
+  "Sleep Time": ""
+ }
+]

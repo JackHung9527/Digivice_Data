@@ -1,8 +1,9 @@
 /* 哥吉拉怪獸對打機速查：共用樣式 */
 :root{
-  --ground:#ECEBF0;--surface:#FBFAFD;--sunken:#E4E2EA;--ink:#17151C;--sub:#625D6E;--line:#D7D3DF;
-  --accent:#7A2FC0;--accent-ink:#FFFFFF;--accent-soft:#EDE3F8;
-  --lcd:#1C1924;--lcd-ink:#EEE9F6;--lcd-sub:#A99CC2;
+  --ground:#EDF1F7;--surface:#FBFCFE;--sunken:#E2E8F1;--ink:#101826;--sub:#566278;--line:#D3DBE7;
+  --accent:#1E5BD6;--accent-ink:#FFFFFF;--accent-soft:#E1EAFB;
+  --hi:#F5C518;--hi-ink:#0E1F3D;
+  --lcd:#0E1F3D;--lcd-ink:#F3F6FC;--lcd-sub:#F5C518;
   --gb:#1D63D1;--gb-soft:#DFEAFB;--gy:#8F5D00;--gy-soft:#FAEDCC;--gr:#C22A2A;--gr-soft:#FBE0E0;
   --ok:#15704A;--ok-soft:#DAF0E3;--warn:#9A4700;--warn-soft:#FBE8D0;--dim:#817B8D;--dim-soft:#E7E5EC;
   --m-b:#3D86F2;--m-y:#E8AE2C;--m-r:#E24848;
@@ -11,22 +12,25 @@
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --ground:#121016;--surface:#1B1821;--sunken:#0E0C12;--ink:#ECE8F2;--sub:#A49DB0;--line:#302A39;
-  --accent:#B98AF2;--accent-ink:#130F19;--accent-soft:#2A2038;
-  --lcd:#09080C;--lcd-ink:#EEE9F6;--lcd-sub:#9A8EB2;
+  --ground:#0B111C;--surface:#131B2A;--sunken:#080C14;--ink:#E8EEF8;--sub:#98A4B8;--line:#243148;
+  --accent:#6EA2FF;--accent-ink:#0B111C;--accent-soft:#16264A;
+  --hi:#F5C518;--hi-ink:#0B111C;
+  --lcd:#060B16;--lcd-ink:#F3F6FC;--lcd-sub:#F5C518;
   --gb:#7AB0FF;--gb-soft:#14233A;--gy:#F0B640;--gy-soft:#30260E;--gr:#FF7E7E;--gr-soft:#371A1D;
   --ok:#63D39A;--ok-soft:#13301F;--warn:#F4A650;--warn-soft:#33220F;--dim:#8F889B;--dim-soft:#25212C;
   color-scheme:dark;
 }}
 :root[data-theme="dark"]{
-  --ground:#121016;--surface:#1B1821;--sunken:#0E0C12;--ink:#ECE8F2;--sub:#A49DB0;--line:#302A39;
-  --accent:#B98AF2;--accent-ink:#130F19;--accent-soft:#2A2038;
-  --lcd:#09080C;--lcd-ink:#EEE9F6;--lcd-sub:#9A8EB2;
+  --ground:#0B111C;--surface:#131B2A;--sunken:#080C14;--ink:#E8EEF8;--sub:#98A4B8;--line:#243148;
+  --accent:#6EA2FF;--accent-ink:#0B111C;--accent-soft:#16264A;
+  --hi:#F5C518;--hi-ink:#0B111C;
+  --lcd:#060B16;--lcd-ink:#F3F6FC;--lcd-sub:#F5C518;
   --gb:#7AB0FF;--gb-soft:#14233A;--gy:#F0B640;--gy-soft:#30260E;--gr:#FF7E7E;--gr-soft:#371A1D;
   --ok:#63D39A;--ok-soft:#13301F;--warn:#F4A650;--warn-soft:#33220F;--dim:#8F889B;--dim-soft:#25212C;
   color-scheme:dark;
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--ground);color:var(--ink);font:15px/1.7 var(--f-body)}
 a{color:var(--accent);text-underline-offset:3px}
@@ -34,7 +38,7 @@ a{color:var(--accent);text-underline-offset:3px}
 .wrap{max-width:720px;margin:0 auto;padding-inline:16px}
 
 /* 液晶橫條 */
-.band{background:var(--lcd);color:var(--lcd-ink);padding-block:calc(14px + env(safe-area-inset-top)) 12px;border-bottom:1px solid var(--line)}
+.band{background:var(--lcd);color:var(--lcd-ink);padding-block:calc(14px + env(safe-area-inset-top)) 12px;border-bottom:3px solid var(--hi)}
 .band-in{display:flex;flex-direction:column;gap:8px}
 .mark{margin:0;font-family:var(--f-dot);font-size:11px;letter-spacing:.12em;color:var(--lcd-sub)}
 .band h1{margin:0;font-size:23px;font-weight:900;letter-spacing:.05em;line-height:1.2;text-wrap:balance}
@@ -52,7 +56,7 @@ a{color:var(--accent);text-underline-offset:3px}
 .tabs{display:flex;gap:4px;overflow-x:auto;padding-bottom:10px;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
 .tabs button{flex:none;border:0;background:transparent;color:var(--sub);border-radius:8px;padding:6px 12px;font:600 14px var(--f-body);cursor:pointer}
-.tabs button[aria-selected=true]{background:var(--accent);color:var(--accent-ink)}
+.tabs button[aria-selected=true]{background:var(--hi);color:var(--hi-ink)}
 body.searching .tabs button[aria-selected=true]{background:var(--sunken);color:var(--sub)}
 main{padding-block:14px calc(48px + env(safe-area-inset-bottom))}
 .ptitle{display:none;font-size:12.5px;color:var(--sub);margin:20px 0 8px;font-weight:700;letter-spacing:.1em}
@@ -97,7 +101,7 @@ td.wrap-cell{white-space:normal}
 .filters button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:3px 12px;font:13px var(--f-body);cursor:pointer}
 .filters button.on{background:var(--ink);border-color:var(--ink);color:var(--surface);font-weight:700}
 body.searching .filters{display:none}
-body:not(.searching) .mon.off,body:not(.searching) .mon.off2{display:none}
+body:not(.searching) .mon.off,body:not(.searching) .mon.off2,body:not(.searching) .mon.off3{display:none}
 .mon header{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px}
 .mon h3{margin:0;font-size:17px}
 .mon .en{font-size:12px;color:var(--sub)}
@@ -218,3 +222,12 @@ ul.jq-all li:empty{display:none}
 .pat{display:inline-flex;gap:2px;align-items:center}
 .pat i{display:inline-block;width:7px;height:11px;border-radius:1px;background:var(--sub)}
 .pat i.p2{width:14px;background:var(--gr)}
+
+/* 彩色超代：版本 */
+.offv{display:none!important}
+.verbar{display:flex;align-items:center;gap:10px;margin:0 0 8px}
+.verbar label{font-size:12.5px;color:var(--sub);font-weight:700;white-space:nowrap}
+.verbar select{flex:1;min-width:0;font-size:15px;padding:6px 8px;background:var(--surface);font-weight:700}
+table.jt3 th,table.jt3 td{width:auto;min-width:88px;max-width:none}
+table.jt3 td a{margin:2px 0}
+.jattr{display:inline-block;margin-top:2px;font-size:10px;padding:0 5px;border:1px solid currentColor;border-radius:4px}

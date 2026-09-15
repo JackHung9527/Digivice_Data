@@ -1,14 +1,18 @@
 // 離線快取：先回快取，同時背景更新（下次開啟就是新版）
-const CACHE = 'gz70-v3';
+const CACHE = 'gz70-v5';
 const ASSETS = [
   './',
   './index.html',
   './dmgz.html',
   './pengz.html',
+  './penc.html',
+  './dm20.html',
   './app.css',
   './app.js',
   './data/dmgz.js',
   './data/pengz.js',
+  './data/penc.js',
+  './data/dm20.js',
   './manifest.webmanifest',
   './icon-192.png',
   './icon-512.png',

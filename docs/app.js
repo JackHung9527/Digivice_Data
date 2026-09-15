@@ -3,11 +3,16 @@
 'use strict';
 const D = window.GZ, M = {};
 D.monsters.forEach(m => M[m.id] = m);
-const PEN = D.kind === 'pen';
+const PEN = D.kind === 'pen', PENC = D.kind === 'penc', DM20 = D.kind === 'dm20', SHAKE = PEN || PENC;
+const VERS = D.versions || null;
+const VER_ZH = {};
+(VERS || []).forEach(v => VER_ZH[v.key] = v.zh);
 const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const STAGE = {I:'幼年期Ⅰ', II:'幼年期Ⅱ', III:'成長期', IV:'成熟期', V:'完全體', VI:'究極體', 'VI+':'超究極體', M:'形態變化'};
-const NEXT_T = PEN
+const NEXT_T = DM20
+  ? {I:'10 分鐘', II:'6 小時（復刻版 12 小時，睡覺不計）', III:'24 小時（睡覺不計）', IV:'36 小時（睡覺不計）', V:'48 小時（睡覺不計）'}
+  : SHAKE
   ? {I:'10 分鐘', II:'12 小時', III:'24 小時', IV:'32 小時', V:'40 小時', VI:'48 小時'}
   : {I:'10 分鐘', II:'12 小時', III:'24 小時', IV:'36 小時', V:'48 小時', VI:'48 小時'};
 const ATTR = {Vaccine:'疫苗種', Data:'資料種', Virus:'病毒種', Free:'自由種'};
@@ -23,9 +28,16 @@ const monOpt = m => `<option value="${m.id}">${esc(m.zh)}（${STAGE[m.stage]}）
 const hasOpt = (sel, v) => !!sel && [...sel.options].some(o => o.value === String(v));
 const phURL = {};
 let coll = store.get('coll', 'all'), phTarget = null, toastTimer;
+let curVer = VERS ? store.get('ver', VERS[0].key) : null;
+if (VERS && !VERS.some(v => v.key === curVer)) curVer = VERS[0].key;
+const inVer = m => PENC ? (!m.questOnly && m.ver === curVer) : !m.enemyOnly;
+const EGG_ZH = {};
+(D.eggs || []).forEach(e => EGG_ZH[e.key] = e.zh);
+let curEgg = store.get('egg', 'all');
 
 /* ---------- 條件標籤 ---------- */
-const jogName = j => j === 'ANY4' ? '其他版本任一成熟期' : j === 'ANY5' ? '其他版本任一完全體' : (M[j] ? M[j].zh : j);
+const verTag = (id, own) => PENC && M[id] && own && M[id].ver !== own && M[id].ver !== 'Q' ? `（${VER_ZH[M[id].ver] || ''}）` : '';
+const jogName = (j, own) => j === 'ANY4' ? '其他版本任一成熟期' : j === 'ANY5' ? '其他版本任一完全體' : (M[j] ? M[j].zh + verTag(j, own) : j);
 function reqChips(r) {
   const o = [];
   if (r.none) o.push(chip('無條件', 'ok'));
@@ -34,13 +46,23 @@ function reqChips(r) {
   if (r.area === 1) o.push(chip('已通關第7關', 'area'));
   if (r.area === 0) o.push(chip('未通關第7關', 'area'));
   if (r.cm) o.push(chip(`失誤 ${rng(r.cm)} 次`, 'cm'));
+  if (r.ch) o.push(chip(`狀態 ${rng(r.ch)} 顆`, r.ch[0] > 0 ? 'ok' : 'cm'));
+  if (r.ef) o.push(chip(`努力 ${rng(r.ef)} 顆`, 'bt'));
+  if (r.slot) o.push(chip(`欄位${r.slot.n}${r.slot.on ? '已解鎖' : '未解鎖'}`, 'area'));
+  if (r.areaF) o.push(chip('用牠通關任務最終關 F', 'frag'));
   if (r.g) o.push(chip(`${GC[r.g.c]} ${rng([r.g.min, r.g.max])} 格`, 'g' + r.g.c));
   if (r.gc === 'r') o.push(chip('G細胞 紅（8格以上）', 'gr'));
   if (r.gc === 'b') o.push(chip('G細胞 藍／空（7格以下）', 'gb'));
   if (r.poop) o.push(chip(`進化時便便 ${r.poop} 坨`, 'cm'));
-  if (r.bt) o.push(chip(`對戰 ${r.bt}+ 場`, 'bt'));
+  if (r.bt && !r.vic) o.push(chip(`對戰 ${r.bt}+ 場`, 'bt'));
+  if (r.vic) o.push(chip(`最近 15 場贏 ${rng(r.vic)} 場`, 'bt'));
+  if (r.tr) o.push(chip(`訓練 ${rng(r.tr)} 次`, 'bt'));
+  if (r.of) o.push(chip(`過食 ${rng(r.of)} 次`, 'cm'));
+  if (r.egg) o.push(chip(`${esc(EGG_ZH[r.egg] || r.egg)}孵化`, 'area'));
+  if (r.wait) o.push(chip(`等 ${r.wait} 分鐘`, 'ok'));
   if (r.btAs) o.push(chip(`以${esc(M[r.btAs.id].zh)}對戰 ${r.btAs.n}+ 場`, 'bt'));
-  if (r.life) o.push(chip(`總對戰 ${r.life}+ 場`, 'bt'));
+  if (r.life) o.push(chip(`${DM20 ? '完全體期間對戰' : '總對戰'} ${r.life}+ 場`, 'bt'));
+  if (r.noJpAB) o.push(chip('日版 A／B 版不可', 'dim'));
   if (r.win) o.push(chip(`勝率 ${r.win}%+`, 'bt'));
   if (r.rand) o.push(chip(`${r.rand}% 隨機`, 'rand'));
   if (r.death) o.push(chip(`死亡時 ${r.death}% 機率`, 'rand'));
@@ -50,25 +72,38 @@ function reqChips(r) {
 }
 
 /* ---------- 怪獸卡片 ---------- */
-function routes(list) {
+function routes(list, own) {
   return list.map(x => {
     const t = M[x.id];
-    const normal = x.req.filter(r => !r.jog), jogs = x.req.filter(r => r.jog).map(r => r.jog);
+    const normal = x.req.filter(r => !r.jog && !r.jogA && !r.tag);
+    const jogs = [...new Set(x.req.filter(r => r.jog).flatMap(r => [].concat(r.jog)))];
+    const jogAs = x.req.filter(r => r.jogA).map(r => r.jogA);
+    const tags = x.req.filter(r => r.tag).map(r => r.tag);
     const parts = normal.map(r => `<div class="opt">${reqChips(r)}</div>`);
+    if (jogAs.length) {
+      parts.push(`<div class="opt">${chip('合體', 'jog')}${jogAs.map(j => chip(`${j.a.map(a => ATTR[a]).join('或')}的${STAGE[j.st]}`, 'dim')).join('')}</div>`);
+    }
     if (jogs.length) {
       parts.push(`<div class="opt">${chip('合體', 'jog')}${jogs.map(j => j.startsWith('ANY')
-        ? chip(jogName(j), 'dim')
-        : `<a class="chip jogp" href="#" data-go="${j}">${esc(jogName(j))}</a>`).join('')}</div>`);
+        ? chip(jogName(j, own), 'dim')
+        : `<a class="chip jogp" href="#" data-go="${j}">${esc(jogName(j, own))}</a>`).join('')}</div>`);
     }
-    return `<div class="route"><div class="who"><a href="#" data-go="${t.id}">${esc(t.zh)}</a><small>${STAGE[t.stage]}</small></div><div>${parts.join('<div class="or">── 或 ──</div>')}</div></div>`;
+    if (tags.length) {
+      parts.push(`<div class="opt">${tags.map(g => `${chip(`雙打 ${g.n} 場合體`, 'jog')}<a class="chip jogp" href="#" data-go="${g.id}">${esc(M[g.id] ? M[g.id].zh : g.id)}</a>`).join('')}</div>`);
+    }
+    const vt = PENC && own && t.ver !== own && t.ver !== 'Q' ? `・${esc(VER_ZH[t.ver] || '')}` : '';
+    return `<div class="route"><div class="who"><a href="#" data-go="${t.id}">${esc(t.zh)}</a><small>${STAGE[t.stage]}${vt}</small></div><div>${parts.join('<div class="or">── 或 ──</div>')}</div></div>`;
   }).join('');
 }
 const stageGroup = st => (st === 'I' || st === 'II') ? 'baby' : (st === 'VI+' || st === 'M') ? 'VI' : st;
 function renderMonsters() {
-  $('#monList').innerHTML = D.monsters.map(m => {
+  $('#monList').innerHTML = D.monsters.filter(m => !m.questOnly).map(m => {
     const stats = [
       m.power != null && `力量 <b>${m.power}</b>`,
-      m.energy != null && `${PEN ? 'DP' : '體力'} ${m.energy}`,
+      m.energy != null && `${SHAKE ? 'DP' : '體力'} ${m.energy}`,
+      m.chMax != null && `狀態愛心 ${m.chMax}`,
+      DM20 && m.eggs && m.eggs.length && `蛋：${m.eggs.map(k => esc(EGG_ZH[k] || k)).join('、')}`,
+      m.verLabel && `<span style="color:var(--accent)">${esc(m.verLabel)}</span>`,
       m.sleep && `睡覺 ${m.sleep}`,
       m.loss && `每 ${m.loss} 分掉心`,
       m.heal && `治療 ${m.heal} 次`,
@@ -77,13 +112,13 @@ function renderMonsters() {
       m.canJog && `<span style="color:var(--accent)">可合體</span>`,
       m.fragDrop && `<span style="color:var(--gr)">可能留下碎片</span>`
     ].filter(Boolean).join('<i>·</i>');
-    return `<article class="card si mon" id="m-${m.id}" data-sg="${stageGroup(m.stage)}" data-alias="${esc(m.en + ' ' + m.alias)}">
+    return `<article class="card si mon" id="m-${m.id}" data-sg="${stageGroup(m.stage)}"${m.ver ? ` data-ver="${m.ver}"` : ''}${m.eggs ? ` data-eggs="${m.eggs.join(' ')}"` : ''} data-alias="${esc(m.en + ' ' + m.alias)}">
       <div class="mhead">${phSlot(m.id)}<div>
       <header><h3>${esc(m.zh)}</h3><span class="en">${esc(m.en)}</span>
         <span class="badges"><span class="badge">${STAGE[m.stage]}</span><span class="badge a-${m.attr}">${ATTR[m.attr]}</span></span></header>
       <div class="stats">${stats}</div></div></div>
-      <h4>▶ 可進化成</h4>${m.to.length ? routes(m.to) : '<p class="small sub">最終型態</p>'}
-      ${m.from.length ? `<h4>◀ 由誰進化</h4>${routes(m.from)}` : ''}
+      <h4>▶ 可進化成</h4>${m.to.length ? routes(m.to, m.ver) : m.enemyOnly ? '<p class="small sub">只在競技場當對手出現，不能培育</p>' : m.noData ? '<p class="small sub">攻略站尚未整理這個版本的進化條件</p>' : '<p class="small sub">最終型態</p>'}
+      ${m.from.length ? `<h4>◀ 由誰進化</h4>${routes(m.from, m.ver)}` : ''}
     </article>`;
   }).join('');
 }
@@ -93,6 +128,14 @@ function setStage(st) {
   $$('#stageFilter button').forEach(b => b.classList.toggle('on', b.dataset.st === st));
   $$('.mon').forEach(e => e.classList.toggle('off', st !== 'all' && e.dataset.sg !== st));
   store.set('stage', st);
+}
+
+function setEgg(k) {
+  curEgg = k;
+  store.set('egg', k);
+  const sel = $('#eggSel');
+  if (sel) sel.value = k;
+  $$('.mon').forEach(e => e.classList.toggle('off3', k !== 'all' && !(e.dataset.eggs || '').split(' ').includes(k)));
 }
 
 /* ---------- 分頁 ---------- */
@@ -125,18 +168,25 @@ function doSearch() {
   let n = 0;
   items.forEach(e => {
     if (e._s == null) e._s = norm(('sonly' in e.dataset ? '' : e.textContent) + ' ' + (e.dataset.alias || ''));
-    const hit = e._s.includes(v);
+    const hit = !e.classList.contains('offv') && e._s.includes(v);
     e.hidden = !hit;
     if (hit) { n++; if (e.tagName === 'DETAILS' && !e.open) { e.open = true; autoOpened.push(e); } }
   });
   $$('.panel').forEach(p => p.hidden = !p.querySelector('.si:not([hidden])'));
-  $('#noresult').hidden = n > 0;
+  const nr = $('#noresult');
+  nr.hidden = n > 0;
+  if (!n) {
+    const other = PENC ? [...new Set(items.filter(e => e.dataset.ver && e.classList.contains('offv') && e._s.includes(v)).map(e => VER_ZH[e.dataset.ver]))] : [];
+    nr.textContent = other.length ? `目前版本找不到，其他版本有：${other.join('、')}` : '找不到符合的內容，換個關鍵字試試';
+  }
 }
 
 /* ---------- 跳到怪獸 ---------- */
 function goMon(id) {
   if (q.value) { q.value = ''; doSearch(); }
+  if (PENC && M[id] && M[id].ver !== curVer && M[id].ver !== 'Q') setVer(M[id].ver);
   setStage('all');
+  if (DM20) setEgg('all');
   coll = 'all'; applyColl();
   showTab('t-evo');
   const el = $('#m-' + id);
@@ -211,6 +261,18 @@ function evalReq(r, s, cells) {
   if (r.frag != null && (!!r.frag) !== s.frag) fail.push(r.frag ? '需要碎片孵化' : '需要非碎片孵化');
   if (r.area != null && (!!r.area) !== s.area) fail.push(r.area ? '需要已通關第7關' : '需要未通關第7關');
   if (r.cm && (s.cm < r.cm[0] || s.cm > r.cm[1])) fail.push(`失誤要 ${rng(r.cm)} 次（現在 ${s.cm}）`);
+  if (r.ch && (s.ch < r.ch[0] || s.ch > r.ch[1])) fail.push(`狀態愛心要 ${rng(r.ch)} 顆（現在 ${s.ch}）`);
+  if (r.ef && (s.ef < r.ef[0] || s.ef > r.ef[1])) fail.push(`努力愛心要 ${rng(r.ef)} 顆（現在 ${s.ef}）`);
+  if (r.slot && (!!r.slot.on) !== !!s.slot) fail.push(r.slot.on ? `需要欄位${r.slot.n}已解鎖` : `需要欄位${r.slot.n}還沒解鎖`);
+  if (r.areaF) fail.push('不是時間進化：用牠通關任務最終關 F 後立刻進化');
+  if (r.tr && (s.tr < r.tr[0] || s.tr > r.tr[1])) fail.push(`訓練要 ${rng(r.tr)} 次（現在 ${s.tr}）`);
+  if (r.of && (s.of < r.of[0] || s.of > r.of[1])) fail.push(`過食要 ${rng(r.of)} 次（現在 ${s.of}）`);
+  if (r.egg && s.egg && r.egg !== s.egg) fail.push(`要從「${EGG_ZH[r.egg] || r.egg}」孵化`);
+  if (r.vic) {
+    if (s.vic < 6) fail.push(`最近 15 場至少要贏 6 場（現在 ${s.vic}）`);
+    else if (s.vic < 11) chance = 25;
+    else if (s.vic < 12) chance = 50;
+  }
   if (r.g && cells) { const v = cells[r.g.c]; if (v < r.g.min || v > r.g.max) fail.push(`${GC[r.g.c]}G細胞要 ${rng([r.g.min, r.g.max])} 格（現在 ${v}）`); }
   if (r.gc) {
     const red = s.gcn >= 8;
@@ -222,7 +284,7 @@ function evalReq(r, s, cells) {
   if (r.life && s.life < r.life) fail.push(`總對戰要 ${r.life} 場以上（現在 ${s.life}）`);
   if (r.win) {
     if (s.win < 40) fail.push(`勝率至少 40%（現在 ${s.win}%）`);
-    else if (PEN) { if (s.win < 70) chance = 40; else if (s.win < 80) chance = 70; }
+    else if (SHAKE) { if (s.win < 70) chance = 40; else if (s.win < 80) chance = 70; }
     else { if (s.win < 60) chance = 25; else if (s.win < 80) chance = 50; }
   }
   if (r.rand) chance = chance * r.rand / 100;
@@ -232,7 +294,7 @@ function evalReq(r, s, cells) {
   return {fail, chance};
 }
 const etSel = $('#et-cur');
-const ET_KEYS = ['cur', 'cm', 'lv', 'vis', 'gcn', 'area', 'frag', 'poop', 'bt', 'win', 'life'];
+const ET_KEYS = ['cur', 'cm', 'lv', 'vis', 'gcn', 'area', 'frag', 'poop', 'bt', 'win', 'life', 'ch', 'ef', 'slot', 'tr', 'of', 'vic', 'egg'];
 function restoreForm(prefix, obj) {
   Object.entries(obj || {}).forEach(([k, v]) => {
     const e = document.getElementById(prefix + k);
@@ -247,7 +309,7 @@ function etState() {
   ET_KEYS.forEach(k => {
     const e = document.getElementById('et-' + k);
     if (!e) return;
-    s[k] = e.type === 'checkbox' ? e.checked : e.tagName === 'SELECT' && k === 'cur' ? e.value : (e.value === '' ? (k === 'win' ? 100 : 0) : +e.value);
+    s[k] = e.type === 'checkbox' ? e.checked : e.tagName === 'SELECT' && (k === 'cur' || k === 'egg') ? e.value : (e.value === '' ? (k === 'win' ? 100 : 0) : +e.value);
   });
   s.cur = etSel.value;
   return s;
@@ -256,17 +318,23 @@ function etRun() {
   const s = etState();
   store.set('et', s);
   const m = M[s.cur];
+  if (!m) { $('#et-out').innerHTML = '<p class="small sub">這個版本還沒有進化資料。</p>'; return; }
   let cells = null;
-  if (PEN) {
+  if (PENC || DM20) {
+    // 彩色超代、元祖20th 沒有 G細胞
+  } else if (PEN) {
     $('#et-cells').innerHTML = gViewPen(m.stage, s.gcn);
   } else {
     $('#et-vis').max = VMAX[s.lv];
     cells = cellsOf(s.lv, s.vis);
     $('#et-cells').innerHTML = gViewDM(s.lv, s.vis);
   }
-  const timed = m.to.map(t => ({t: M[t.id], reqs: t.req.filter(r => !r.jog)}));
-  const needBattle = timed.some(x => x.reqs.some(r => r.bt || r.win || r.life || r.btAs));
+  const timed = m.to.map(t => ({t: M[t.id], reqs: t.req.filter(r => !r.jog && !r.jogA && !r.tag)}));
+  const needBattle = timed.some(x => x.reqs.some(r => r.bt || r.win || r.life || r.btAs || r.vic));
+  $$('.life-f').forEach(e => e.hidden = !timed.some(x => x.reqs.some(r => r.life)));
+  $$('.egg-f').forEach(e => e.hidden = !timed.some(x => x.reqs.some(r => r.egg)));
   $$('.bt-f').forEach(e => e.hidden = !needBattle);
+  $$('.cm-f').forEach(e => e.hidden = !timed.some(x => x.reqs.some(r => r.cm)));
   const res = timed.filter(x => x.reqs.length).map(x => {
     let best = null;
     x.reqs.forEach(r => {
@@ -276,18 +344,18 @@ function etRun() {
     return {t: x.t, ...best};
   }).sort((a, b) => a.fail.length - b.fail.length || b.chance - a.chance);
   const jogOnly = timed.filter(x => !x.reqs.length).map(x => x.t);
-  let html = `<p class="small sub">${STAGE[m.stage]} 進化到下一階段約 ${NEXT_T[m.stage] || '—'}（冷凍、備份期間不計時）</p>`;
+  let html = `<p class="small sub">${STAGE[m.stage]} 進化到下一階段約 ${NEXT_T[m.stage] || '—'}${DM20 ? '' : '（冷凍、備份期間不計時）'}</p>`;
   html += res.map(x => x.fail.length
     ? `<div class="res no"><span class="mk">✕</span><div><a href="#" data-go="${x.t.id}">${esc(x.t.zh)}</a><div class="small">${x.fail.map(esc).join('；')}</div></div></div>`
     : `<div class="res yes"><span class="mk">✓</span><div><a href="#" data-go="${x.t.id}">${esc(x.t.zh)}</a><div class="small">符合條件${x.chance < 100 ? `・進化機率 ${x.chance}%` : ''}</div></div></div>`
   ).join('');
   if (res.length && !res.some(x => !x.fail.length)) {
     html += (m.stage === 'IV' || m.stage === 'V')
-      ? `<p class="warn">目前都不符合：時間到就不會再進化；若當時照顧失誤 ≥ 5 次，怪獸會死亡。</p>`
+      ? `<p class="warn">目前都不符合：時間到就不會自然進化${PENC ? '（仍然可以合體）' : ''}；若當時照顧失誤 ≥ 5 次，怪獸會死亡。</p>`
       : `<p class="warn">目前都不符合，請確認輸入是否正確。</p>`;
   }
   if (jogOnly.length) {
-    html += `<p class="small">只能靠合體：${jogOnly.map(t => `<a href="#" data-go="${t.id}">${esc(t.zh)}</a>`).join('、')}（見「合體速查」）</p>`;
+    html += `<p class="small">只能靠合體：${jogOnly.map(t => `<a href="#" data-go="${t.id}">${esc(t.zh)}</a>`).join('、')}${DM20 ? '（兩隻指定究極體一起雙打 5 場）' : '（見「合體速查」）'}</p>`;
   }
   $('#et-out').innerHTML = html;
 }
@@ -334,9 +402,13 @@ const areaAlias = no => no === 'F' ? '最終關 第F關 area f' : no === 'Ω' ? 
 const patHTML = p => p ? `<span class="pat" aria-label="攻擊模式 ${p}">${[...p].map(c => `<i class="p${c}"></i>`).join('')}</span>` : '';
 function renderQuest() {
   if (!$('#questList')) return;
-  const hasPat = D.quest.some(a => a.rounds.some(r => r.pat));
-  const hasHc = D.quest.some(a => a.rounds.some(r => r.hc));
-  $('#questList').innerHTML = D.quest.map(a => {
+  const groups = PENC ? VERS.map(v => [v.key, D.quest[v.key] || []]) : [[null, D.quest]];
+  $('#questList').innerHTML = groups.map(([vk, list]) => {
+    const vattr = vk ? ` data-ver="${vk}"` : '';
+    if (!list.length) return `<div class="card si"${vattr}><p class="small sub">這個版本的關卡資料尚未整理。</p></div>`;
+    const hasPat = list.some(a => a.rounds.some(r => r.pat));
+    const hasHc = list.some(a => a.rounds.some(r => r.hc));
+    return list.map(a => {
     const rows = a.rounds.map((r, i) => {
       const boss = i === a.rounds.length - 1;
       return `<tr><td>${boss ? '<b style="color:var(--gr)">BOSS</b>' : i + 1}</td><td><a href="#" data-go="${r.id}">${esc(M[r.id].zh)}</a></td>` +
@@ -344,37 +416,48 @@ function renderQuest() {
         (hasPat ? `<td>${patHTML(r.pat)}</td>` : '') +
         (hasHc ? `<td>${r.hc ? `<b style="color:var(--gr)">−${r.hc}</b>` : '<span class="sub">—</span>'}</td>` : '') + `</tr>`;
     }).join('');
-    return `<div class="card si" data-alias="${esc(areaAlias(a.no))}">
+    return `<div class="card si"${vattr} data-alias="${esc(areaAlias(a.no))}">
       <h3>${areaTitle(a.no)}</h3>
       <div class="tw"><table><tr><th>回合</th><th>對手</th><th>屬性</th><th>力量</th>${hasPat ? '<th>攻擊模式</th>' : ''}${hasHc ? '<th>命中減</th>' : ''}</tr>${rows}</table></div>
       ${a.unlock ? `<p class="small">首次通關解鎖：<b>${esc(a.unlock)}</b></p>` : ''}
     </div>`;
+    }).join('');
   }).join('');
 }
 // 力量加成：[力量滿心, 性格蛋, G細胞紅]
-const BONUS = PEN
+const BONUS = PENC
+  ? {III:[5, 5, 10], IV:[8, 8, 10], V:[15, 15, 10], VI:[20, 20, 10], 'VI+':[20, 20, 10], M:[20, 20, 10]}
+  : PEN
   ? {III:[5, 5, 5], IV:[8, 8, 8], V:[15, 15, 15], VI:[20, 15, 20], 'VI+':[20, 15, 20], M:[20, 15, 20]}
   : {III:[5, 5], IV:[8, 8], V:[15, 15], VI:[25, 25], 'VI+':[25, 25]};
-const ADV_PTS = PEN ? 10 : 5;
+const ADV_PTS = SHAKE ? 10 : 5;
+const questList = () => PENC ? (D.quest[curVer] || []) : D.quest;
 const BEATS = {Vaccine:'Virus', Virus:'Data', Data:'Vaccine'};
 const adv = (a, b) => BEATS[a] === b ? ADV_PTS : (BEATS[b] === a ? -ADV_PTS : 0);
 const hcMon = $('#hc-mon'), hcOpp = $('#hc-opp');
 function hcRun() {
   if (!hcMon) return;
   const m = M[hcMon.value];
+  if (!m) { $('#hc-out').innerHTML = '<p class="small sub">這個版本還沒有力量資料。</p>'; return; }
   const b = BONUS[m.stage] || [0, 0, 0];
-  const flags = [$('#hc-full').checked, $('#hc-egg').checked, !!($('#hc-red') && $('#hc-red').checked)];
+  const third = $('#hc-red') || $('#hc-shake');
+  const flags = [$('#hc-full').checked, $('#hc-egg').checked, !!(third && third.checked)];
   const bonus = flags.reduce((sum, f, i) => sum + (f ? (b[i] || 0) : 0), 0);
   const p = m.power + bonus;
   let op, oa, hc = 0;
   const custom = hcOpp.value === 'custom';
   $$('.hc-c').forEach(e => e.hidden = !custom);
   if (custom) { op = +$('#hc-cp').value || 0; oa = $('#hc-ca').value; }
-  else { const [, ai, ri] = hcOpp.value.split(':').map(Number); const r = D.quest[ai].rounds[ri]; op = r.p; oa = r.attr; hc = r.hc || 0; }
+  else {
+    const [, ai, ri] = hcOpp.value.split(':').map(Number);
+    const area = questList()[ai];
+    const r = area ? area.rounds[ri] : {p: 0, attr: 'Free', hc: 0};
+    op = r.p; oa = r.attr; hc = r.hc || 0;
+  }
   const a = adv(m.attr, oa);
-  const clamp = x => Math.max(0, Math.min(PEN ? 99 : 100, Math.round(x * 10) / 10));
+  const clamp = x => Math.max(0, Math.min(SHAKE ? 99 : 100, Math.round(x * 10) / 10));
   let hit = p + op > 0 ? p * 100 / (p + op) + a - hc : 0;
-  if (PEN && a > 0) hit = Math.max(5, hit);
+  if (SHAKE && a > 0) hit = Math.max(5, hit);
   hit = clamp(hit);
   const ohit = p + op > 0 ? clamp(op * 100 / (p + op) - a) : 0;
   const advTxt = a > 0 ? `屬性有利 +${ADV_PTS}` : a < 0 ? `屬性不利 −${ADV_PTS}` : '無相剋';
@@ -434,6 +517,126 @@ function renderJog() {
     </details>`).join('');
 }
 
+/* ---------- 版本切換・依屬性合體（彩色超代） ---------- */
+function setVer(k) {
+  if (!PENC) return;
+  curVer = k;
+  store.set('ver', k);
+  $$('.verSel').forEach(s => s.value = k);
+  $$('[data-ver]').forEach(e => e.classList.toggle('offv', e.dataset.ver !== k));
+  if (etSel) { fillEt(); etRun(); }
+  if (hcMon) { fillHc(); hcRun(); }
+  renderJogPenc();
+  paintDex();
+}
+const ATTR3 = ['Vaccine', 'Data', 'Virus'];
+function jogCombos(m) {
+  const byA = {Vaccine: [], Data: [], Virus: []}, spec = new Map();
+  m.to.forEach(t => t.req.forEach(r => {
+    if (r.jogA) r.jogA.a.forEach(a => { if (!byA[a].includes(t.id)) byA[a].push(t.id); });
+    if (r.jog) [].concat(r.jog).forEach(p => {
+      if (!spec.has(p)) spec.set(p, []);
+      if (!spec.get(p).includes(t.id)) spec.get(p).push(t.id);
+    });
+  }));
+  return {byA, spec};
+}
+function renderJogPenc() {
+  if (!PENC || !$('#jogTables')) return;
+  const meSel = $('#jq-me'), pSel = $('#jq-partner');
+  const vName = id => esc(VER_ZH[M[id].ver] || '');
+  const mons = D.monsters.filter(m => inVer(m) && m.to.some(t => t.req.some(r => r.jog || r.jogA)));
+  const keepMe = meSel.value;
+  meSel.innerHTML = ['IV', 'V', 'VI', 'VI+'].map(st => {
+    const g = mons.filter(m => m.stage === st);
+    return g.length ? `<optgroup label="${STAGE[st]}">${g.map(m => `<option value="${m.id}">${esc(m.zh)}（${ATTR[m.attr]}）</option>`).join('')}</optgroup>` : '';
+  }).join('');
+  const saved = store.get('jqp', null);
+  if (hasOpt(meSel, keepMe)) meSel.value = keepMe;
+  else if (saved && hasOpt(meSel, saved.me)) meSel.value = saved.me;
+  const fill = () => {
+    const m = M[meSel.value];
+    if (!m) { pSel.innerHTML = ''; return; }
+    const {spec} = jogCombos(m);
+    const keep = pSel.value || (saved && saved.p);
+    pSel.innerHTML =
+      (m.stage === 'IV' || m.stage === 'V' ? `<optgroup label="依屬性（同為${STAGE[m.stage]}）">${ATTR3.map(a => `<option value="A:${a}">${ATTR[a]}的${STAGE[m.stage]}</option>`).join('')}</optgroup>` : '') +
+      (spec.size ? `<optgroup label="指定怪獸">${[...spec.keys()].map(p => `<option value="S:${p}">${esc(M[p].zh)}（${vName(p)}）</option>`).join('')}</optgroup>` : '');
+    if (hasOpt(pSel, keep)) pSel.value = keep;
+  };
+  const run = () => {
+    const m = M[meSel.value];
+    if (!m) { $('#jq-out').innerHTML = '<p class="small sub">這個版本沒有合體資料。</p>'; return; }
+    const {byA, spec} = jogCombos(m);
+    const v = pSel.value || '';
+    const res = v.startsWith('A:') ? byA[v.slice(2)] : v.startsWith('S:') ? (spec.get(v.slice(2)) || []) : [];
+    const plabel = v.startsWith('A:') ? `${ATTR[v.slice(2)]}的${STAGE[m.stage]}` : v.startsWith('S:') ? M[v.slice(2)].zh : '';
+    let h = res.length
+      ? res.map(id => `<div class="jq-res">${jcell(id)}<div><div class="small sub">${esc(m.zh)} ＋ ${esc(plabel)}</div><a href="#" data-go="${id}" class="jq-name">${esc(M[id].zh)}</a><div class="small sub">${STAGE[M[id].stage]}</div></div></div>`).join('')
+      : `<p class="warn">這個組合不能合體（機器會顯示 MIS MATCH）</p>`;
+    const rows = ATTR3.filter(a => byA[a].length).map(a =>
+      `<li><span class="sub">${ATTR[a]}</span> → ${byA[a].map(id => `<a href="#" data-go="${id}">${esc(M[id].zh)}</a>`).join('、')}</li>`)
+      .concat([...spec.entries()].map(([p, ts]) =>
+        `<li><span class="sub">${esc(M[p].zh)}（${vName(p)}）</span> → ${ts.map(id => `<a href="#" data-go="${id}">${esc(M[id].zh)}</a>`).join('、')}</li>`));
+    h += `<h4>${esc(m.zh)} 的全部合體</h4><ul class="jq-all">${rows.join('')}</ul>`;
+    $('#jq-out').innerHTML = h;
+    store.set('jqp', {me: meSel.value, p: pSel.value});
+  };
+  if (!meSel._wired) {
+    meSel._wired = true;
+    meSel.addEventListener('input', () => { fill(); run(); });
+    pSel.addEventListener('input', run);
+  }
+  fill(); run();
+  const table = st => {
+    const g = D.monsters.filter(m => inVer(m) && m.stage === st && m.to.some(t => t.req.some(r => r.jogA)));
+    if (!g.length) return '';
+    return `<details class="card si" open data-sonly data-alias="${STAGE[st]}合體速查表 合體 jogress 屬性"><summary>${STAGE[st]}合體速查表 <span class="hint">左欄＝目前養的・上排＝夥伴屬性（同為${STAGE[st]}）</span></summary>
+      <div class="tw jtw"><table class="jt jt3"><thead><tr><th class="corner">目前＼夥伴</th>${ATTR3.map(a => `<th><span class="badge a-${a}">${ATTR[a]}</span></th>`).join('')}</tr></thead>
+      <tbody>${g.map(m => {
+        const {byA} = jogCombos(m);
+        return `<tr><th>${jcell(m.id)}<span class="jattr a-${m.attr}">${ATTR[m.attr]}</span></th>${ATTR3.map(a => `<td>${byA[a].length
+          ? byA[a].map(id => `<a href="#" data-go="${id}">${jcell(id)}</a>`).join('')
+          : '<span class="sub">—</span>'}</td>`).join('')}</tr>`;
+      }).join('')}</tbody></table></div></details>`;
+  };
+  const specs = D.monsters.filter(inVer).flatMap(m => [...jogCombos(m).spec.entries()].map(([p, ts]) => ({m, p, ts})));
+  const specCard = specs.length ? `<details class="card si" data-sonly data-alias="指定合體 究極體 超究極體 合體"><summary>指定怪獸合體 <span class="hint">需要特定夥伴</span></summary>
+    <div class="tw"><table><tr><th>目前養的</th><th>夥伴</th><th>結果</th></tr>${specs.map(x =>
+      `<tr><td class="wrap-cell"><a href="#" data-go="${x.m.id}">${esc(x.m.zh)}</a></td><td class="wrap-cell">${esc(M[x.p].zh)}<br><span class="sub small">${vName(x.p)}</span></td><td class="wrap-cell">${x.ts.map(id => `<a href="#" data-go="${id}">${esc(M[id].zh)}</a>`).join('、')}</td></tr>`).join('')}</table></div></details>` : '';
+  $('#jogTables').innerHTML = (table('IV') + table('V') + specCard) || '<div class="card"><p class="small sub">這個版本還沒有合體資料。</p></div>';
+}
+
+/* ---------- 元祖20th：蛋・版本・競技場 ---------- */
+function renderEggs() {
+  if (!$('#eggList')) return;
+  $('#eggList').innerHTML = D.eggs.map(e => {
+    const mons = D.monsters.filter(m => (m.eggs || []).includes(e.key));
+    const tops = mons.filter(m => m.stage === 'VI' || m.stage === 'VI+');
+    return `<div class="card si" data-alias="${esc(e.en + ' ' + e.zh)}">
+      <h3>${esc(e.zh)}${e.ver ? ` <span class="chip bt">${esc(e.ver)}</span>` : ''}</h3>
+      <p class="small"><b>取得：</b>${esc(e.unlock)}</p>
+      <p class="small sub">共 ${mons.length} 隻${tops.length ? `・究極體以上：${tops.map(m => `<a href="#" data-go="${m.id}">${esc(m.zh)}</a>`).join('、')}` : ''}</p>
+      <button type="button" class="btn" data-egg="${e.key}">只看這顆蛋的進化</button>
+    </div>`;
+  }).join('');
+  $('#verList').innerHTML = D.vers.map(v => `<div class="card si" data-alias="${esc('版本 ' + v.title + ' ' + v.colors.join(' '))}">
+      <h3>${esc(v.title)}</h3>
+      ${v.colors.length ? `<p class="small sub">配色：${esc(v.colors.join('、'))}</p>` : ''}
+      <p class="small">${v.mons.map(id => M[id] ? `<a href="#" data-go="${id}">${esc(M[id].zh)}</a>` : esc(id)).join('、') || '—'}</p>
+    </div>`).join('');
+}
+function renderColo() {
+  if (!$('#coloSingle')) return;
+  const who = x => x.id && M[x.id] ? `<a href="#" data-go="${x.id}">${esc(M[x.id].zh)}</a>` : esc(x.name);
+  const pw = x => x.p != null ? `<b>${x.p}</b>` : '<span class="sub">?</span>';
+  const at = a => `<span class="badge a-${a}">${ATTR[a] || esc(a)}</span>`;
+  $('#coloSingle').innerHTML = `<tr><th>回合</th><th>對手</th><th>屬性</th><th>力量</th></tr>` + D.colo.single.map(r =>
+    `<tr><td>${r.no}</td><td class="wrap-cell">${who(r)}</td><td>${at(r.attr)}</td><td>${pw(r)}</td></tr>`).join('');
+  $('#coloTag').innerHTML = `<tr><th>回合</th><th>左</th><th>力量</th><th>右</th><th>力量</th></tr>` + D.colo.tag.map(r =>
+    `<tr><td>${r.no}</td><td class="wrap-cell">${who(r.l)} ${at(r.l.attr)}</td><td>${pw(r.l)}</td><td class="wrap-cell">${who(r.r)} ${at(r.r.attr)}</td><td>${pw(r.r)}</td></tr>`).join('');
+}
+
 /* ---------- 圖鑑圖片（存在瀏覽器 IndexedDB） ---------- */
 const imgDB = (() => {
   let dbp;
@@ -483,7 +686,8 @@ function applyColl() {
   });
 }
 function paintDex() {
-  const n = Object.keys(phURL).length, total = D.monsters.length;
+  const list = D.monsters.filter(m => !m.questOnly && inVer(m));
+  const n = list.filter(m => phURL[m.id]).length, total = list.length;
   $('#dexCount').textContent = `已收集 ${n} / ${total}`;
   $('#dexBar').style.width = (n * 100 / total) + '%';
   applyColl();
@@ -495,9 +699,12 @@ function setPhoto(id, blob) {
   paintDex();
 }
 function renderDex() {
-  $('#dexGrid').innerHTML = D.monsters.map((m, i) =>
-    `<div class="dex-tile">${phSlot(m.id)}<span class="no">No.${String(i).padStart(2, '0')}</span><span class="nm"><a href="#" data-go="${m.id}">${esc(m.zh)}</a></span></div>`
-  ).join('');
+  const cnt = {};
+  $('#dexGrid').innerHTML = D.monsters.filter(m => !m.questOnly).map(m => {
+    const k = m.ver || '_';
+    const i = cnt[k] = (cnt[k] ?? -1) + 1;
+    return `<div class="dex-tile"${m.ver ? ` data-ver="${m.ver}"` : ''}>${phSlot(m.id)}<span class="no">No.${String(i).padStart(2, '0')}</span><span class="nm"><a href="#" data-go="${m.id}">${esc(m.zh)}</a></span></div>`;
+  }).join('');
 }
 async function shrink(file, max = 640) {
   const url = URL.createObjectURL(file);
@@ -526,6 +733,13 @@ function openViewer(id) {
 
 /* ---------- 事件 ---------- */
 document.addEventListener('click', e => {
+  const eg = e.target.closest('[data-egg]');
+  if (eg) {
+    e.preventDefault();
+    if (q.value) { q.value = ''; doSearch(); }
+    setStage('all'); setEgg(eg.dataset.egg); showTab('t-evo'); window.scrollTo(0, 0);
+    return;
+  }
   const go = e.target.closest('[data-go]');
   if (go) { e.preventDefault(); if (pv.open) pv.close(); goMon(go.dataset.go); return; }
   const b = e.target.closest('[data-ph]');
@@ -578,13 +792,36 @@ pv.addEventListener('click', e => { if (e.target === pv) pv.close(); });
 renderMonsters();
 renderDex();
 renderJog();
+if (PENC) {
+  const opts = VERS.map(v => `<option value="${v.key}">${esc(v.zh)}（${esc(v.en)}）</option>`).join('');
+  $$('.verSel').forEach(s => { s.innerHTML = opts; s.value = curVer; s.addEventListener('input', () => setVer(s.value)); });
+}
+if (DM20) {
+  const eggOpts = D.eggs.map(e => `<option value="${e.key}">${esc(e.zh)}</option>`).join('');
+  if ($('#eggSel')) {
+    $('#eggSel').innerHTML = `<option value="all">全部的蛋</option>` + eggOpts;
+    $('#eggSel').addEventListener('input', e => setEgg(e.target.value));
+  }
+  if ($('#et-egg')) $('#et-egg').innerHTML = eggOpts;
+  renderEggs();
+  renderColo();
+}
 renderEncTables();
 renderQuest();
 if ($('#fragDropList')) $('#fragDropList').innerHTML = D.monsters.filter(m => m.fragDrop).map(m => `<a href="#" data-go="${m.id}">${esc(m.zh)}</a>`).join('、');
 
+function fillEt() {
+  const keep = etSel.value;
+  etSel.innerHTML = D.monsters.filter(m => inVer(m) && m.to.length).map(monOpt).join('');
+  if (hasOpt(etSel, keep)) etSel.value = keep;
+}
 if (etSel) {
-  etSel.innerHTML = D.monsters.filter(m => m.to.length).map(monOpt).join('');
-  restoreForm('et-', store.get('et', PEN
+  fillEt();
+  restoreForm('et-', store.get('et', DM20
+    ? {cur:'grey', cm:1, tr:16, of:0, vic:12, life:0, egg:'digitama_1'}
+    : PENC
+    ? {cur:'NSp-kabuteri', ch:1, ef:2, slot:false, cm:0, bt:15, win:85}
+    : PEN
     ? {cur:'tyrano', cm:1, gcn:9, bt:15, win:85, life:30, poop:false}
     : {cur:'littlegodzilla', cm:1, lv:3, vis:0, area:false, frag:false, bt:15, win:85}));
   $('#evoTool').addEventListener('input', etRun);
@@ -603,24 +840,33 @@ if (enSel) {
   enRun();
   setInterval(() => { if (!$('#t-enc').hidden) enRun(); }, 60000);
 }
-if (hcMon) {
-  hcMon.innerHTML = D.monsters.filter(m => m.power != null && m.stage !== 'I' && m.stage !== 'II').map(monOpt).join('');
-  hcOpp.innerHTML = D.quest.map((a, ai) =>
+function fillHc() {
+  const keepM = hcMon.value, keepO = hcOpp.value;
+  hcMon.innerHTML = D.monsters.filter(m => inVer(m) && m.power != null && m.stage !== 'I' && m.stage !== 'II').map(monOpt).join('');
+  hcOpp.innerHTML = questList().map((a, ai) =>
     `<optgroup label="${areaTitle(a.no)}">${a.rounds.map((r, ri) =>
       `<option value="q:${ai}:${ri}">${ri === a.rounds.length - 1 ? 'BOSS ' : `R${ri + 1} `}${esc(M[r.id].zh)}（${ATTR[r.attr]}・${r.p}${r.hc ? `・命中減${r.hc}` : ''}）</option>`).join('')}</optgroup>`
   ).join('') + `<option value="custom">自訂對手…</option>`;
+  if (hasOpt(hcMon, keepM)) hcMon.value = keepM;
+  if (hasOpt(hcOpp, keepO)) hcOpp.value = keepO;
+}
+if (hcMon) {
+  fillHc();
   const hc = store.get('hc', null);
   if (hc) {
     if (hasOpt(hcMon, hc.mon)) hcMon.value = hc.mon;
     $('#hc-full').checked = hc.full !== false;
     $('#hc-egg').checked = !!hc.egg;
-    if ($('#hc-red')) $('#hc-red').checked = !!hc.red;
+    const third = $('#hc-red') || $('#hc-shake');
+    if (third) third.checked = !!hc.red;
     if (hasOpt(hcOpp, hc.opp)) hcOpp.value = hc.opp;
   }
   hcMon.closest('.tool').addEventListener('input', hcRun);
   hcRun();
 }
 
+if (PENC) setVer(curVer);
+if (DM20) setEgg(curEgg);
 setStage(store.get('stage', 'all'));
 showTab(store.get('tab', TAB_IDS[0]));
 

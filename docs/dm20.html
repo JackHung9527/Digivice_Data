@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>元祖20th 速查</title>
+<meta name="description" content="Digimon Original（Digital Monster Ver.20th）中文攻略速查（可離線）">
+<meta name="theme-color" content="#0E1F3D">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Digivice">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+TC:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="band">
+  <div class="wrap band-in">
+    <nav class="devsw" aria-label="切換機型"><a href="dmgz.html">哥吉拉彩元祖</a><a href="pengz.html">哥吉拉彩色超代</a><a href="penc.html">彩色超代</a><a href="dm20.html" aria-current="page">元祖20th</a><a href="index.html">選機型</a></nav>
+    <p class="mark">DIGITAL MONSTER VER.20TH</p>
+    <h1>元祖20th 速查</h1>
+    <div class="gcap" aria-hidden="true"><span>雙養・單打／雙打・雙打合體</span><span>CR2032</span></div>
+  </div>
+</header>
+<div class="top">
+  <div class="wrap">
+    <div class="search">
+      <input id="q" type="search" placeholder="搜尋：怪獸名、訓練、過食、雙打、青蛋…" autocomplete="off" enterkeyhint="search">
+      <button id="qclear" type="button" aria-label="清除" hidden>×</button>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button data-tab="t-evo" role="tab">進化條件</button>
+      <button data-tab="t-op" role="tab">操作手順</button>
+      <button data-tab="t-egg" role="tab">蛋與版本</button>
+      <button data-tab="t-colo" role="tab">競技場</button>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+<div id="noresult" hidden>找不到符合的內容，換個關鍵字試試</div>
+
+<!-- ================= 進化條件 ================= -->
+<section class="panel" id="t-evo">
+  <h2 class="ptitle">進化條件</h2>
+
+  <details class="card tool si" id="evoTool" open data-sonly data-alias="進化試算 模擬 計算 判斷 會進化成誰">
+    <summary>進化試算 <span class="hint">輸入目前狀態，看時間到會進化成誰</span></summary>
+    <div class="form">
+      <label class="full">目前怪獸<select id="et-cur"></select></label>
+      <label class="full egg-f" hidden>從哪顆蛋孵出來<select id="et-egg"></select></label>
+      <label>本階段照顧失誤（次）<input id="et-cm" type="number" min="0" max="30" inputmode="numeric" value="0"></label>
+      <label>本階段訓練次數<input id="et-tr" type="number" min="0" max="99" inputmode="numeric" value="0"></label>
+      <label>本階段過食次數<input id="et-of" type="number" min="0" max="20" inputmode="numeric" value="0"></label>
+      <label class="bt-f">最近 15 場贏幾場<input id="et-vic" type="number" min="0" max="15" inputmode="numeric" value="15"></label>
+      <label class="life-f" hidden>完全體期間對戰場數<input id="et-life" type="number" min="0" inputmode="numeric" value="0"></label>
+    </div>
+    <div id="et-out"></div>
+  </details>
+
+  <details class="card si" data-alias="失誤 訓練 努力 過食 勝率 雙打合體 M E O">
+    <summary>進化基本規則</summary>
+    <h4>進化時間（睡覺時不計時）</h4>
+    <div class="tw"><table>
+      <tr><th>目前階段</th><th>到下一階段</th></tr>
+      <tr><td>蛋</td><td>1 分鐘</td></tr>
+      <tr><td>幼年期Ⅰ</td><td>10 分鐘</td></tr>
+      <tr><td>幼年期Ⅱ</td><td>6 小時（復刻版 12 小時）</td></tr>
+      <tr><td>成長期</td><td>24 小時</td></tr>
+      <tr><td>成熟期</td><td>36 小時</td></tr>
+      <tr><td>完全體</td><td>48 小時</td></tr>
+    </table></div>
+    <p class="small">20th 與英文版睡覺時間不算進化時間；復刻版（Ver.Revival）睡覺也會計時。</p>
+
+    <h4>三個關鍵：失誤（M）・訓練（E）・過食（O）</h4>
+    <ul class="small">
+      <li><b>照顧失誤</b>：決定成長期、成熟期走哪條路。例：M2- ＝失誤 2 次以下。</li>
+      <li><b>訓練次數</b>：看努力愛心大概估算。4–7 次＝1 顆、8–11 次＝2 顆、12–15 次＝3 顆、16 次以上＝4 顆。</li>
+      <li><b>過食</b>：一直餵肉到牠搖頭拒吃＝1 次；要等牠願意再吃（例如拉過一次便便）才能算下一次。只有成長期失誤 3 次以上時才有影響。</li>
+    </ul>
+
+    <h4>成熟期 → 完全體：看最近 15 場</h4>
+    <div class="tw"><table>
+      <tr><th>最近 15 場贏</th><th>進化機率</th></tr>
+      <tr><td>12–15 場（80% 以上）</td><td>100%</td></tr>
+      <tr><td>11 場（70–79%）</td><td>50%</td></tr>
+      <tr><td>6–10 場（40–69%）</td><td>25%</td></tr>
+      <tr><td>5 場以下</td><td>不會進化</td></tr>
+    </table></div>
+    <p class="small">一定要在<b>成熟期</b>打滿 15 場，成長期打的不算；超過 15 場只算最近 15 場，所以狀態畫面的勝率不一定準。單打、雙打、通信、競技場都算，雙打時兩隻都算。</p>
+
+    <h4>究極體以上</h4>
+    <ul class="small">
+      <li>只有特定完全體會進化到究極體；失誤太多（超過 4 次）在進化時會死亡。</li>
+      <li><b>雙打合體</b>：兩隻指定的究極體一起雙打 <b>5 場</b>，第 5 場打完立刻合體成超究極體。另一隻可以是複製怪。如果兩隻都是自己養的，合體後會空出一格可以孵新蛋。</li>
+      <li><b>對戰 100 場</b>：翼龍獸、地龍獸在完全體期間失誤 3–4 次、對戰 100 場以上，會變成戰鬥暴龍獸／鋼鐵加魯魯獸（日版 A、B 版與復刻版不行）。</li>
+    </ul>
+
+    <h4>進化後</h4>
+    <p class="small">只保留戰績；照顧失誤、努力、受傷次數都會重置。</p>
+  </details>
+
+  <details class="card si" id="dex" data-sonly data-alias="我的圖鑑 收集 圖片 照片 相簿">
+    <summary>我的圖鑑 <span class="hint" id="dexCount">0 / 0</span></summary>
+    <div class="dex-bar"><span id="dexBar" style="width:0%"></span></div>
+    <p class="small sub">點空格從相簿選圖；圖片只存在這支手機的瀏覽器裡，清除瀏覽器資料會一起刪掉。</p>
+    <div class="dex-grid" id="dexGrid"></div>
+  </details>
+
+  <div class="verbar" style="margin-top:18px"><label for="eggSel">蛋</label><select id="eggSel"></select></div>
+  <div class="filters" id="stageFilter" style="margin-top:8px">
+    <button data-st="all" class="on">全部</button>
+    <button data-st="baby">幼年期</button>
+    <button data-st="III">成長期</button>
+    <button data-st="IV">成熟期</button>
+    <button data-st="V">完全體</button>
+    <button data-st="VI">究極體</button>
+  </div>
+  <div class="filters" id="collFilter" style="margin-top:0">
+    <button data-coll="all" class="on">不限</button>
+    <button data-coll="have">已收集</button>
+    <button data-coll="need">未收集</button>
+  </div>
+  <div id="monList"></div>
+</section>
+
+<!-- ================= 操作手順 ================= -->
+<section class="panel" id="t-op" hidden>
+  <h2 class="ptitle">操作手順</h2>
+
+  <details class="card si" open>
+    <summary>按鍵速查</summary>
+    <p>螢幕右側由上到下是 <span class="key">A</span> <span class="key">B</span> <span class="key">C</span>。</p>
+    <div class="tw"><table>
+      <tr><th>操作</th><th>效果</th></tr>
+      <tr><td><span class="key">A</span></td><td class="wrap-cell">切換選擇圖示／選項</td></tr>
+      <tr><td><span class="key">B</span></td><td class="wrap-cell">決定；主畫面（沒選圖示）按 B＝看時鐘</td></tr>
+      <tr><td><span class="key">C</span></td><td class="wrap-cell">取消／返回；主畫面按 C＝切換畫面上顯示哪一隻（養兩隻時）</td></tr>
+      <tr><td><span class="key">A</span>+<span class="key">C</span>（主畫面）</td><td class="wrap-cell">聲音開／關</td></tr>
+      <tr><td><span class="key">A</span>+<span class="key">C</span>（時鐘畫面）</td><td class="wrap-cell">修改時間（不會加快成長）</td></tr>
+      <tr><td><span class="key">A</span>+<span class="key">B</span>（？蛋或墳墓畫面）</td><td class="wrap-cell">選蛋：A 切換、B 決定</td></tr>
+      <tr><td>重置孔</td><td class="wrap-cell">LOAD 接續；RESET 會<b>全部刪除</b></td></tr>
+    </table></div>
+    <p class="small">電池是 CR2032，每分鐘自動存檔。換完電池選 LOAD 接續。</p>
+  </details>
+
+  <details class="card si">
+    <summary>開始養・第二顆蛋</summary>
+    <ol>
+      <li>拉出電池絕緣片 → 設定時間（<span class="key">A</span> 時、<span class="key">B</span> 分、<span class="key">C</span> 確定）→ 輸入 4 個字的馴獸師名字。</li>
+      <li>蛋 1 分鐘孵化，10 分鐘後變幼年期Ⅱ。</li>
+      <li>第一隻養到<b>成長期</b>後會多一顆蛋：按 <span class="key">C</span> 讓畫面只剩蛋，按 <span class="key">A</span>+<span class="key">B</span> 選蛋。</li>
+      <li>最多同時養 2 隻，兩隻不在畫面上也會照常肚子餓、拉便便。</li>
+    </ol>
+  </details>
+
+  <details class="card si">
+    <summary>圖示選單</summary>
+    <h4>狀態（天秤）</h4>
+    <ul class="small">
+      <li>名稱 → 年齡・體重 → 滿腹（おなか）→ 筋力（きんりょく）→ 努力（どりょく）→ 體力 DP → 單打勝率 S → 雙打勝率 T。</li>
+      <li>DP：成長期最多 14，每進化一階 +14，睡覺或吃蛋白質會回復。</li>
+    </ul>
+    <h4>食物（肉）</h4>
+    <ul class="small">
+      <li><b>肉（エサ）</b>：滿腹 +1、體重 +1G。</li>
+      <li><b>蛋白質（プロテイン）</b>：筋力 +1、體重 +2G，每 4 個 DP +1。吃太多輸了比較容易受傷。</li>
+      <li>體重 99G 或空腹時，筋力的力量加成會消失。</li>
+    </ul>
+    <h4>訓練（舉重）</h4>
+    <p class="small">每 4 次訓練＝努力 1 顆，成功失敗都算。體重 −1～4G。</p>
+    <ul class="small">
+      <li><b>單人訓練</b>：「！」出現後狂按 <span class="key">A</span>。按 13 下以上筋力 +2。</li>
+      <li><b>雙人訓練</b>（畫面上有兩隻時）：5 回合選打上（A）或下（B），打中 3 次成功筋力 +1，5 次全中 +2。</li>
+    </ul>
+    <h4>雙人訓練必勝順序（循環，退出也算一次）</h4>
+    <div class="tw"><table>
+      <tr><th>第幾次</th><th>按鍵</th></tr>
+      <tr><td>1</td><td>A B A B B</td></tr>
+      <tr><td>2</td><td>B B A A B</td></tr>
+      <tr><td>3</td><td>B A A B B</td></tr>
+      <tr><td>4</td><td>A B B A A</td></tr>
+      <tr><td>5</td><td>B A B A B</td></tr>
+      <tr><td>6</td><td>A B A B A</td></tr>
+    </table></div>
+    <h4>競技場（獎盃）</h4>
+    <ul class="small">
+      <li>單打（シングル）／雙打（タッグ），選つづき繼續或さいしょ從頭，共 100 回合。</li>
+      <li>每場前的小遊戲決定攻擊順序：單打狂按 A 集滿；雙打第一條停在<b>由下數第 3 格</b>，第二條按 9 或 12 下最強。</li>
+      <li>筋力全滿時傷害：單打 +1、雙打 +2（雙打要兩隻都滿）。</li>
+      <li>每場消耗 DP：成長期 1、成熟期 2、完全體 3、究極體 4。</li>
+      <li>輸了（有時贏了也會）可能受傷，記得治療。</li>
+    </ul>
+    <h4>便便（馬桶）</h4>
+    <p class="small">累積 4 坨會受傷，這台很常拉。小技巧：受傷後只治療、不要清便便，畫面上保持 4 坨就不會再拉，也不會再因便便受傷。</p>
+    <h4>電燈</h4>
+    <ul class="small">
+      <li>頭上出現 Z＝累了，<b>10 分鐘內</b>選睡覺（ねかす），否則失誤。</li>
+      <li>早上 7:00 自動起床。叫醒（おこす）約 15 分鐘後會再睡，不算失誤。</li>
+      <li>醒著時選睡覺＝小睡 3 小時，可以回 DP（約 1 小時回 10）。</li>
+    </ul>
+    <h4>治療（繃帶）</h4>
+    <p class="small">怪獸旁邊有骷髏＝受傷，可能要治療好幾次。同形態受傷 20 次會死亡。</p>
+    <h4>相簿（書）</h4>
+    <p class="small">デジモン（養過的怪獸）／ストック（複製怪）／せんせき（戰績）／なまえ（名字）。登錄越多隻，解鎖越多蛋。</p>
+    <h4>通信</h4>
+    <ul class="small">
+      <li><b>對戰</b>：跟另一台 20th 比照競技場規則；選「そのた」可以跟舊機種用簡易規則對戰。出現 BATTLE 後接上，其中一台按 B。</li>
+      <li><b>複製（コピー）</b>：おくる 傳送／もらう 接收，最多存 2 隻（C1、C2），可以拿來雙打。</li>
+    </ul>
+    <h4>呼叫</h4>
+    <p class="small">空腹、虛弱（筋力空）、想睡時亮起，<b>10 分鐘內</b>處理，否則失誤 +1。</p>
+  </details>
+
+  <details class="card si" data-alias="力量 屬性 相剋 筋力">
+    <summary>力量與屬性</summary>
+    <ul class="small">
+      <li>每隻怪獸有固定基礎力量（見卡片），筋力每顆 +4，全滿 +16。</li>
+      <li>疫苗種 ＞ 病毒種 ＞ 資料種 ＞ 疫苗種；有利時等於力量 +32。自由種沒有相剋。</li>
+      <li>運氣也有影響，強的也可能輸給弱的。</li>
+    </ul>
+  </details>
+
+  <details class="card si" data-alias="死亡 墳墓 性格蛋">
+    <summary>死亡・遺留的蛋</summary>
+    <ul class="small">
+      <li>同形態受傷 20 次，或照顧失誤 20 次</li>
+      <li>在同一階段醒著超過 48 小時後，又失誤 5 次</li>
+      <li>受傷 6 小時沒治療</li>
+      <li>滿腹或筋力空著 12 小時</li>
+    </ul>
+    <p class="small">墳墓畫面按 C 讓畫面只剩墳墓，再按 A+B 選新蛋。進化後醒著撐滿 48 小時再死亡，會留下性格蛋（加成很小）。</p>
+  </details>
+
+  <details class="card si" data-alias="復刻版 Ver.Revival 差異">
+    <summary>復刻版（Ver.Revival）的差異</summary>
+    <ul class="small">
+      <li>便便變少；睡覺也會計入進化時間，幼年期Ⅱ改為 12 小時。</li>
+      <li>沒有 DP，只要不餓就能對戰；冷凍取代小睡。</li>
+      <li>雙人訓練只要打中 2 次，成功會把兩隻的筋力補滿。</li>
+      <li>過食只要滿腹後多餵 1 個。</li>
+      <li>棕色版只要跟任一 B 版連線一次、灰色版跟任一 A 版連線一次，就能解鎖限定蛋。</li>
+      <li>翼龍獸、地龍獸不能靠對戰 100 場進化。</li>
+    </ul>
+  </details>
+</section>
+
+<!-- ================= 蛋與版本 ================= -->
+<section class="panel" id="t-egg" hidden>
+  <h2 class="ptitle">蛋與版本</h2>
+  <div class="card si" data-alias="蛋 解鎖 版本">
+    <h3>蛋怎麼解鎖</h3>
+    <p class="small">一開始有 5 顆（Ver.1～5）。其他蛋靠相簿登錄數、累計對戰數或通信解鎖。版本限定蛋只會出現在對應配色的機器上。</p>
+  </div>
+  <div id="eggList"></div>
+  <h2 class="ptitle" style="display:block;margin-top:22px">各版本限定</h2>
+  <div id="verList"></div>
+</section>
+
+<!-- ================= 競技場 ================= -->
+<section class="panel" id="t-colo" hidden>
+  <h2 class="ptitle">競技場</h2>
+  <div class="card si" data-alias="競技場 規則">
+    <h3>競技場規則</h3>
+    <ul class="small">
+      <li>單打、雙打各 100 回合，打贏往下一回合，全部打完回到第 1 回合（沒有獎勵）。</li>
+      <li>標「?」的是只在競技場出現、不能養的怪獸，力量未知。</li>
+      <li>成熟期要湊 15 場進化時，重複打第 1 回合也算。</li>
+    </ul>
+  </div>
+  <details class="card si" open data-sonly data-alias="單打 シングル">
+    <summary>單打（シングル）</summary>
+    <div class="tw"><table id="coloSingle"></table></div>
+  </details>
+  <details class="card si" data-sonly data-alias="雙打 タッグ">
+    <summary>雙打（タッグ）</summary>
+    <div class="tw"><table id="coloTag"></table></div>
+  </details>
+</section>
+
+<footer>
+  非官方整理。資料來源：humulos.com 攻略站、中文玩家整理的「DIGIMON VER.20th 說明書／資料集」。<br>
+  Digimon © 本鄉あきよし・東映動畫・BANDAI
+</footer>
+</main>
+
+<input type="file" id="phFile" accept="image/*" hidden>
+<dialog id="phView">
+  <div class="pv-img"><img id="pvImg" alt=""></div>
+  <div class="pv-body">
+    <h3 id="pvName"></h3>
+    <div class="pv-actions">
+      <button type="button" class="btn pri" id="pvChange">換一張</button>
+      <button type="button" class="btn" id="pvGo">看進化條件</button>
+      <button type="button" class="btn danger" id="pvDel">刪除</button>
+      <button type="button" class="btn" id="pvClose">關閉</button>
+    </div>
+  </div>
+</dialog>
+<div id="toast" role="status" hidden></div>
+
+<script src="data/dm20.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
