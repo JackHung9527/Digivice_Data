@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>哥吉拉怪獸對打機速查</title>
+<meta name="theme-color" content="#1C1924">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="哥吉拉速查">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+TC:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="app.css">
+<style>
+.pick{display:grid;gap:12px;padding-block:18px 40px}
+.dev{display:grid;grid-template-columns:56px 1fr auto;gap:4px 14px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;text-decoration:none;color:var(--ink)}
+.dev:hover{border-color:var(--accent)}
+.dev .ic{grid-row:1/3;width:56px;height:56px;border-radius:12px;background:var(--lcd);display:grid;place-items:center;font:20px var(--f-dot);color:var(--lcd-ink)}
+.dev b{font-size:18px;font-weight:900}
+.dev small{grid-column:2;color:var(--sub);font-size:12.5px}
+.dev .go{grid-row:1/3;grid-column:3;color:var(--accent);font-size:22px}
+.dev .gm{display:flex;gap:2px;height:5px;width:44px}
+.dev .gm i{flex:1;border-radius:1px}
+.last{font-size:12.5px;color:var(--sub);margin:0}
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap band-in">
+    <p class="mark">GODZILLA × DIGIMON COLOR</p>
+    <h1>哥吉拉怪獸對打機速查</h1>
+    <div class="gmeter" aria-hidden="true"><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i></div>
+  </div>
+</header>
+<main class="wrap pick">
+  <p class="last" id="last">選擇你的機型</p>
+  <a class="dev" href="dmgz.html" data-dev="gz70">
+    <span class="ic">70</span>
+    <b>哥吉拉彩元祖</b>
+    <small>Digital Monster COLOR ゴジラ 70th Edition・34 隻</small>
+    <span class="go" aria-hidden="true">›</span>
+  </a>
+  <a class="dev" href="pengz.html" data-dev="pengz">
+    <span class="ic">PEN</span>
+    <b>哥吉拉彩色超代</b>
+    <small>Digimon Pendulum COLOR ゴジラ Edition・58 隻・合體</small>
+    <span class="go" aria-hidden="true">›</span>
+  </a>
+  <footer>非官方整理。資料來源：BANDAI 官方說明書、humulos.com 攻略站。<br>Digimon © 本鄉あきよし・東映動畫・BANDAI／Godzilla TM &amp; © TOHO CO., LTD.</footer>
+</main>
+<script>
+document.querySelectorAll('.dev').forEach(a => a.addEventListener('click', () => { try { localStorage.setItem('gzhub.last', a.getAttribute('href')); } catch (e) {} }));
+try {
+  const last = localStorage.getItem('gzhub.last');
+  const a = last && document.querySelector('.dev[href="' + last + '"]');
+  if (a) { document.getElementById('last').textContent = '上次使用：' + a.querySelector('b').textContent; a.style.borderColor = 'var(--accent)'; }
+} catch (e) {}
+if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol) && !/claude\.ai|claudeusercontent/.test(location.hostname)) navigator.serviceWorker.register('sw.js').catch(() => {});
+</script>
+</body>
+</html>

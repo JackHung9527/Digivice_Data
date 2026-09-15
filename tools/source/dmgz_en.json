@@ -1,0 +1,1366 @@
+[
+ {
+  "id": "bota",
+  "name": "Botamon",
+  "stage": "Stage I (Baby I)",
+  "attr": "Free",
+  "from": [],
+  "to": [
+   {
+    "id": "koro",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "Power": "",
+  "Min Weight": "5",
+  "Sleep Time": ":00 AM",
+  "Energy": "",
+  "Heal Doses": "",
+  "Hunger / Strength Loss": "3 Minutes",
+  "Encounter Time Group": "",
+  "Encounter Opponent Group": ""
+ },
+ {
+  "id": "koro",
+  "name": "Koromon",
+  "stage": "Stage II (Baby II)",
+  "attr": "Free",
+  "from": [
+   {
+    "id": "bota",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "babygodzilla",
+    "req": [
+     "Hatched from a G-Cell Fragment",
+     "Not hatched from a G-Cell Fragment, 0-1 Care Mistakes, 5+ Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 2-4 Care Mistakes, 10+ Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Area 7 not cleared, 2+ Care Mistakes, 10+ Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "agu",
+    "req": [
+     "Not hatched from a G-Cell Fragment, 0-1 Care Mistakes, 0-4 Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 2-4 Care Mistakes, 5-9 Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Area 7 not cleared, 2+ Care Mistakes, 0-9 Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "monodra",
+    "req": [
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 2-4 Care Mistakes, 0-4 Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 5+ Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "",
+  "Min Weight": "10",
+  "Sleep Time": "8:00 PM",
+  "Energy": "",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "30 Minutes",
+  "Encounter Time Group": "",
+  "Encounter Opponent Group": ""
+ },
+ {
+  "id": "babygodzilla",
+  "name": "Baby Godzilla",
+  "stage": "Stage III (Child)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "koro",
+    "req": [
+     "Hatched from a G-Cell Fragment",
+     "Not hatched from a G-Cell Fragment, 0-1 Care Mistakes, 5+ Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 2-4 Care Mistakes, 10+ Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Area 7 not cleared, 2+ Care Mistakes, 10+ Blue G-Cells*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "godzillasaurus",
+    "req": [
+     "Hatched from a G-Cell Fragment, 0-4 Care Mistakes",
+     "Hatched from a G-Cell Fragment, 0-13 Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, 0-1 Care Mistakes, 0-13 Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, 2-4 Care Mistakes, 14+ Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "littlegodzilla",
+    "req": [
+     "Not hatched from a G-Cell Fragment, 0-1 Care Mistakes, 14+ Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "biollante",
+    "req": [
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 2-4 Care Mistakes, 10-13 Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 5+ Care Mistakes, 14+ Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Area 7 not cleared, 2-4 Care Mistakes, 0-13 Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Area 7 not cleared, 5+ Care Mistakes"
+    ]
+   },
+   {
+    "id": "mothra",
+    "req": [
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 2-4 Care Mistakes, 0-9 Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "rodan",
+    "req": [
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 5+ Care Mistakes, 0-13 Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "chibigodzilla",
+    "req": [
+     "Hatched from a G-Cell Fragment, 5+ Care Mistakes, 14+ Blue G-Cells*, 50% Chance"
+    ]
+   },
+   {
+    "id": "chibimechagodzilla",
+    "req": [
+     "Hatched from a G-Cell Fragment, 5+ Care Mistakes, 14+ Blue G-Cells*, 50% Chance"
+    ]
+   }
+  ],
+  "Power": "30",
+  "Min Weight": "20",
+  "Sleep Time": "9:00 PM",
+  "Energy": "20",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "38 Minutes",
+  "Encounter Time Group": "0",
+  "Encounter Opponent Group": "0"
+ },
+ {
+  "id": "agu",
+  "name": "Agumon",
+  "stage": "Stage III (Child)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "koro",
+    "req": [
+     "Not hatched from a G-Cell Fragment, 0-1 Care Mistakes, 0-4 Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 2-4 Care Mistakes, 5-9 Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Area 7 not cleared, 2+ Care Mistakes, 0-9 Blue G-Cells*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "godzillasaurus",
+    "req": [
+     "0-1 Care Mistakes, 14+ Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "grey",
+    "req": [
+     "0-1 Care Mistakes, 0-13 Blue G-Cells*",
+     "2-4 Care Mistakes, 14+ Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "gigan",
+    "req": [
+     "Clear Area 7, 2-4 Care Mistakes, 0-9 Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "rare",
+    "req": [
+     "Area 7 not cleared, 2-4 Care Mistakes, 0-13 Blue G-Cells*",
+     "Area 7 not cleared, 5+ Care Mistakes",
+     "Clear Area 7, 2-4 Care Mistakes, 10-13 Blue G-Cells*",
+     "Clear Area 7, 5+ Care Mistakes, 14+ Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "rodan",
+    "req": [
+     "Clear Area 7, 5+ Care Mistakes, 0-13 Blue G-Cells*"
+    ]
+   }
+  ],
+  "Power": "25",
+  "Min Weight": "20",
+  "Sleep Time": "8:00 PM",
+  "Energy": "20",
+  "Heal Doses": "2",
+  "Hunger / Strength Loss": "48 Minutes",
+  "Encounter Time Group": "1",
+  "Encounter Opponent Group": "0"
+ },
+ {
+  "id": "monodra",
+  "name": "Monodramon",
+  "stage": "Stage III (Child)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "koro",
+    "req": [
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 2-4 Care Mistakes, 0-4 Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 5+ Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "grey",
+    "req": [
+     "0-1 Care Mistakes, 14+ Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "gigan",
+    "req": [
+     "0-1 Care Mistakes, 0-13 Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "kingghidorah",
+    "req": [
+     "2-4 Care Mistakes, 14+ Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "rodan",
+    "req": [
+     "2-4 Care Mistakes, 0-13 Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "rare",
+    "req": [
+     "5+ Care Mistakes, 14+ Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "mothra",
+    "req": [
+     "5+ Care Mistakes, 0-13 Blue G-Cells*"
+    ]
+   }
+  ],
+  "Power": "22",
+  "Min Weight": "40",
+  "Sleep Time": "10:00 PM",
+  "Energy": "20",
+  "Heal Doses": "2",
+  "Hunger / Strength Loss": "48 Minutes",
+  "Encounter Time Group": "0",
+  "Encounter Opponent Group": "0"
+ },
+ {
+  "id": "littlegodzilla",
+  "name": "Little Godzilla",
+  "stage": "Stage IV (Adult)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "babygodzilla",
+    "req": [
+     "Not hatched from a G-Cell Fragment, 0-1 Care Mistakes, 14+ Blue G-Cells*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "godzillajr",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "kiryu",
+    "req": [
+     "Clear Area 7, 0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "Area 7 not cleared, 0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "3-4 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "zilla",
+    "req": [
+     "3-4 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "52",
+  "Min Weight": "40",
+  "Sleep Time": "10:00 PM",
+  "Energy": "30",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "48 Minutes",
+  "Encounter Time Group": "2",
+  "Encounter Opponent Group": "1"
+ },
+ {
+  "id": "grey",
+  "name": "Greymon",
+  "stage": "Stage IV (Adult)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "agu",
+    "req": [
+     "0-1 Care Mistakes, 0-13 Blue G-Cells*",
+     "2-4 Care Mistakes, 14+ Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "monodra",
+    "req": [
+     "0-1 Care Mistakes, 14+ Blue G-Cells*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "metalgrey_va",
+    "req": [
+     "0-4 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "skullgrey_g",
+    "req": [
+     "3-4 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "50",
+  "Min Weight": "30",
+  "Sleep Time": "11:00 PM",
+  "Energy": "30",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "59 Minutes",
+  "Encounter Time Group": "4",
+  "Encounter Opponent Group": "2"
+ },
+ {
+  "id": "biollante",
+  "name": "Biollante",
+  "stage": "Stage IV (Adult)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "babygodzilla",
+    "req": [
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 2-4 Care Mistakes, 10-13 Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 5+ Care Mistakes, 14+ Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Area 7 not cleared, 2-4 Care Mistakes, 0-13 Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, Area 7 not cleared, 5+ Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "spacegodzilla",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "zilla",
+    "req": [
+     "0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "3-4 Care Mistakes, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "40",
+  "Min Weight": "40",
+  "Sleep Time": "9:00 PM",
+  "Energy": "30",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "48 Minutes",
+  "Encounter Time Group": "3",
+  "Encounter Opponent Group": "1"
+ },
+ {
+  "id": "godzillasaurus",
+  "name": "Godzillasaurus",
+  "stage": "Stage IV (Adult)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "babygodzilla",
+    "req": [
+     "Hatched from a G-Cell Fragment, 0-4 Care Mistakes",
+     "Hatched from a G-Cell Fragment, 0-13 Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, 0-1 Care Mistakes, 0-13 Blue G-Cells*",
+     "Not hatched from a G-Cell Fragment, 2-4 Care Mistakes, 14+ Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "agu",
+    "req": [
+     "0-1 Care Mistakes, 14+ Blue G-Cells*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "godzillajr",
+    "req": [
+     "Hatched from a G-Cell Fragment, 0-4 Care Mistakes, 15+ Battles, 80%+ Win Ratio*",
+     "Not hatched from a G-Cell Fragment, 3-4 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "Not hatched from a G-Cell Fragment, 0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "zilla",
+    "req": [
+     "Not hatched from a G-Cell Fragment, 0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "Not hatched from a G-Cell Fragment, 3-4 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "46",
+  "Min Weight": "20",
+  "Sleep Time": "10:00 PM",
+  "Energy": "30",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "38 Minutes",
+  "Encounter Time Group": "4",
+  "Encounter Opponent Group": "2"
+ },
+ {
+  "id": "rare",
+  "name": "Raremon",
+  "stage": "Stage IV (Adult)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "agu",
+    "req": [
+     "Clear Area 7, 2-4 Care Mistakes, 10-13 Blue G-Cells*",
+     "Clear Area 7, 5+ Care Mistakes, 14+ Blue G-Cells*",
+     "Area 7 not cleared, 2-4 Care Mistakes, 0-13 Blue G-Cells*",
+     "Area 7 not cleared, 5+ Care Mistakes"
+    ]
+   },
+   {
+    "id": "monodra",
+    "req": [
+     "5+ Care Mistakes, 14+ Blue G-Cells*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "skullgrey_g",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "mechakingghidorah",
+    "req": [
+     "Clear Area 7, 0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "40",
+  "Min Weight": "20",
+  "Sleep Time": "10:00 PM",
+  "Energy": "30",
+  "Heal Doses": "3",
+  "Hunger / Strength Loss": "28 Minutes",
+  "Encounter Time Group": "2",
+  "Encounter Opponent Group": "1"
+ },
+ {
+  "id": "gigan",
+  "name": "Gigan",
+  "stage": "Stage IV (Adult)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "agu",
+    "req": [
+     "Clear Area 7, 2-4 Care Mistakes, 0-9 Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "monodra",
+    "req": [
+     "0-1 Care Mistakes, 0-13 Blue G-Cells*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "kiryu",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "metalgrey_va",
+    "req": [
+     "0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "3-4 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "45",
+  "Min Weight": "40",
+  "Sleep Time": "10:00 PM",
+  "Energy": "30",
+  "Heal Doses": "2",
+  "Hunger / Strength Loss": "48 Minutes",
+  "Encounter Time Group": "4",
+  "Encounter Opponent Group": "2"
+ },
+ {
+  "id": "mothra",
+  "name": "Mothra",
+  "stage": "Stage IV (Adult)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "babygodzilla",
+    "req": [
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 2-4 Care Mistakes, 0-9 Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "monodra",
+    "req": [
+     "5+ Care Mistakes, 0-13 Blue G-Cells*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "spacegodzilla",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "firerodan",
+    "req": [
+     "0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "3-4 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "42",
+  "Min Weight": "20",
+  "Sleep Time": "9:00 PM",
+  "Energy": "30",
+  "Heal Doses": "3",
+  "Hunger / Strength Loss": "38 Minutes",
+  "Encounter Time Group": "2",
+  "Encounter Opponent Group": "1"
+ },
+ {
+  "id": "kingghidorah",
+  "name": "King Ghidorah (1991)",
+  "stage": "Stage IV (Adult)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "monodra",
+    "req": [
+     "2-4 Care Mistakes, 14+ Blue G-Cells*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "mechakingghidorah",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "firerodan",
+    "req": [
+     "0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "3-4 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "48",
+  "Min Weight": "60",
+  "Sleep Time": "10:00 PM",
+  "Energy": "30",
+  "Heal Doses": "2",
+  "Hunger / Strength Loss": "59 Minutes",
+  "Encounter Time Group": "3",
+  "Encounter Opponent Group": "1"
+ },
+ {
+  "id": "rodan",
+  "name": "Rodan",
+  "stage": "Stage IV (Adult)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "babygodzilla",
+    "req": [
+     "Not hatched from a G-Cell Fragment, Clear Area 7, 5+ Care Mistakes, 0-13 Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "agu",
+    "req": [
+     "Clear Area 7, 5+ Care Mistakes, 0-13 Blue G-Cells*"
+    ]
+   },
+   {
+    "id": "monodra",
+    "req": [
+     "2-4 Care Mistakes, 0-13 Blue G-Cells*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "firerodan",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "metalgrey_va",
+    "req": [
+     "0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "3-4 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "45",
+  "Min Weight": "40",
+  "Sleep Time": "10:00 PM",
+  "Energy": "30",
+  "Heal Doses": "2",
+  "Hunger / Strength Loss": "38 Minutes",
+  "Encounter Time Group": "4",
+  "Encounter Opponent Group": "2"
+ },
+ {
+  "id": "godzillajr",
+  "name": "Godzilla Jr",
+  "stage": "Stage V (Perfect)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "littlegodzilla",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "godzillasaurus",
+    "req": [
+     "Hatched from a G-Cell Fragment, 0-4 Care Mistakes, 15+ Battles, 80%+ Win Ratio*",
+     "Not hatched from a G-Cell Fragment, 3-4 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "godzilla_1994",
+    "req": [
+     "Hatched from a G-Cell Fragment, 0-4 Care Mistakes, 15+ Battles, 80%+ Win Ratio*",
+     "Not hatched from a G-Cell Fragment, 0-2 Care Mistakes, 10+ Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "destoroyah",
+    "req": [
+     "Not hatched from a G-Cell Fragment, 0-2 Care Mistakes, 0-9 Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "95",
+  "Min Weight": "50",
+  "Sleep Time": "11:00 PM",
+  "Energy": "40",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "48 Minutes",
+  "Encounter Time Group": "4",
+  "Encounter Opponent Group": "3"
+ },
+ {
+  "id": "metalgrey_g",
+  "name": "Metal Greymon (Vaccine): G-Erosion Mode",
+  "stage": "Stage V (Perfect)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "littlegodzilla",
+    "req": [
+     "Area 7 not cleared, 0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "3-4 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "grey",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "wargrey_g",
+    "req": [
+     "0-2 Care Mistakes, 10+ Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "godzilla_1999",
+    "req": [
+     "0-2 Care Mistakes, 0-9 Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "110",
+  "Min Weight": "40",
+  "Sleep Time": "10:00 PM",
+  "Energy": "50",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "59 Minutes",
+  "Encounter Time Group": "7",
+  "Encounter Opponent Group": "5"
+ },
+ {
+  "id": "metalgrey_va",
+  "name": "Metal Greymon (Vaccine)",
+  "stage": "Stage V (Perfect)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "grey",
+    "req": [
+     "0-4 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "gigan",
+    "req": [
+     "0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "3-4 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "rodan",
+    "req": [
+     "0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "3-4 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "wargrey_g",
+    "req": [
+     "0-1 Care Mistakes, 10+ Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "wargrey",
+    "req": [
+     "0-1 Care Mistakes, 0-9 Red G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "2-3 Care Mistakes, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "90",
+  "Min Weight": "40",
+  "Sleep Time": "10:00 PM",
+  "Energy": "40",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "59 Minutes",
+  "Encounter Time Group": "6",
+  "Encounter Opponent Group": "4"
+ },
+ {
+  "id": "spacegodzilla",
+  "name": "Space Godzilla",
+  "stage": "Stage V (Perfect)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "biollante",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "mothra",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "godzilla_1994",
+    "req": [
+     "0-1 Care Mistakes, 10+ Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "destoroyah",
+    "req": [
+     "0-1 Care Mistakes, 0-9 Red G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "2-3 Care Mistakes, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "78",
+  "Min Weight": "40",
+  "Sleep Time": "11:00 PM",
+  "Energy": "40",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "48 Minutes",
+  "Encounter Time Group": "4",
+  "Encounter Opponent Group": "3"
+ },
+ {
+  "id": "godzilla_1954",
+  "name": "Godzilla (1954)",
+  "stage": "Stage V (Perfect)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "godzillasaurus",
+    "req": [
+     "Not hatched from a G-Cell Fragment, 0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "godzilla_1999",
+    "req": [
+     "0-2 Care Mistakes, 10+ Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "wargrey_g",
+    "req": [
+     "0-2 Care Mistakes, 0-9 Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "90",
+  "Min Weight": "50",
+  "Sleep Time": "11:00 PM",
+  "Energy": "40",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "66 Minutes",
+  "Encounter Time Group": "5",
+  "Encounter Opponent Group": "4"
+ },
+ {
+  "id": "skullgrey_g",
+  "name": "Skull Greymon: G-Erosion Mode",
+  "stage": "Stage V (Perfect)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "grey",
+    "req": [
+     "3-4 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "rare",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "mugendra_m",
+    "req": [
+     "0-2 Care Mistakes, 10+ Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "100",
+  "Min Weight": "40",
+  "Sleep Time": "10:00 PM",
+  "Energy": "40",
+  "Heal Doses": "3",
+  "Hunger / Strength Loss": "59 Minutes",
+  "Encounter Time Group": "7",
+  "Encounter Opponent Group": "5"
+ },
+ {
+  "id": "zilla",
+  "name": "Zilla",
+  "stage": "Stage V (Perfect)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "littlegodzilla",
+    "req": [
+     "3-4 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "biollante",
+    "req": [
+     "0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "3-4 Care Mistakes, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "godzillasaurus",
+    "req": [
+     "Not hatched from a G-Cell Fragment, 0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "Not hatched from a G-Cell Fragment, 3-4 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "70",
+  "Min Weight": "30",
+  "Sleep Time": "10:00 PM",
+  "Energy": "40",
+  "Heal Doses": "2",
+  "Hunger / Strength Loss": "38 Minutes",
+  "Encounter Time Group": "4",
+  "Encounter Opponent Group": "3"
+ },
+ {
+  "id": "kiryu",
+  "name": "Kiryu",
+  "stage": "Stage V (Perfect)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "littlegodzilla",
+    "req": [
+     "Clear Area 7, 0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "gigan",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "mugendra_m",
+    "req": [
+     "0-1 Care Mistakes, 10+ Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "mechagodzilla",
+    "req": [
+     "0-1 Care Mistakes, 0-9 Red G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "2-3 Care Mistakes, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "85",
+  "Min Weight": "40",
+  "Sleep Time": "11:00 PM",
+  "Energy": "40",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "48 Minutes",
+  "Encounter Time Group": "7",
+  "Encounter Opponent Group": "4"
+ },
+ {
+  "id": "mechakingghidorah",
+  "name": "Mecha-King Ghidorah",
+  "stage": "Stage V (Perfect)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "rare",
+    "req": [
+     "Clear Area 7, 0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "kingghidorah",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "mechagodzilla",
+    "req": [
+     "0-2 Care Mistakes, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "78",
+  "Min Weight": "80",
+  "Sleep Time": "11:00 PM",
+  "Energy": "40",
+  "Heal Doses": "2",
+  "Hunger / Strength Loss": "48 Minutes",
+  "Encounter Time Group": "5",
+  "Encounter Opponent Group": "4"
+ },
+ {
+  "id": "firerodan",
+  "name": "Fire Rodan",
+  "stage": "Stage V (Perfect)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "mothra",
+    "req": [
+     "0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "3-4 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "kingghidorah",
+    "req": [
+     "0-2 Care Mistakes, 0-9 Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "3-4 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "rodan",
+    "req": [
+     "0-2 Care Mistakes, 10+ Yellow G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "80",
+  "Min Weight": "40",
+  "Sleep Time": "10:00 PM",
+  "Energy": "40",
+  "Heal Doses": "2",
+  "Hunger / Strength Loss": "38 Minutes",
+  "Encounter Time Group": "3",
+  "Encounter Opponent Group": "3"
+ },
+ {
+  "id": "godzilla_1994",
+  "name": "Godzilla (1994)",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "godzillajr",
+    "req": [
+     "Hatched from a G-Cell Fragment, 0-4 Care Mistakes, 15+ Battles, 80%+ Win Ratio*",
+     "Not hatched from a G-Cell Fragment, 0-2 Care Mistakes, 10+ Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "spacegodzilla",
+    "req": [
+     "0-1 Care Mistakes, 10+ Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "burninggodzilla",
+    "req": [
+     "Hatched from a G-Cell Fragment, 0-2 Care Mistakes, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "Power": "170",
+  "Min Weight": "50",
+  "Sleep Time": "0:00 AM",
+  "Energy": "50",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "59 Minutes",
+  "Encounter Time Group": "5",
+  "Encounter Opponent Group": "6"
+ },
+ {
+  "id": "wargrey_g",
+  "name": "War Greymon: G-Erosion Mode",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "0-2 Care Mistakes, 10+ Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "metalgrey_va",
+    "req": [
+     "0-1 Care Mistakes, 10+ Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "0-2 Care Mistakes, 0-9 Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "190",
+  "Min Weight": "20",
+  "Sleep Time": "11:00 PM",
+  "Energy": "50",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "59 Minutes",
+  "Encounter Time Group": "7",
+  "Encounter Opponent Group": "7"
+ },
+ {
+  "id": "wargrey",
+  "name": "War Greymon",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "metalgrey_va",
+    "req": [
+     "0-1 Care Mistakes, 0-9 Red G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "2-3 Care Mistakes, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "145",
+  "Min Weight": "20",
+  "Sleep Time": "11:00 PM",
+  "Energy": "50",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "59 Minutes",
+  "Encounter Time Group": "6",
+  "Encounter Opponent Group": "5"
+ },
+ {
+  "id": "destoroyah",
+  "name": "Destoroyah",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "godzillajr",
+    "req": [
+     "Not hatched from a G-Cell Fragment, 0-2 Care Mistakes, 0-9 Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "spacegodzilla",
+    "req": [
+     "0-1 Care Mistakes, 0-9 Red G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "2-3 Care Mistakes, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "155",
+  "Min Weight": "60",
+  "Sleep Time": "0:00 AM",
+  "Energy": "50",
+  "Heal Doses": "2",
+  "Hunger / Strength Loss": "48 Minutes",
+  "Encounter Time Group": "5",
+  "Encounter Opponent Group": "5"
+ },
+ {
+  "id": "godzilla_1999",
+  "name": "Godzilla (1999)",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "0-2 Care Mistakes, 0-9 Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "0-2 Care Mistakes, 10+ Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "170",
+  "Min Weight": "70",
+  "Sleep Time": "11:00 PM",
+  "Energy": "50",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "59 Minutes",
+  "Encounter Time Group": "6",
+  "Encounter Opponent Group": "6"
+ },
+ {
+  "id": "mugendra_m",
+  "name": "Mugendramon: MFS-3",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "skullgrey_g",
+    "req": [
+     "0-2 Care Mistakes, 10+ Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "kiryu",
+    "req": [
+     "0-1 Care Mistakes, 10+ Red G-Cells*, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "185",
+  "Min Weight": "50",
+  "Sleep Time": "11:00 PM",
+  "Energy": "50",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "59 Minutes",
+  "Encounter Time Group": "6",
+  "Encounter Opponent Group": "7"
+ },
+ {
+  "id": "mechagodzilla",
+  "name": "Mechagodzilla (1993)",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "kiryu",
+    "req": [
+     "0-1 Care Mistakes, 0-9 Red G-Cells*, 15+ Battles, 80%+ Win Ratio*",
+     "2-3 Care Mistakes, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   },
+   {
+    "id": "mechakingghidorah",
+    "req": [
+     "0-2 Care Mistakes, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "160",
+  "Min Weight": "40",
+  "Sleep Time": "11:00 PM",
+  "Energy": "50",
+  "Heal Doses": "2",
+  "Hunger / Strength Loss": "48 Minutes",
+  "Encounter Time Group": "7",
+  "Encounter Opponent Group": "5"
+ },
+ {
+  "id": "burninggodzilla",
+  "name": "Burning Godzilla",
+  "stage": "Stage VI+ (Super Ultimate)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "godzilla_1994",
+    "req": [
+     "Hatched from a G-Cell Fragment, 0-2 Care Mistakes, 15+ Battles, 80%+ Win Ratio*"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "220",
+  "Min Weight": "40",
+  "Sleep Time": "0:00 AM",
+  "Energy": "50",
+  "Heal Doses": "1",
+  "Hunger / Strength Loss": "38 Minutes",
+  "Encounter Time Group": "5",
+  "Encounter Opponent Group": "6"
+ },
+ {
+  "id": "chibigodzilla",
+  "name": "Chibi Godzilla",
+  "stage": "Stage IV (Adult)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "babygodzilla",
+    "req": [
+     "Hatched from a G-Cell Fragment, 5+ Care Mistakes, 14+ Blue G-Cells*, 50% Chance"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "130",
+  "Min Weight": "20",
+  "Sleep Time": "9:00 PM",
+  "Energy": "50",
+  "Heal Doses": "2",
+  "Hunger / Strength Loss": "59 Minutes",
+  "Encounter Time Group": "2",
+  "Encounter Opponent Group": "5"
+ },
+ {
+  "id": "chibimechagodzilla",
+  "name": "Chibi Mechagodzilla",
+  "stage": "Stage IV (Adult)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "babygodzilla",
+    "req": [
+     "Hatched from a G-Cell Fragment, 5+ Care Mistakes, 14+ Blue G-Cells*, 50% Chance"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "130",
+  "Min Weight": "20",
+  "Sleep Time": "9:00 PM",
+  "Energy": "50",
+  "Heal Doses": "2",
+  "Hunger / Strength Loss": "59 Minutes",
+  "Encounter Time Group": "2",
+  "Encounter Opponent Group": "5"
+ }
+]

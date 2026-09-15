@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>哥吉拉彩元祖 速查</title>
+<meta name="description" content="Digital Monster COLOR 哥吉拉 70th Edition 中文攻略速查（可離線）">
+<meta name="theme-color" content="#2b1a47">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="哥吉拉速查">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+TC:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="band">
+  <div class="wrap band-in">
+    <nav class="devsw" aria-label="切換機型"><a href="dmgz.html" aria-current="page">哥吉拉彩元祖</a><a href="pengz.html">哥吉拉彩色超代</a><a href="index.html">選機型</a></nav>
+    <p class="mark">DIGITAL MONSTER COLOR · GODZILLA 70th</p>
+    <h1>哥吉拉彩元祖 速查</h1>
+    <div class="gmeter" aria-hidden="true"><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="y"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i><i class="r"></i></div>
+    <div class="gcap" aria-hidden="true"><span>G細胞 14 藍</span><span>10 黃</span><span>20 紅</span></div>
+  </div>
+</header>
+<div class="top">
+  <div class="wrap">
+    <div class="search">
+      <input id="q" type="search" placeholder="搜尋：怪獸名、失誤、蛋白質、背景、第7關…" autocomplete="off" enterkeyhint="search">
+      <button id="qclear" type="button" aria-label="清除" hidden>×</button>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button data-tab="t-evo" role="tab">進化條件</button>
+      <button data-tab="t-op" role="tab">操作手順</button>
+      <button data-tab="t-gc" role="tab">G細胞系統</button>
+      <button data-tab="t-enc" role="tab">隨機遭遇事件</button>
+      <button data-tab="t-bg" role="tab">背景獲得</button>
+      <button data-tab="t-quest" role="tab">關卡</button>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+<div id="noresult" hidden>找不到符合的內容，換個關鍵字試試</div>
+
+<!-- ================= 進化條件 ================= -->
+<section class="panel" id="t-evo">
+  <h2 class="ptitle">進化條件</h2>
+
+  <details class="card tool si" id="evoTool" open data-sonly data-alias="進化試算 模擬 計算 判斷 會進化成誰">
+    <summary>進化試算 <span class="hint">輸入目前狀態，看會進化成誰</span></summary>
+    <div class="form">
+      <label class="full">目前怪獸<select id="et-cur"></select></label>
+      <label>本階段照顧失誤（次）<input id="et-cm" type="number" min="0" max="30" inputmode="numeric" value="0"></label>
+      <label>G細胞背景<select id="et-lv">
+        <option value="1">荒野・藍</option>
+        <option value="2">海洋・黃</option>
+        <option value="3">海邊城市・紅</option>
+        <option value="4">城市內部・紅</option>
+      </select></label>
+      <label>目前顏色的格數<input id="et-vis" type="number" min="0" max="13" inputmode="numeric" value="0"></label>
+      <label class="chk"><input type="checkbox" id="et-area"> 已通關第7關</label>
+      <label class="chk"><input type="checkbox" id="et-frag"> 由G細胞碎片孵化</label>
+      <label class="bt-f">本階段對戰場數<input id="et-bt" type="number" min="0" inputmode="numeric" value="0"></label>
+      <label class="bt-f">勝率（%）<input id="et-win" type="number" min="0" max="100" inputmode="numeric" value="100"></label>
+    </div>
+    <div class="gview" id="et-cells"></div>
+    <div id="et-out"></div>
+  </details>
+
+  <details class="card si">
+    <summary>進化基本規則</summary>
+    <h4>進化時間（從上次進化起算，睡覺也算）</h4>
+    <div class="tw"><table>
+      <tr><th>目前階段</th><th>到下一階段</th></tr>
+      <tr><td>蛋</td><td>8 秒</td></tr>
+      <tr><td>幼年期Ⅰ</td><td>10 分鐘</td></tr>
+      <tr><td>幼年期Ⅱ</td><td>12 小時</td></tr>
+      <tr><td>成長期</td><td>24 小時</td></tr>
+      <tr><td>成熟期</td><td>36 小時</td></tr>
+      <tr><td>完全體</td><td>48 小時</td></tr>
+      <tr><td>究極體</td><td>48 小時（僅紅蓮哥吉拉路線）</td></tr>
+    </table></div>
+    <h4>三大關鍵</h4>
+    <p>照顧失誤次數、G細胞數量、勝率。條件沒寫到的項目＝不影響。</p>
+    <h4>勝率 → 進化機率（成熟期以上，且需本階段對戰 15 場以上）</h4>
+    <div class="tw"><table>
+      <tr><th>勝率</th><th>進化機率</th></tr>
+      <tr><td>80% 以上</td><td>100%</td></tr>
+      <tr><td>60–79%</td><td>50%</td></tr>
+      <tr><td>40–59%</td><td>25%</td></tr>
+      <tr><td>未滿 40%</td><td>不會進化</td></tr>
+    </table></div>
+    <p class="small">勝率是這隻怪獸<b>全部對戰累計</b>（不是最近 15 場）。任務模式每一回合算 1 場，通信對戰也算。輸贏都算場數。</p>
+    <h4>進化後</h4>
+    <p class="small">重置：照顧失誤、訓練次數、蛋白質過量、受傷次數、本階段對戰場數。<br>保留：勝率、G細胞。</p>
+    <h4>一定會進化嗎？</h4>
+    <p class="small">只要沒養死，一定會長到成熟期。成熟期、完全體若時間到還沒達成任何條件，就不會再進化。</p>
+    <h4>條件寫了好幾行？</h4>
+    <p class="small">「或」隔開的是不同路線，符合<b>其中一行</b>就行。</p>
+  </details>
+
+  <details class="card si" id="dex" data-sonly data-alias="我的圖鑑 收集 圖片 照片 相簿">
+    <summary>我的圖鑑 <span class="hint" id="dexCount">0 / 34</span></summary>
+    <div class="dex-bar"><span id="dexBar" style="width:0%"></span></div>
+    <p class="small sub">點空格從相簿選圖（例如自己拍的機器畫面）。圖片只存在這支手機的瀏覽器裡；清除瀏覽器資料會一起刪掉。</p>
+    <div class="dex-grid" id="dexGrid"></div>
+  </details>
+
+  <div class="filters" id="stageFilter">
+    <button data-st="all" class="on">全部</button>
+    <button data-st="baby">幼年期</button>
+    <button data-st="III">成長期</button>
+    <button data-st="IV">成熟期</button>
+    <button data-st="V">完全體</button>
+    <button data-st="VI">究極體</button>
+  </div>
+  <div class="filters" id="collFilter" style="margin-top:0">
+    <button data-coll="all" class="on">不限</button>
+    <button data-coll="have">已收集</button>
+    <button data-coll="need">未收集</button>
+  </div>
+  <div id="monList"></div>
+</section>
+
+<!-- ================= 操作手順 ================= -->
+<section class="panel" id="t-op" hidden>
+  <h2 class="ptitle">操作手順</h2>
+
+  <details class="card si" open>
+    <summary>按鍵速查</summary>
+    <p>螢幕右側由上到下是 <span class="key">A</span> <span class="key">B</span> <span class="key">C</span>。</p>
+    <div class="tw"><table>
+      <tr><th>操作</th><th>效果</th></tr>
+      <tr><td><span class="key">A</span></td><td class="wrap-cell">切換選擇圖示／選項</td></tr>
+      <tr><td><span class="key">B</span></td><td class="wrap-cell">決定；主畫面（沒選圖示）按 B＝看時鐘</td></tr>
+      <tr><td><span class="key">C</span></td><td class="wrap-cell">取消／返回</td></tr>
+      <tr><td><span class="key">C</span> 長按 3 秒</td><td class="wrap-cell">開機</td></tr>
+      <tr><td><span class="key">C</span> 長按 2 秒（主畫面）</td><td class="wrap-cell">設定畫面（背景・亮度・音量・電源）</td></tr>
+      <tr><td><span class="key">C</span> 長按 10 秒</td><td class="wrap-cell">強制關機（5 秒會響警告音）。<b>不會存檔</b>，平常請用設定裡的「電源」</td></tr>
+      <tr><td><span class="key">A</span>+<span class="key">C</span>（主畫面）</td><td class="wrap-cell">聲音開／關</td></tr>
+      <tr><td><span class="key">A</span>+<span class="key">C</span>（時鐘畫面）</td><td class="wrap-cell">修改時間（改時間不會加快成長）</td></tr>
+      <tr><td><span class="key">A</span>+<span class="key">B</span>（墓碑畫面）</td><td class="wrap-cell">重新孵一顆蛋</td></tr>
+      <tr><td>重置孔</td><td class="wrap-cell">當機時用細棒按；之後會出現讀取／重置選單</td></tr>
+    </table></div>
+  </details>
+
+  <details class="card si">
+    <summary>開機・設定時間・充電</summary>
+    <h4>第一次開機</h4>
+    <ol>
+      <li>先用附的線充電。長按 <span class="key">C</span> 約 3 秒開機。</li>
+      <li>哥吉拉主題曲響起，70 週年 Logo 與 COLOR Logo 交替出現 → 按 A／B／C 任一鍵。</li>
+      <li>設定時間：<span class="key">A</span> 調「時」、<span class="key">B</span> 調「分」、<span class="key">C</span> 確定（按住可連續跳）。</li>
+      <li>約 8 秒後怪獸誕生，進入主畫面。</li>
+    </ol>
+    <h4>充電</h4>
+    <ul>
+      <li>底部 USB-C（掀開 USB 蓋）。接電腦 USB 或官方確認過的 USB 變壓器。</li>
+      <li>充電中：電池圖示有黃色閃電；充飽：綠色、沒有閃電。在主畫面長按 C 2 秒進設定畫面可看電量。</li>
+      <li>電量低時主畫面也會出現通知標記；出現低電壓畫面就要充電。</li>
+      <li>超過約 4 小時還沒充完、或出現發燙、異味、膨脹 → 立刻拔線停止使用。</li>
+      <li>小技巧：用 USB-C 轉 USB-A 線、避開 PD 快充比較穩。一般使用每週充 1 小時左右即可。</li>
+    </ul>
+    <h4>存檔</h4>
+    <p class="small">每 1 分鐘自動存檔。沒電後充好電選「ロード（讀取）」就能接續。</p>
+  </details>
+
+  <details class="card si">
+    <summary>圖示選單（A～H）</summary>
+    <p class="small">主畫面按 <span class="key">A</span> 依序點亮圖示，<span class="key">B</span> 決定。16 秒沒操作會取消選擇並關閉螢幕（怪獸呼叫、便便、進化時會自動亮）。</p>
+
+    <h4>A. 狀態（天秤圖示）</h4>
+    <ul>
+      <li><b>パラメーター（狀態）</b>：A／B 翻頁看 年齡・體重 → 飢餓 → 力量 → G細胞活性值 → 體力 → 勝率。</li>
+      <li><b>アルバム（相簿）</b>：看養過的怪獸，A 下一隻、B 看特寫動畫。</li>
+      <li>飢餓、力量愛心會隨時間減少；體力是對戰次數用的。</li>
+    </ul>
+
+    <h4>B. 食物（肉圖示）</h4>
+    <ul>
+      <li><b>エサ（肉）</b>：飢餓 +1 心、體重 +1G。滿心後再多餵 10 個會「過食」，延後 60 分鐘才開始掉心。</li>
+      <li><b>プロテイン（蛋白質）</b>：力量 +1 心、體重 +2G、<b>G細胞 −4 點</b>。每 4 個：體力 +1、蛋白質過量 +1（上限 7）。</li>
+    </ul>
+
+    <h4>C. 訓練（舉重圖示）</h4>
+    <ol>
+      <li><b>前半</b>：對 G 兵器從上段或下段出現 → 上段按 <span class="key">A</span>、下段按 <span class="key">B</span>，共 5 次。失敗＝G細胞 −2 點、沒有力量。</li>
+      <li><b>後半</b>：M.O.G.E.R.A. 出現，「！」後約 4 秒內連打 A 或 B 把量表集滿 4 格。成功 G細胞 +4 點、失敗 +2 點；兩者力量都 +1。</li>
+    </ol>
+    <p class="small">每次訓練體重 −1G。在攻擊 M.O.G.E.R.A. 前取消＝什麼都沒有。</p>
+
+    <h4>D. 對戰（格鬥圖示）</h4>
+    <ul>
+      <li>「クエスト（任務）」或「ツウシン（通信）」。幼年期Ⅰ、Ⅱ 不能對戰；體力 0 不能對戰。</li>
+      <li>任務：每挑戰一關消耗 1 體力（不是每回合）。在第一回合開始前按 C 取消不耗體力。詳見「關卡」分頁。</li>
+      <li>通信：每場消耗 1 體力。</li>
+      <li>不論輸贏，戰後都有機率受傷。</li>
+    </ul>
+
+    <h4>E. 廁所（便便圖示）</h4>
+    <p class="small">沖掉便便。便便累積 8 坨會受傷。幼年期Ⅰ 每 3 分鐘、幼年期Ⅱ 每 60 分鐘、之後每 120 分鐘拉一次。</p>
+
+    <h4>F. 電燈（燈泡圖示）</h4>
+    <ul>
+      <li><b>デンキ（電燈）</b>：開關燈。</li>
+      <li><b>コールド（冷凍）</b>：暫停一切（不老化、不進化、不掉心、不呼叫）。再做一次同樣操作解除。</li>
+      <li><b>イレカエ（替換／備份）</b>：把目前怪獸存起來。</li>
+    </ul>
+
+    <h4>G. 治療（繃帶圖示）</h4>
+    <p class="small">怪獸旁邊出現骷髏＝受傷，治療到骷髏消失為止（每隻需要的次數見進化條件頁「治療」）。</p>
+
+    <h4>H. 呼叫燈</h4>
+    <p class="small">不能選。亮燈表示怪獸需要照顧，沒處理完燈就熄＝照顧失誤。</p>
+  </details>
+
+  <details class="card si">
+    <summary>睡覺・電燈</summary>
+    <ul>
+      <li>到睡覺時間怪獸睡著並呼叫 → <b>1 小時內關燈</b>，否則算照顧失誤（睡覺只會呼叫一次）。</li>
+      <li>每隻的睡覺時間不同，見進化條件頁。早上 8:00 自動起床並開燈。</li>
+      <li>連續睡滿 4 小時體力全滿（幼年期沒有體力）。</li>
+      <li>睡著時選 食物／訓練／對戰 會把牠叫醒約 10 分鐘，<b>不算失誤</b>。</li>
+      <li>醒著也可以關燈，但會不好照顧，建議開燈。</li>
+    </ul>
+  </details>
+
+  <details class="card si">
+    <summary>冷凍・備份（替換）</summary>
+    <h4>冷凍（コールド）</h4>
+    <ul>
+      <li>F 電燈 → コールド → コールド。怪獸進入冰箱，時間暫停。</li>
+      <li>冷凍中只能操作電燈圖示。<b>不解凍就不會進化</b>。</li>
+      <li>白天沒空照顧時很好用。</li>
+      <li class="warn" style="list-style:none;margin-left:-1.3em">注意：冷凍狀態下又做備份、按重置孔或關機，飢餓與力量會變成 0。</li>
+    </ul>
+    <h4>備份（イレカエ）</h4>
+    <ul>
+      <li>沒有備份時：目前怪獸存進資料夾，畫面出現新蛋。</li>
+      <li>已有備份時：兩隻互換。換回來的那隻飢餓、力量都是 0。</li>
+      <li>備份中的怪獸視同冷凍。</li>
+    </ul>
+  </details>
+
+  <details class="card si">
+    <summary>照顧失誤（お世話ミス）</summary>
+    <p>呼叫燈亮起後，在時限內沒處理、燈自己熄滅＝失誤 1 次。</p>
+    <div class="tw"><table>
+      <tr><th>呼叫原因</th><th>時限</th></tr>
+      <tr><td>飢餓愛心空了</td><td>10 分鐘</td></tr>
+      <tr><td>力量愛心空了</td><td>10 分鐘</td></tr>
+      <tr><td>睡著了要關燈</td><td>1 小時</td></tr>
+    </table></div>
+    <ul class="small">
+      <li>飢餓和力量同時空＝就算只呼叫一次也算 <b>2 次</b>失誤。</li>
+      <li>失誤後沒補滿，下一次掉心計時到還會再呼叫，可能再失誤。</li>
+      <li><b>不算失誤</b>：便便、受傷、過食、吵醒睡覺的怪獸。</li>
+      <li>靜音時一樣會呼叫（只是沒聲音），要自己注意。</li>
+      <li>照顧失誤每次會讓 G細胞 −8 點。</li>
+    </ul>
+  </details>
+
+  <details class="card si">
+    <summary>受傷・死亡・遺留的蛋</summary>
+    <h4>受傷</h4>
+    <ul class="small">
+      <li>對戰後不論輸贏 1/16 機率受傷。</li>
+      <li>輸的時候，每 1 點蛋白質過量再加 1/16（最高 1/2）。</li>
+      <li>便便累積 8 坨也會受傷。</li>
+    </ul>
+    <h4>死亡條件（同一形態內）</h4>
+    <ul class="small">
+      <li>受傷累計 15 次</li>
+      <li>受傷狀態持續 6 小時</li>
+      <li>飢餓或力量愛心空著 12 小時</li>
+      <li>成熟期／完全體：進化時間到卻沒達成任何進化條件，且失誤 ≥ 5</li>
+      <li>究極體／超究極體：待滿 48 小時時失誤 ≥ 5</li>
+    </ul>
+    <p class="small">死亡後出現墓碑與存活天數，同時按 <span class="key">A</span>+<span class="key">B</span> 出現新蛋，約 8 秒孵化。</p>
+    <h4>遺留的蛋（性格蛋）</h4>
+    <p class="small">大部分完全體以上的怪獸死亡時有 30% 機率留下蛋，孵出來的怪獸力量有加成（見「關卡」分頁的力量加成表）。部分怪獸改為 15% 蛋＋15% G細胞碎片，見「G細胞系統」。</p>
+  </details>
+
+  <details class="card si">
+    <summary>通信對戰</summary>
+    <ol>
+      <li>D 對戰 → ツウシン，出現待機畫面。</li>
+      <li>兩台上方的接頭互相接好，<b>其中一台</b>按 A 或 B。</li>
+      <li>出現「OK!」＝連線成功，之後可以分開。出現「リトライ」就從頭再來一次。</li>
+    </ol>
+    <ul class="small">
+      <li>兩台同時按 A／B 會失敗；「OK!」前分開也會失敗；電量低容易失敗。</li>
+      <li>待機畫面按 C 回到對戰選單。</li>
+      <li>雙方自動互打，先命中 4 次的一方勝（前 3 下雙方必中，第 4 下決勝負）。</li>
+      <li>可連線：Digital Monster COLOR（2023～，含聯名）、Digimon Pendulum COLOR（2024～，含聯名）、-25th COLOR EVOLUTION- 系列。<b>不能</b>跟非 COLOR 的舊機種連。</li>
+      <li>通信勝場數、跟一般 COLOR 版連線次數可以解鎖背景（見「背景獲得」）。</li>
+    </ul>
+  </details>
+
+  <details class="card si">
+    <summary>設定畫面・讀取與重置</summary>
+    <p class="small">主畫面（沒選圖示）長按 <span class="key">C</span> 2 秒：</p>
+    <ul>
+      <li><b>ハイケイ（背景）</b>：選已取得的背景。</li>
+      <li><b>アカルサ（亮度）</b>：5 段，越右越亮。</li>
+      <li><b>オンリョウ（音量）</b>：大／中／關。按重置孔或關機後會回到「大」。</li>
+      <li><b>デンゲン（電源）</b>：存檔後關機（本機沒有電源開關）。</li>
+    </ul>
+    <h4>讀取・重置（開機或按重置孔後）</h4>
+    <ul>
+      <li><b>ロード（上）</b>：讀取存檔接著玩（需重設時間）。</li>
+      <li><b>リセット（下）</b> → 「けす（上）」<b>全部資料刪除</b>；「けさない（下）」或按 C 返回。</li>
+    </ul>
+  </details>
+
+  <details class="card si">
+    <summary>屬性相剋</summary>
+    <p>疫苗種 ＞ 病毒種 ＞ 資料種 ＞ 疫苗種（循環）；自由種沒有相剋。</p>
+    <p class="small">有利時命中率 +5，不利時 −5。公式與計算機在「關卡」分頁。</p>
+  </details>
+</section>
+
+<!-- ================= G細胞系統 ================= -->
+<section class="panel" id="t-gc" hidden>
+  <h2 class="ptitle">G細胞系統</h2>
+
+  <div class="card si">
+    <h3>G細胞是什麼</h3>
+    <p>狀態畫面第 4 頁「Gサイボウ」的彩色量表，是這台進化的關鍵數值。每 1 格由好幾「點」組成，所以做一次動作格子不一定會馬上變。</p>
+    <p>量表集滿就<b>升級</b>，主畫面背景也跟著換（荒野 → 海洋 → 海邊城市 → 城市內部）。<b>看背景是判斷 G細胞等級最快的方法。</b></p>
+    <p class="small sub">註：另外 10 張非 G細胞背景（海底、Logo 等）不代表等級。</p>
+  </div>
+
+  <div class="card si">
+    <h3>量表等級</h3>
+    <div class="tw"><table>
+      <tr><th>等級</th><th>顏色</th><th>每格點數</th><th>背景</th><th>要填滿</th><th>點數範圍</th></tr>
+      <tr><td>1</td><td><span class="chip gb">藍</span></td><td>8</td><td>荒野</td><td>14 藍</td><td>0–112</td></tr>
+      <tr><td>2</td><td><span class="chip gy">黃</span></td><td>12</td><td>海洋</td><td>10 黃</td><td>112–232</td></tr>
+      <tr><td>3</td><td><span class="chip gr">紅</span></td><td>12</td><td>海邊城市</td><td>10 紅</td><td>232–352</td></tr>
+      <tr><td>4</td><td><span class="chip gr">紅</span></td><td>12</td><td>城市內部</td><td>再 10 紅</td><td>352–472</td></tr>
+    </table></div>
+    <p class="small">可以想成一條 44 格的長條：<b>14 藍 → 10 黃 → 20 紅</b>。等級 2～4 的畫面最左邊會先顯示 4 格上一級的顏色，那 4 格只是「接續」的意思。</p>
+    <p class="warn">重點：看不到的格子還是算！例如條件寫「藍 9 格以上」，你在等級 4（只看得到紅色）當然已經符合；在等級 3 看到 4 格黃，其實黃色已經有 10 格。</p>
+  </div>
+
+  <div class="card tool si" data-sonly data-alias="G細胞換算 格數 計算 背景 等級 藍 黃 紅">
+    <h3>G細胞換算</h3>
+    <div class="form">
+      <label>目前背景<select id="gc-lv">
+        <option value="1">荒野（等級1・藍）</option>
+        <option value="2">海洋（等級2・黃）</option>
+        <option value="3">海邊城市（等級3・紅）</option>
+        <option value="4">城市內部（等級4・紅）</option>
+      </select></label>
+      <label>目前顏色格數（不含左邊 4 格）<input id="gc-vis" type="number" min="0" inputmode="numeric" value="0"></label>
+    </div>
+    <div class="gview" id="gc-out"></div>
+  </div>
+
+  <div class="card si">
+    <h3>增減點數</h3>
+    <div class="tw"><table>
+      <tr><th>動作</th><th>G細胞點數</th></tr>
+      <tr><td>隨機遭遇 勝利</td><td><b style="color:var(--ok)">+12</b></td></tr>
+      <tr><td>對戰 勝利</td><td style="color:var(--ok)">+6</td></tr>
+      <tr><td>訓練 成功</td><td style="color:var(--ok)">+4</td></tr>
+      <tr><td>訓練 後半失敗</td><td style="color:var(--ok)">+2</td></tr>
+      <tr><td>訓練 前半失敗</td><td style="color:var(--gr)">−2</td></tr>
+      <tr><td>餵蛋白質（每個）</td><td style="color:var(--gr)">−4</td></tr>
+      <tr><td>對戰 輸</td><td style="color:var(--gr)">−4</td></tr>
+      <tr><td>隨機遭遇 輸</td><td style="color:var(--gr)">−6</td></tr>
+      <tr><td>照顧失誤（每次）</td><td><b style="color:var(--gr)">−8</b></td></tr>
+    </table></div>
+    <p class="small">等級 1 每格 8 點、之後每格 12 點，所以前期格子漲比較快。<br>想<b>壓低</b> G細胞 → 餵蛋白質（說明書也有提示）。想<b>衝高</b> → 隨機遭遇打贏最有效。</p>
+  </div>
+
+  <div class="card si">
+    <h3>G細胞碎片（Gサイボウのカケラ）</h3>
+    <p>下列怪獸死亡時：<b>15% 留下性格蛋、15% 留下 G細胞碎片</b>（其他完全體以上是 30% 性格蛋）。</p>
+    <p id="fragDropList"></p>
+    <p>碎片孵化的怪獸，除了有性格蛋的力量加成，<b>進化路線也會改變</b>。只有碎片才能得到的 3 隻：</p>
+    <ul>
+      <li><a href="#" data-go="chibigodzilla">迷你哥吉拉</a>／<a href="#" data-go="chibimechagodzilla">迷你機械哥吉拉</a>：哥吉拉寶寶時 失誤 5 次以上＋藍 14 格以上（兩隻 50% 隨機）</li>
+      <li><a href="#" data-go="burninggodzilla">紅蓮哥吉拉</a>：哥吉拉(1994) 時 失誤 0–2＋對戰 15 場＋勝率 80%</li>
+    </ul>
+    <p class="small sub">碎片孵化一定先變哥吉拉寶寶。說明書提示：「成長期時多次照顧失誤、同時努力累積 G細胞」就是迷你哥吉拉的條件。</p>
+  </div>
+</section>
+
+<!-- ================= 隨機遭遇事件 ================= -->
+<section class="panel" id="t-enc" hidden>
+  <h2 class="ptitle">隨機遭遇事件</h2>
+
+  <div class="card si">
+    <h3>怪獸襲來</h3>
+    <ul>
+      <li>白天在主畫面時，哥吉拉主題曲響起＋畫面出現「！」＝怪獸襲來。</li>
+      <li>按 <span class="key">A</span> 或 <span class="key">B</span> 應戰；按 <span class="key">C</span> 或放著一段時間＝迴避。</li>
+      <li>戰鬥方式同任務模式（先命中 3 次勝）。</li>
+      <li><b>勝利 G細胞 +12 點</b>（最多的來源），輸 −6 點。</li>
+      <li>襲來時呼叫燈不會亮，不迴避也不算失誤。</li>
+    </ul>
+  </div>
+
+  <div class="card si">
+    <h3>其實不是隨機</h3>
+    <p>每隻怪獸都有「時間組」和「對手組」（在進化條件頁每隻怪獸資料裡）：</p>
+    <ul>
+      <li><b>時間組</b>決定每天幾點發生。</li>
+      <li><b>對手組</b>決定對手順序。<b>每發生一次遭遇、或每進入一次訓練</b>，就換成清單的下一個。</li>
+      <li>輪到「無」＝那個時間點不會發生。清單跑完從頭開始。</li>
+      <li>冷凍、備份、關機會讓對手清單重回第 1 個。</li>
+    </ul>
+    <p class="note">小技巧：把時鐘調到遭遇時間的前 1 分鐘，等它自己跳到那一分鐘就會觸發。輪到「無」時可以先進訓練（再取消）跳過。</p>
+  </div>
+
+  <div class="card tool si" data-sonly data-alias="遭遇查詢 下一次 幾點 時間 對手 我的怪獸">
+    <h3>我的怪獸何時遭遇？</h3>
+    <div class="form"><label class="full">目前怪獸<select id="en-mon"></select></label></div>
+    <div id="en-out"></div>
+  </div>
+
+  <div class="card si" data-alias="時間組 遭遇時間表">
+    <h3>時間組一覽</h3>
+    <div class="tw"><table id="encTimeTable"></table></div>
+  </div>
+
+  <div id="encOppCards"></div>
+</section>
+
+<!-- ================= 背景獲得 ================= -->
+<section class="panel" id="t-bg" hidden>
+  <h2 class="ptitle">背景獲得</h2>
+  <div class="card si">
+    <h3>怎麼換背景</h3>
+    <p>主畫面長按 <span class="key">C</span> 2 秒 → ハイケイ → <span class="key">A</span> 選 → <span class="key">B</span> 決定。</p>
+    <p class="small">G細胞背景會隨時間變色：06:00 白天、16:00 黃昏、19:00 夜晚。</p>
+  </div>
+
+  <div class="bg-list">
+    <div class="card si"><b>G細胞背景 1（4 張）</b><span class="chip ok">預設</span>
+      <div class="cond">荒野（等級1）／海洋（等級2）／海邊城市（等級3）／城市內部（等級4），依 G細胞等級自動顯示</div></div>
+    <div class="card si"><b>G細胞背景 2（4 張）</b><span class="chip bt">任務</span>
+      <div class="cond">通關任務<b>第 4 關</b>。同樣依 G細胞等級顯示荒野／海洋／海邊城市／城市內部</div></div>
+    <div class="card si"><b>海底</b><span class="chip ok">預設</span>
+      <div class="cond">一開始就有</div></div>
+    <div class="card si"><b>機體 Logo</b><span class="chip bt">任務</span>
+      <div class="cond">通關任務<b>第 1 關</b></div></div>
+    <div class="card si"><b>70 週年 Logo</b><span class="chip bt">任務</span>
+      <div class="cond">通關任務<b>最終關（F）</b></div></div>
+    <div class="card si" data-alias="戰鬥暴龍獸 G侵食 ウォーグレイモン"><b>戰鬥暴龍獸：G侵食模式</b><span class="chip gr">進化</span>
+      <div class="cond">養出 <a href="#" data-go="wargrey_g">戰鬥暴龍獸：G侵食模式</a></div></div>
+    <div class="card si" data-alias="小美人 Shobijin 通信 勝利"><b>小美人</b><span class="chip gb">通信</span>
+      <div class="cond">通信對戰<b>勝利 70 場</b></div></div>
+    <div class="card si" data-alias="Grasslands 通信"><b>草原</b><span class="chip gb">通信</span>
+      <div class="cond">和一般 Digital Monster COLOR（Ver.1～5 任一）通信對戰 <b>3 次</b></div></div>
+    <div class="card si" data-alias="Desert 通信"><b>沙漠</b><span class="chip gb">通信</span>
+      <div class="cond">和一般 Digital Monster COLOR 通信對戰 <b>6 次</b></div></div>
+    <div class="card si" data-alias="Forest 通信"><b>森林</b><span class="chip gb">通信</span>
+      <div class="cond">和一般 Digital Monster COLOR 通信對戰 <b>9 次</b></div></div>
+    <div class="card si" data-alias="Mountains 通信"><b>山岳</b><span class="chip gb">通信</span>
+      <div class="cond">和一般 Digital Monster COLOR 通信對戰 <b>12 次</b></div></div>
+    <div class="card si" data-alias="Beach 通信"><b>海灘</b><span class="chip gb">通信</span>
+      <div class="cond">和一般 Digital Monster COLOR 通信對戰 <b>15 次</b></div></div>
+  </div>
+</section>
+
+<!-- ================= 關卡 ================= -->
+<section class="panel" id="t-quest" hidden>
+  <h2 class="ptitle">關卡</h2>
+
+  <div class="card si" data-alias="任務模式 クエスト 規則">
+    <h3>任務模式規則</h3>
+    <ul>
+      <li>D 對戰 → クエスト → A 選關卡、B 決定。每挑戰一關消耗 1 體力。</li>
+      <li>每關連續打數個對手，最後一回合是 BOSS（出現 WARNING）。</li>
+      <li>雙方自動互打，<b>先命中 3 次勝</b>。中途輸一場＝整關失敗，要從該關第一回合重來。</li>
+      <li>沒打倒上一關 BOSS，下一關不會出現。</li>
+      <li>每一回合都算 1 場對戰（第 1 關打完＝3 場）。</li>
+      <li>回合開始前或戰後勝敗畫面可按 C 放棄（BOSS 勝利畫面不能取消）。</li>
+      <li>任務對手的力量是固定的（下表），和進化圖上的數值不同。</li>
+    </ul>
+  </div>
+
+  <div id="questList"></div>
+
+  <div class="card tool si" data-sonly data-alias="命中率 計算機 hitrate 力量 屬性 打得贏">
+    <h3>命中率計算</h3>
+    <div class="form">
+      <label class="full">我的怪獸<select id="hc-mon"></select></label>
+      <label class="chk"><input type="checkbox" id="hc-full" checked> 力量愛心全滿</label>
+      <label class="chk"><input type="checkbox" id="hc-egg"> 性格蛋／碎片孵化</label>
+      <label class="full">對手<select id="hc-opp"></select></label>
+      <label class="hc-c">對手力量<input id="hc-cp" type="number" min="0" inputmode="numeric" value="50"></label>
+      <label class="hc-c">對手屬性<select id="hc-ca"><option value="Vaccine">疫苗種</option><option value="Data">資料種</option><option value="Virus">病毒種</option><option value="Free">自由種</option></select></label>
+    </div>
+    <div id="hc-out"></div>
+  </div>
+
+  <div class="card si" data-alias="力量加成 公式 性格蛋">
+    <h3>力量加成・命中公式</h3>
+    <div class="tw"><table>
+      <tr><th>階段</th><th>力量滿心</th><th>性格蛋</th><th>兩者</th></tr>
+      <tr><td>成長期</td><td>+5</td><td>+5</td><td>+10</td></tr>
+      <tr><td>成熟期</td><td>+8</td><td>+8</td><td>+16</td></tr>
+      <tr><td>完全體</td><td>+15</td><td>+15</td><td>+30</td></tr>
+      <tr><td>究極體／超究極體</td><td>+25</td><td>+25</td><td>+50</td></tr>
+    </table></div>
+    <p class="small">命中率 ＝ 我方力量 × 100 ÷（我方力量＋對手力量）＋ 屬性修正（有利 +5、不利 −5）</p>
+    <p class="small">對戰前記得先把力量愛心補滿。</p>
+  </div>
+</section>
+
+<footer>
+  非官方整理。資料來源：BANDAI 官方說明書、humulos.com 攻略站。<br>
+  Digimon © 本鄉あきよし・東映動畫・BANDAI／Godzilla TM &amp; © TOHO CO., LTD.
+</footer>
+</main>
+
+<input type="file" id="phFile" accept="image/*" hidden>
+<dialog id="phView">
+  <div class="pv-img"><img id="pvImg" alt=""></div>
+  <div class="pv-body">
+    <h3 id="pvName"></h3>
+    <div class="pv-actions">
+      <button type="button" class="btn pri" id="pvChange">換一張</button>
+      <button type="button" class="btn" id="pvGo">看進化條件</button>
+      <button type="button" class="btn danger" id="pvDel">刪除</button>
+      <button type="button" class="btn" id="pvClose">關閉</button>
+    </div>
+  </div>
+</dialog>
+<div id="toast" role="status" hidden></div>
+
+<script src="data/dmgz.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

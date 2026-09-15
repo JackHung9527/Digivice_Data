@@ -1,0 +1,4123 @@
+[
+ {
+  "id": "agu",
+  "name": "Agumon",
+  "stage": "Stage III (Child)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "koro",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells",
+     "3+ Care Mistakes, Red G-Cells"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "grey_g",
+    "req": [
+     "0-3 Care Mistakes, Red G-Cells"
+    ]
+   },
+   {
+    "id": "tyrano",
+    "req": [
+     "0-3 Care Mistakes, Blue or Empty G-Cells",
+     "4+ Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "20",
+  "Min Weight": "13",
+  "Sleep Time": "20:00",
+  "Energy": "50",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "4",
+  "Encounter Time Group": "1",
+  "Encounter Opponent Group": "1"
+ },
+ {
+  "id": "aquamothra",
+  "name": "Aqua Mothra",
+  "stage": "Stage V (Perfect)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "mothraleo",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with Mothra Leo",
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "kingghidorah",
+    "req": [
+     "Jogress with Mothra Leo"
+    ]
+   },
+   {
+    "id": "gigan_2004",
+    "req": [
+     "Jogress with Mothra Leo"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "armormothra",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Master Tyranomon",
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra"
+    ]
+   },
+   {
+    "id": "megalon",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Baragon",
+     "Jogress with Were Garurumon",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "hedorah",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "orga",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "keizerghidorah",
+    "req": [
+     "Jogress with Mecha-King Ghidorah"
+    ]
+   },
+   {
+    "id": "kingghidorah_2001",
+    "req": [
+     "Jogress with Monster X"
+    ]
+   },
+   {
+    "id": "kingcaesar",
+    "req": [
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   }
+  ],
+  "Power": "92",
+  "Min Weight": "20",
+  "Sleep Time": "21:00",
+  "Energy": "60",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "17",
+  "Encounter Time Group": "3",
+  "Encounter Opponent Group": "6"
+ },
+ {
+  "id": "armormothra",
+  "name": "Armor Mothra",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "battra",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Master Tyranomon",
+     "Jogress with Aqua Mothra"
+    ]
+   },
+   {
+    "id": "aquamothra",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Master Tyranomon",
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra"
+    ]
+   },
+   {
+    "id": "mastertyrano",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra"
+    ]
+   },
+   {
+    "id": "atlurkabuteri",
+    "req": [
+     "Jogress with Mecha-King Ghidorah",
+     "Jogress with Monster X"
+    ]
+   },
+   {
+    "id": "mechakingghidorah",
+    "req": [
+     "Jogress with Atlur Kabuterimon"
+    ]
+   },
+   {
+    "id": "monsterx",
+    "req": [
+     "Jogress with Atlur Kabuterimon"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "155",
+  "Min Weight": "30",
+  "Sleep Time": "22:00",
+  "Energy": "60",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "26",
+  "Encounter Time Group": "3",
+  "Encounter Opponent Group": "10"
+ },
+ {
+  "id": "atlurkabuteri",
+  "name": "Atlur Kabuterimon",
+  "stage": "Stage V (Perfect)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "fly",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Gigan (2004)",
+     "Jogress with Garurumon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "grey_g",
+    "req": [
+     "Jogress with Mothra Leo"
+    ]
+   },
+   {
+    "id": "tyrano",
+    "req": [
+     "Jogress with Garurumon"
+    ]
+   },
+   {
+    "id": "mothraleo",
+    "req": [
+     "Jogress with Greymon: G-Erosion Mode",
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with Garurumon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "kingghidorah",
+    "req": [
+     "Jogress with Flymon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "gigan_2004",
+    "req": [
+     "Jogress with Flymon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "strikedra",
+    "req": [
+     "Jogress with Mothra Leo"
+    ]
+   },
+   {
+    "id": "raptordra",
+    "req": [
+     "Jogress with Mothra Leo"
+    ]
+   },
+   {
+    "id": "garuru",
+    "req": [
+     "Jogress with Tyranomon",
+     "Jogress with Flymon",
+     "Jogress with Mothra Leo"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "megalon",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Atlur Kabuterimon"
+    ]
+   },
+   {
+    "id": "dino",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Master Tyranomon",
+     "Jogress with Were Garurumon"
+    ]
+   },
+   {
+    "id": "hedorah",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "blackwargrey_g",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "armormothra",
+    "req": [
+     "Jogress with Mecha-King Ghidorah",
+     "Jogress with Monster X"
+    ]
+   },
+   {
+    "id": "metalgaruru",
+    "req": [
+     "Jogress with Mechagodzilla (1974)",
+     "Jogress with Baragon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   }
+  ],
+  "Power": "96",
+  "Min Weight": "30",
+  "Sleep Time": "22:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "20",
+  "Encounter Time Group": "4",
+  "Encounter Opponent Group": "7"
+ },
+ {
+  "id": "babygodzilla",
+  "name": "Baby Godzilla",
+  "stage": "Stage III (Child)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "koro",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "minilla",
+    "req": [
+     "0-3 Care Mistakes, Red G-Cells"
+    ]
+   },
+   {
+    "id": "littlegodzilla",
+    "req": [
+     "0-3 Care Mistakes, Blue or Empty G-Cells",
+     "4+ Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "25",
+  "Min Weight": "20",
+  "Sleep Time": "21:00",
+  "Energy": "50",
+  "Heart Loss": "38 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "3",
+  "Encounter Time Group": "0",
+  "Encounter Opponent Group": "0"
+ },
+ {
+  "id": "baragon",
+  "name": "Baragon",
+  "stage": "Stage V (Perfect)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "tyrano",
+    "req": [
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "raptordra",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "garuru",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "kingghidorah",
+    "req": [
+     "Jogress with Tyranomon",
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with Garurumon"
+    ]
+   },
+   {
+    "id": "gigan_2004",
+    "req": [
+     "Jogress with Tyranomon",
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with Garurumon"
+    ]
+   },
+   {
+    "id": "strikedra",
+    "req": [
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Gigan (2004)"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "kingcaesar",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Monster X",
+     "Jogress with Baragon",
+     "Jogress with Were Garurumon"
+    ]
+   },
+   {
+    "id": "metalgaruru",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Master Tyranomon",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "hedorah",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "orga",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "megalon",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra"
+    ]
+   },
+   {
+    "id": "keizerghidorah",
+    "req": [
+     "Jogress with Mecha-King Ghidorah"
+    ]
+   },
+   {
+    "id": "jetjaguar",
+    "req": [
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   }
+  ],
+  "Power": "80",
+  "Min Weight": "30",
+  "Sleep Time": "22:00",
+  "Energy": "60",
+  "Heart Loss": "38 Minutes",
+  "Battle": "No",
+  "Jogress": "Yes",
+  "Library Number": "45",
+  "Encounter Time Group": "2",
+  "Encounter Opponent Group": "8"
+ },
+ {
+  "id": "battra",
+  "name": "Battra",
+  "stage": "Stage V (Perfect)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "fly",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla",
+     "Jogress with Flymon",
+     "Jogress with Mothra Leo"
+    ]
+   },
+   {
+    "id": "mothraleo",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla",
+     "Jogress with Tyranomon",
+     "Jogress with Flymon"
+    ]
+   },
+   {
+    "id": "minilla",
+    "req": [
+     "Jogress with Flymon",
+     "Jogress with Mothra Leo"
+    ]
+   },
+   {
+    "id": "littlegodzilla",
+    "req": [
+     "Jogress with Flymon",
+     "Jogress with Mothra Leo"
+    ]
+   },
+   {
+    "id": "tyrano",
+    "req": [
+     "Jogress with Mothra Leo"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "armormothra",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Master Tyranomon",
+     "Jogress with Aqua Mothra"
+    ]
+   },
+   {
+    "id": "megalon",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Battra",
+     "Jogress with Baragon",
+     "Jogress with Were Garurumon",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "hedorah",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "orga",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "keizerghidorah",
+    "req": [
+     "Jogress with Mecha-King Ghidorah"
+    ]
+   },
+   {
+    "id": "kingghidorah_2001",
+    "req": [
+     "Jogress with Monster X"
+    ]
+   },
+   {
+    "id": "kingcaesar",
+    "req": [
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   }
+  ],
+  "Power": "84",
+  "Min Weight": "40",
+  "Sleep Time": "22:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "16",
+  "Encounter Time Group": "3",
+  "Encounter Opponent Group": "8"
+ },
+ {
+  "id": "blackwargrey_g",
+  "name": "Black War Greymon: G-Erosion Mode",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "metalgrey_vi_g",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Master Tyranomon",
+     "Jogress with Atlur Kabuterimon"
+    ]
+   },
+   {
+    "id": "skullgrey_g",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Master Tyranomon",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "Jogress with Master Tyranomon",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "godzillajr",
+    "req": [
+     "Jogress with Master Tyranomon",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "Jogress with Master Tyranomon",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "mastertyrano",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "atlurkabuteri",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "175",
+  "Min Weight": "20",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "28",
+  "Encounter Time Group": "6",
+  "Encounter Opponent Group": "9"
+ },
+ {
+  "id": "bota",
+  "name": "Botamon",
+  "stage": "Stage I (Baby I)",
+  "attr": "Free",
+  "from": [],
+  "to": [
+   {
+    "id": "koro",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "Power": "0",
+  "Min Weight": "5",
+  "Sleep Time": "0:00",
+  "Energy": "0",
+  "Heart Loss": "3 Minutes",
+  "Battle": "No",
+  "Jogress": "No",
+  "Library Number": "1",
+  "Encounter Time Group": "65535",
+  "Encounter Opponent Group": "65535"
+ },
+ {
+  "id": "burninggodzilla_2025",
+  "name": "Burning Godzilla (2025)",
+  "stage": "Stage VI+ (Super Ultimate)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "godzilla_1999",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles as Godzilla (1999), 30+ Lifetime Battles, 80%+ Win Ratio"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "200",
+  "Min Weight": "70",
+  "Sleep Time": "23:00",
+  "Energy": "70",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "56",
+  "Encounter Time Group": "5",
+  "Encounter Opponent Group": "10"
+ },
+ {
+  "id": "dino",
+  "name": "Dinomon",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "mastertyrano",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Master Tyranomon",
+     "Jogress with Were Garurumon",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "metalgrey_vi_g",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "atlurkabuteri",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Master Tyranomon",
+     "Jogress with Were Garurumon"
+    ]
+   },
+   {
+    "id": "weregaruru",
+    "req": [
+     "Jogress with Master Tyranomon",
+     "Jogress with Atlur Kabuterimon"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "150",
+  "Min Weight": "30",
+  "Sleep Time": "22:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "25",
+  "Encounter Time Group": "5",
+  "Encounter Opponent Group": "9"
+ },
+ {
+  "id": "dorat",
+  "name": "Dorat",
+  "stage": "Stage III (Child)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "tuno",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "kingghidorah",
+    "req": [
+     "0-3 Care Mistakes, Red G-Cells"
+    ]
+   },
+   {
+    "id": "raptordra",
+    "req": [
+     "0-3 Care Mistakes, Blue or Empty G-Cells",
+     "4+ Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "22",
+  "Min Weight": "13",
+  "Sleep Time": "20:00",
+  "Energy": "50",
+  "Heart Loss": "38 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "34",
+  "Encounter Time Group": "1",
+  "Encounter Opponent Group": "1"
+ },
+ {
+  "id": "fly",
+  "name": "Flymon",
+  "stage": "Stage IV (Adult)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "mothra_l",
+    "req": [
+     "0-3 Care Mistakes, Red G-Cells"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "battra",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla",
+     "Jogress with Flymon",
+     "Jogress with Mothra Leo"
+    ]
+   },
+   {
+    "id": "atlurkabuteri",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Gigan (2004)",
+     "Jogress with Garurumon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "mastertyrano",
+    "req": [
+     "Jogress with Greymon: G-Erosion Mode",
+     "Jogress with Tyranomon",
+     "Jogress with Strikedramon"
+    ]
+   },
+   {
+    "id": "weregaruru",
+    "req": [
+     "Jogress with Raptordramon"
+    ]
+   }
+  ],
+  "Power": "36",
+  "Min Weight": "20",
+  "Sleep Time": "22:00",
+  "Energy": "50",
+  "Heart Loss": "38 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "10",
+  "Encounter Time Group": "2",
+  "Encounter Opponent Group": "3"
+ },
+ {
+  "id": "gabu",
+  "name": "Gabumon",
+  "stage": "Stage III (Child)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "tuno",
+    "req": [
+     "3+ Care Mistakes, Blue or Empty G-Cells"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "raptordra",
+    "req": [
+     "0-3 Care Mistakes, Red G-Cells"
+    ]
+   },
+   {
+    "id": "garuru",
+    "req": [
+     "0-3 Care Mistakes, Blue or Empty G-Cells",
+     "4+ Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "14",
+  "Min Weight": "15",
+  "Sleep Time": "20:00",
+  "Energy": "50",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "36",
+  "Encounter Time Group": "0",
+  "Encounter Opponent Group": "0"
+ },
+ {
+  "id": "garuru",
+  "name": "Garurumon",
+  "stage": "Stage IV (Adult)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "gabu",
+    "req": [
+     "0-3 Care Mistakes, Blue or Empty G-Cells",
+     "4+ Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "baragon",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "weregaruru",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with Garurumon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "monsterx",
+    "req": [
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla",
+     "Jogress with Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "atlurkabuteri",
+    "req": [
+     "Jogress with Tyranomon",
+     "Jogress with Flymon",
+     "Jogress with Mothra Leo"
+    ]
+   }
+  ],
+  "Power": "44",
+  "Min Weight": "20",
+  "Sleep Time": "21:00",
+  "Energy": "50",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "41",
+  "Encounter Time Group": "3",
+  "Encounter Opponent Group": "5"
+ },
+ {
+  "id": "gatlinggigan",
+  "name": "Gatling Gigan",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "gigan_2004",
+    "req": [
+     "0-2 Care Mistakes, 15+ Battles as Gigan (2004), 50+ Lifetime Battles, 80%+ Win Ratio",
+     "8 Poops on screen, 50+ Lifetime Battles, 80%+ Win Ratio"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "155",
+  "Min Weight": "60",
+  "Sleep Time": "21:00",
+  "Energy": "60",
+  "Heart Loss": "66 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "54",
+  "Encounter Time Group": "3",
+  "Encounter Opponent Group": "11"
+ },
+ {
+  "id": "gigan_2004",
+  "name": "Gigan (2004)",
+  "stage": "Stage IV (Adult)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "monodra",
+    "req": [
+     "0-3 Care Mistakes, Red G-Cells"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "gatlinggigan",
+    "req": [
+     "0-2 Care Mistakes, 15+ Battles as Gigan (2004), 50+ Lifetime Battles, 80%+ Win Ratio",
+     "8 Poops on screen, 50+ Lifetime Battles, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "monsterx",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "mechagodzilla_1974",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla",
+     "Jogress with Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "baragon",
+    "req": [
+     "Jogress with Tyranomon",
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with Garurumon"
+    ]
+   },
+   {
+    "id": "atlurkabuteri",
+    "req": [
+     "Jogress with Flymon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "aquamothra",
+    "req": [
+     "Jogress with Mothra Leo"
+    ]
+   },
+   {
+    "id": "mechakingghidorah",
+    "req": [
+     "Jogress with King Ghidorah (1991)"
+    ]
+   }
+  ],
+  "Power": "40",
+  "Min Weight": "60",
+  "Sleep Time": "22:00",
+  "Energy": "50",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "38",
+  "Encounter Time Group": "4",
+  "Encounter Opponent Group": "5"
+ },
+ {
+  "id": "godzillajr",
+  "name": "Godzilla Jr",
+  "stage": "Stage V (Perfect)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "minilla",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Little Godzilla"
+    ]
+   },
+   {
+    "id": "littlegodzilla",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "godzilla_2022",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Godzilla Jr"
+    ]
+   },
+   {
+    "id": "godzilla_2004",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Skull Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "skullgrey_g",
+    "req": [
+     "30% chance of evolution upon death"
+    ]
+   },
+   {
+    "id": "hedorah",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "godzilla_1999",
+    "req": [
+     "Jogress with Godzilla (1954)"
+    ]
+   },
+   {
+    "id": "wargrey_g",
+    "req": [
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "blackwargrey_g",
+    "req": [
+     "Jogress with Master Tyranomon",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "orga",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Monster X",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "supergodzilla",
+    "req": [
+     "Jogress with Mecha-King Ghidorah",
+     "Jogress with King Ghidorah (2001)",
+     "Jogress with King Ghidorah (1991)"
+    ]
+   },
+   {
+    "id": "mugendra_m",
+    "req": [
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "metalgaruru_g",
+    "req": [
+     "Jogress with Were Garurumon"
+    ]
+   }
+  ],
+  "Power": "92",
+  "Min Weight": "50",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "13",
+  "Encounter Time Group": "4",
+  "Encounter Opponent Group": "7"
+ },
+ {
+  "id": "godzilla_1954",
+  "name": "Godzilla (1954)",
+  "stage": "Stage V (Perfect)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "minilla",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla",
+     "Jogress with Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "littlegodzilla",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "grey_g",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "godzilla_2004",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Godzilla (1954)"
+    ]
+   },
+   {
+    "id": "wargrey_g",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "skullgrey_g",
+    "req": [
+     "30% chance of evolution upon death"
+    ]
+   },
+   {
+    "id": "hedorah",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "godzilla_1999",
+    "req": [
+     "Jogress with Godzilla Jr"
+    ]
+   },
+   {
+    "id": "blackwargrey_g",
+    "req": [
+     "Jogress with Master Tyranomon",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "orga",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Monster X",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "godzilla_2022",
+    "req": [
+     "Jogress with Skull Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "supergodzilla",
+    "req": [
+     "Jogress with Mecha-King Ghidorah",
+     "Jogress with King Ghidorah (2001)",
+     "Jogress with King Ghidorah (1991)"
+    ]
+   },
+   {
+    "id": "mugendra_m",
+    "req": [
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "metalgaruru_g",
+    "req": [
+     "Jogress with Were Garurumon"
+    ]
+   }
+  ],
+  "Power": "88",
+  "Min Weight": "50",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "66 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "12",
+  "Encounter Time Group": "5",
+  "Encounter Opponent Group": "6"
+ },
+ {
+  "id": "godzilla_1999",
+  "name": "Godzilla (1999)",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "Jogress with Godzilla Jr"
+    ]
+   },
+   {
+    "id": "godzillajr",
+    "req": [
+     "Jogress with Godzilla (1954)"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "burninggodzilla_2025",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles as Godzilla (1999), 30+ Lifetime Battles, 80%+ Win Ratio"
+    ]
+   }
+  ],
+  "Power": "175",
+  "Min Weight": "70",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "21",
+  "Encounter Time Group": "6",
+  "Encounter Opponent Group": "9"
+ },
+ {
+  "id": "godzilla_2004",
+  "name": "Godzilla (2004)",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Godzilla (1954)"
+    ]
+   },
+   {
+    "id": "godzillajr",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Skull Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "skullgrey_g",
+    "req": [
+     "Jogress with Godzilla Jr"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "180",
+  "Min Weight": "50",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "66 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "22",
+  "Encounter Time Group": "7",
+  "Encounter Opponent Group": "10"
+ },
+ {
+  "id": "godzilla_2022",
+  "name": "Godzilla (2022)",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "godzillajr",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Godzilla Jr"
+    ]
+   },
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "Jogress with Skull Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "skullgrey_g",
+    "req": [
+     "Jogress with Godzilla (1954)"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "170",
+  "Min Weight": "60",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "23",
+  "Encounter Time Group": "6",
+  "Encounter Opponent Group": "11"
+ },
+ {
+  "id": "grey_g",
+  "name": "Greymon: G-Erosion Mode",
+  "stage": "Stage IV (Adult)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "agu",
+    "req": [
+     "0-3 Care Mistakes, Red G-Cells"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla"
+    ]
+   },
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Little Godzilla",
+     "Jogress with Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "mastertyrano",
+    "req": [
+     "Jogress with Tyranomon",
+     "Jogress with Flymon"
+    ]
+   },
+   {
+    "id": "atlurkabuteri",
+    "req": [
+     "Jogress with Mothra Leo"
+    ]
+   },
+   {
+    "id": "monsterx",
+    "req": [
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Garurumon"
+    ]
+   },
+   {
+    "id": "mechagodzilla_1974",
+    "req": [
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "metalgrey_vi_g",
+    "req": [
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   }
+  ],
+  "Power": "50",
+  "Min Weight": "30",
+  "Sleep Time": "23:00",
+  "Energy": "50",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "8",
+  "Encounter Time Group": "4",
+  "Encounter Opponent Group": "4"
+ },
+ {
+  "id": "hedorah",
+  "name": "Hedorah",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "godzillajr",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "mastertyrano",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "battra",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "aquamothra",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "metalgrey_vi_g",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "atlurkabuteri",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "skullgrey_g",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "mechakingghidorah",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "monsterx",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "mechagodzilla_1974",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "baragon",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "weregaruru",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "170",
+  "Min Weight": "50",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "66 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "31",
+  "Encounter Time Group": "6",
+  "Encounter Opponent Group": "11"
+ },
+ {
+  "id": "jetjaguar",
+  "name": "Jet Jaguar",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "mastertyrano",
+    "req": [
+     "Jogress with Monster X"
+    ]
+   },
+   {
+    "id": "monsterx",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Master Tyranomon",
+     "Jogress with Were Garurumon"
+    ]
+   },
+   {
+    "id": "mechagodzilla_1974",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "mechakingghidorah",
+    "req": [
+     "Jogress with Were Garurumon"
+    ]
+   },
+   {
+    "id": "baragon",
+    "req": [
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "weregaruru",
+    "req": [
+     "Jogress with Mecha-King Ghidorah",
+     "Jogress with Monster X"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "150",
+  "Min Weight": "40",
+  "Sleep Time": "22:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "50",
+  "Encounter Time Group": "5",
+  "Encounter Opponent Group": "10"
+ },
+ {
+  "id": "keizerghidorah",
+  "name": "Keizer Ghidorah",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "battra",
+    "req": [
+     "Jogress with Mecha-King Ghidorah"
+    ]
+   },
+   {
+    "id": "aquamothra",
+    "req": [
+     "Jogress with Mecha-King Ghidorah"
+    ]
+   },
+   {
+    "id": "monsterx",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Monster X"
+    ]
+   },
+   {
+    "id": "mechakingghidorah",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Mechagodzilla (1974)",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "mechagodzilla_1974",
+    "req": [
+     "Jogress with Mecha-King Ghidorah"
+    ]
+   },
+   {
+    "id": "baragon",
+    "req": [
+     "Jogress with Mecha-King Ghidorah"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "160",
+  "Min Weight": "70",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "66 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "49",
+  "Encounter Time Group": "7",
+  "Encounter Opponent Group": "11"
+ },
+ {
+  "id": "kingcaesar",
+  "name": "King Caesar",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "battra",
+    "req": [
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "aquamothra",
+    "req": [
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "baragon",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Monster X",
+     "Jogress with Baragon",
+     "Jogress with Were Garurumon"
+    ]
+   },
+   {
+    "id": "weregaruru",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "monsterx",
+    "req": [
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "mechagodzilla_1974",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "140",
+  "Min Weight": "40",
+  "Sleep Time": "22:00",
+  "Energy": "60",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "51",
+  "Encounter Time Group": "6",
+  "Encounter Opponent Group": "9"
+ },
+ {
+  "id": "kingghidorah",
+  "name": "King Ghidorah (1991)",
+  "stage": "Stage IV (Adult)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "dorat",
+    "req": [
+     "0-3 Care Mistakes, Red G-Cells"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "mechakingghidorah",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "monsterx",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla",
+     "Jogress with Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "baragon",
+    "req": [
+     "Jogress with Tyranomon",
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with Garurumon"
+    ]
+   },
+   {
+    "id": "atlurkabuteri",
+    "req": [
+     "Jogress with Flymon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "aquamothra",
+    "req": [
+     "Jogress with Mothra Leo"
+    ]
+   },
+   {
+    "id": "supergodzilla",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr"
+    ]
+   }
+  ],
+  "Power": "48",
+  "Min Weight": "60",
+  "Sleep Time": "22:00",
+  "Energy": "50",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "37",
+  "Encounter Time Group": "3",
+  "Encounter Opponent Group": "4"
+ },
+ {
+  "id": "kingghidorah_2001",
+  "name": "King Ghidorah (2001)",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "battra",
+    "req": [
+     "Jogress with Monster X"
+    ]
+   },
+   {
+    "id": "aquamothra",
+    "req": [
+     "Jogress with Monster X"
+    ]
+   },
+   {
+    "id": "mechakingghidorah",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Mecha-King Ghidorah",
+     "Jogress with Monster X"
+    ]
+   },
+   {
+    "id": "monsterx",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Mecha-King Ghidorah"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "supergodzilla",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr"
+    ]
+   }
+  ],
+  "Power": "175",
+  "Min Weight": "40",
+  "Sleep Time": "22:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "48",
+  "Encounter Time Group": "6",
+  "Encounter Opponent Group": "9"
+ },
+ {
+  "id": "koro",
+  "name": "Koromon",
+  "stage": "Stage II (Baby II)",
+  "attr": "Free",
+  "from": [
+   {
+    "id": "bota",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "babygodzilla",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells"
+    ]
+   },
+   {
+    "id": "agu",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells",
+     "3+ Care Mistakes, Red G-Cells"
+    ]
+   },
+   {
+    "id": "mothra_l",
+    "req": [
+     "3+ Care Mistakes, Blue or Empty G-Cells"
+    ]
+   }
+  ],
+  "Power": "0",
+  "Min Weight": "10",
+  "Sleep Time": "20:00",
+  "Energy": "50",
+  "Heart Loss": "30 Minutes",
+  "Battle": "No",
+  "Jogress": "No",
+  "Library Number": "2",
+  "Encounter Time Group": "65535",
+  "Encounter Opponent Group": "65535"
+ },
+ {
+  "id": "littlegodzilla",
+  "name": "Little Godzilla",
+  "stage": "Stage IV (Adult)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "babygodzilla",
+    "req": [
+     "0-3 Care Mistakes, Blue or Empty G-Cells",
+     "4+ Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "godzillajr",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla"
+    ]
+   },
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "Jogress with Greymon: G-Erosion Mode",
+     "Jogress with Tyranomon"
+    ]
+   },
+   {
+    "id": "battra",
+    "req": [
+     "Jogress with Flymon",
+     "Jogress with Mothra Leo"
+    ]
+   },
+   {
+    "id": "monsterx",
+    "req": [
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Garurumon"
+    ]
+   },
+   {
+    "id": "mechagodzilla_1974",
+    "req": [
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "metalgrey_vi_g",
+    "req": [
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   }
+  ],
+  "Power": "48",
+  "Min Weight": "40",
+  "Sleep Time": "22:00",
+  "Energy": "50",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "7",
+  "Encounter Time Group": "2",
+  "Encounter Opponent Group": "5"
+ },
+ {
+  "id": "mastertyrano",
+  "name": "Master Tyranomon",
+  "stage": "Stage V (Perfect)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "tyrano",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Greymon: G-Erosion Mode",
+     "Jogress with Tyranomon",
+     "Jogress with Flymon",
+     "Jogress with Strikedramon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "grey_g",
+    "req": [
+     "Jogress with Tyranomon",
+     "Jogress with Flymon"
+    ]
+   },
+   {
+    "id": "fly",
+    "req": [
+     "Jogress with Greymon: G-Erosion Mode",
+     "Jogress with Tyranomon",
+     "Jogress with Strikedramon"
+    ]
+   },
+   {
+    "id": "strikedra",
+    "req": [
+     "Jogress with Tyranomon",
+     "Jogress with Flymon"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "wargrey_g",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "dino",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Master Tyranomon",
+     "Jogress with Were Garurumon",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "hedorah",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "blackwargrey_g",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "armormothra",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra"
+    ]
+   },
+   {
+    "id": "mechagodzilla",
+    "req": [
+     "Jogress with Mecha-King Ghidorah"
+    ]
+   },
+   {
+    "id": "jetjaguar",
+    "req": [
+     "Jogress with Monster X"
+    ]
+   },
+   {
+    "id": "metalgaruru",
+    "req": [
+     "Jogress with Mechagodzilla (1974)",
+     "Jogress with Baragon"
+    ]
+   }
+  ],
+  "Power": "88",
+  "Min Weight": "40",
+  "Sleep Time": "22:00",
+  "Energy": "60",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "15",
+  "Encounter Time Group": "4",
+  "Encounter Opponent Group": "7"
+ },
+ {
+  "id": "mechagodzilla",
+  "name": "Mechagodzilla (1993)",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "Jogress with Mecha-King Ghidorah"
+    ]
+   },
+   {
+    "id": "mastertyrano",
+    "req": [
+     "Jogress with Mecha-King Ghidorah"
+    ]
+   },
+   {
+    "id": "skullgrey_g",
+    "req": [
+     "Jogress with Mecha-King Ghidorah",
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "mechakingghidorah",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Master Tyranomon",
+     "Jogress with Skull Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "mechagodzilla_1974",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Monster X",
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "monsterx",
+    "req": [
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "supermechagodzilla",
+    "req": [
+     "No requirementsMode Change"
+    ]
+   }
+  ],
+  "Power": "160",
+  "Min Weight": "40",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "47",
+  "Encounter Time Group": "7",
+  "Encounter Opponent Group": "10"
+ },
+ {
+  "id": "mechagodzilla_1974",
+  "name": "Mechagodzilla (1974)",
+  "stage": "Stage V (Perfect)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "minilla",
+    "req": [
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "littlegodzilla",
+    "req": [
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "grey_g",
+    "req": [
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "gigan_2004",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla",
+     "Jogress with Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "strikedra",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Strikedramon"
+    ]
+   },
+   {
+    "id": "raptordra",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "mechagodzilla",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Monster X",
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "jetjaguar",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "hedorah",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "mugendra_m",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "metalgaruru",
+    "req": [
+     "Jogress with Master Tyranomon",
+     "Jogress with Were Garurumon",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "kingcaesar",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra"
+    ]
+   },
+   {
+    "id": "keizerghidorah",
+    "req": [
+     "Jogress with Mecha-King Ghidorah"
+    ]
+   }
+  ],
+  "Power": "110",
+  "Min Weight": "50",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "44",
+  "Encounter Time Group": "3",
+  "Encounter Opponent Group": "7"
+ },
+ {
+  "id": "mechakingghidorah",
+  "name": "Mecha-King Ghidorah",
+  "stage": "Stage V (Perfect)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "kingghidorah",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "gigan_2004",
+    "req": [
+     "Jogress with King Ghidorah (1991)"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "kingghidorah_2001",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Mecha-King Ghidorah",
+     "Jogress with Monster X"
+    ]
+   },
+   {
+    "id": "mechagodzilla",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Master Tyranomon",
+     "Jogress with Skull Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "hedorah",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "supergodzilla",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr"
+    ]
+   },
+   {
+    "id": "keizerghidorah",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Mechagodzilla (1974)",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "jetjaguar",
+    "req": [
+     "Jogress with Were Garurumon"
+    ]
+   },
+   {
+    "id": "orga",
+    "req": [
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "armormothra",
+    "req": [
+     "Jogress with Atlur Kabuterimon"
+    ]
+   },
+   {
+    "id": "metalgaruru",
+    "req": [
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   }
+  ],
+  "Power": "80",
+  "Min Weight": "65",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "42",
+  "Encounter Time Group": "5",
+  "Encounter Opponent Group": "8"
+ },
+ {
+  "id": "megalon",
+  "name": "Megalon",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "battra",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Battra",
+     "Jogress with Baragon",
+     "Jogress with Were Garurumon",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "aquamothra",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Baragon",
+     "Jogress with Were Garurumon",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "atlurkabuteri",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Atlur Kabuterimon"
+    ]
+   },
+   {
+    "id": "baragon",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra"
+    ]
+   },
+   {
+    "id": "weregaruru",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "145",
+  "Min Weight": "50",
+  "Sleep Time": "21:00",
+  "Energy": "60",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "29",
+  "Encounter Time Group": "2",
+  "Encounter Opponent Group": "10"
+ },
+ {
+  "id": "metalgaruru",
+  "name": "Metal Garurumon",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "mastertyrano",
+    "req": [
+     "Jogress with Mechagodzilla (1974)",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "metalgrey_vi_g",
+    "req": [
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "atlurkabuteri",
+    "req": [
+     "Jogress with Mechagodzilla (1974)",
+     "Jogress with Baragon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "baragon",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Master Tyranomon",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "weregaruru",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Mechagodzilla (1974)",
+     "Jogress with Were Garurumon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "mechakingghidorah",
+    "req": [
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "monsterx",
+    "req": [
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "mechagodzilla_1974",
+    "req": [
+     "Jogress with Master Tyranomon",
+     "Jogress with Were Garurumon",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "metalgaruru_g",
+    "req": [
+     "Defeat 10 Stage V or higher Monsters with Godzilla, G-Erosion or G-Fusion in their name"
+    ]
+   }
+  ],
+  "Power": "150",
+  "Min Weight": "28",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "52",
+  "Encounter Time Group": "5",
+  "Encounter Opponent Group": "11"
+ },
+ {
+  "id": "metalgaruru_g",
+  "name": "Metal Garurumon: G-Erosion Mode",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "Jogress with Were Garurumon"
+    ]
+   },
+   {
+    "id": "godzillajr",
+    "req": [
+     "Jogress with Were Garurumon"
+    ]
+   },
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "Jogress with Were Garurumon"
+    ]
+   },
+   {
+    "id": "skullgrey_g",
+    "req": [
+     "Jogress with Were Garurumon"
+    ]
+   },
+   {
+    "id": "metalgrey_vi_g",
+    "req": [
+     "Jogress with Were Garurumon"
+    ]
+   },
+   {
+    "id": "metalgaruru",
+    "req": [
+     "Defeat 10 Stage V or higher Monsters with Godzilla, G-Erosion or G-Fusion in their name"
+    ]
+   },
+   {
+    "id": "weregaruru",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "omega_g",
+    "req": [
+     "Jogress with War Greymon: G-Erosion Mode"
+    ]
+   }
+  ],
+  "Power": "170",
+  "Min Weight": "28",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "53",
+  "Encounter Time Group": "7",
+  "Encounter Opponent Group": "9"
+ },
+ {
+  "id": "metalgrey_g",
+  "name": "Metal Greymon (Vaccine): G-Erosion Mode",
+  "stage": "Stage V (Perfect)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "grey_g",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Little Godzilla",
+     "Jogress with Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "tyrano",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla"
+    ]
+   },
+   {
+    "id": "minilla",
+    "req": [
+     "Jogress with Tyranomon"
+    ]
+   },
+   {
+    "id": "littlegodzilla",
+    "req": [
+     "Jogress with Greymon: G-Erosion Mode",
+     "Jogress with Tyranomon"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "wargrey_g",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "dino",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "skullgrey_g",
+    "req": [
+     "30% chance of evolution upon death"
+    ]
+   },
+   {
+    "id": "hedorah",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "blackwargrey_g",
+    "req": [
+     "Jogress with Master Tyranomon",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "orga",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Monster X",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "mechagodzilla",
+    "req": [
+     "Jogress with Mecha-King Ghidorah"
+    ]
+   },
+   {
+    "id": "mugendra_m",
+    "req": [
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "metalgaruru_g",
+    "req": [
+     "Jogress with Were Garurumon"
+    ]
+   }
+  ],
+  "Power": "110",
+  "Min Weight": "40",
+  "Sleep Time": "22:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "14",
+  "Encounter Time Group": "7",
+  "Encounter Opponent Group": "8"
+ },
+ {
+  "id": "metalgrey_vi_g",
+  "name": "Metal Greymon (Virus): G-Erosion Mode",
+  "stage": "Stage V (Perfect)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "minilla",
+    "req": [
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "littlegodzilla",
+    "req": [
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "grey_g",
+    "req": [
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "strikedra",
+    "req": [
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla",
+     "Jogress with Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "raptordra",
+    "req": [
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla",
+     "Jogress with Greymon: G-Erosion Mode"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "blackwargrey_g",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Master Tyranomon",
+     "Jogress with Atlur Kabuterimon"
+    ]
+   },
+   {
+    "id": "dino",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "hedorah",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "wargrey_g",
+    "req": [
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "orga",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Mecha-King Ghidorah",
+     "Jogress with Monster X",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "mugendra_m",
+    "req": [
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "metalgaruru_g",
+    "req": [
+     "Jogress with Were Garurumon"
+    ]
+   },
+   {
+    "id": "metalgaruru",
+    "req": [
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   }
+  ],
+  "Power": "105",
+  "Min Weight": "40",
+  "Sleep Time": "22:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "19",
+  "Encounter Time Group": "5",
+  "Encounter Opponent Group": "6"
+ },
+ {
+  "id": "minilla",
+  "name": "Minilla",
+  "stage": "Stage IV (Adult)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "babygodzilla",
+    "req": [
+     "0-3 Care Mistakes, Red G-Cells"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla",
+     "Jogress with Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "godzillajr",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Little Godzilla"
+    ]
+   },
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "Jogress with Tyranomon"
+    ]
+   },
+   {
+    "id": "battra",
+    "req": [
+     "Jogress with Flymon",
+     "Jogress with Mothra Leo"
+    ]
+   },
+   {
+    "id": "monsterx",
+    "req": [
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Garurumon"
+    ]
+   },
+   {
+    "id": "mechagodzilla_1974",
+    "req": [
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "metalgrey_vi_g",
+    "req": [
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   }
+  ],
+  "Power": "55",
+  "Min Weight": "15",
+  "Sleep Time": "21:00",
+  "Energy": "50",
+  "Heart Loss": "38 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "6",
+  "Encounter Time Group": "3",
+  "Encounter Opponent Group": "3"
+ },
+ {
+  "id": "monodra",
+  "name": "Monodramon",
+  "stage": "Stage III (Child)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "tuno",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells",
+     "3+ Care Mistakes, Red G-Cells"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "gigan_2004",
+    "req": [
+     "0-3 Care Mistakes, Red G-Cells"
+    ]
+   },
+   {
+    "id": "strikedra",
+    "req": [
+     "0-3 Care Mistakes, Blue or Empty G-Cells",
+     "4+ Care Mistakes, Red G-Cells"
+    ]
+   },
+   {
+    "id": "raptordra",
+    "req": [
+     "4+ Care Mistakes, Blue or Empty G-Cells"
+    ]
+   }
+  ],
+  "Power": "18",
+  "Min Weight": "40",
+  "Sleep Time": "21:00",
+  "Energy": "50",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "35",
+  "Encounter Time Group": "0",
+  "Encounter Opponent Group": "2"
+ },
+ {
+  "id": "monsterx",
+  "name": "Monster X",
+  "stage": "Stage V (Perfect)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "minilla",
+    "req": [
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Garurumon"
+    ]
+   },
+   {
+    "id": "littlegodzilla",
+    "req": [
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Garurumon"
+    ]
+   },
+   {
+    "id": "grey_g",
+    "req": [
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Garurumon"
+    ]
+   },
+   {
+    "id": "kingghidorah",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla",
+     "Jogress with Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "gigan_2004",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "strikedra",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "garuru",
+    "req": [
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla",
+     "Jogress with Greymon: G-Erosion Mode"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "keizerghidorah",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Monster X"
+    ]
+   },
+   {
+    "id": "jetjaguar",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Master Tyranomon",
+     "Jogress with Were Garurumon"
+    ]
+   },
+   {
+    "id": "hedorah",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "orga",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "kingghidorah_2001",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Mecha-King Ghidorah"
+    ]
+   },
+   {
+    "id": "mechagodzilla",
+    "req": [
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "kingcaesar",
+    "req": [
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "armormothra",
+    "req": [
+     "Jogress with Atlur Kabuterimon"
+    ]
+   },
+   {
+    "id": "metalgaruru",
+    "req": [
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   }
+  ],
+  "Power": "100",
+  "Min Weight": "60",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "43",
+  "Encounter Time Group": "4",
+  "Encounter Opponent Group": "6"
+ },
+ {
+  "id": "mothraleo",
+  "name": "Mothra Leo",
+  "stage": "Stage IV (Adult)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "mothra_l",
+    "req": [
+     "0-3 Care Mistakes, Blue or Empty G-Cells",
+     "4+ Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "aquamothra",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with Mothra Leo",
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "battra",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla",
+     "Jogress with Tyranomon",
+     "Jogress with Flymon"
+    ]
+   },
+   {
+    "id": "atlurkabuteri",
+    "req": [
+     "Jogress with Greymon: G-Erosion Mode",
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with Garurumon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   }
+  ],
+  "Power": "44",
+  "Min Weight": "20",
+  "Sleep Time": "20:00",
+  "Energy": "50",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "11",
+  "Encounter Time Group": "1",
+  "Encounter Opponent Group": "4"
+ },
+ {
+  "id": "mothra_l",
+  "name": "Mothra (Larva)",
+  "stage": "Stage III (Child)",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "koro",
+    "req": [
+     "3+ Care Mistakes, Blue or Empty G-Cells"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "fly",
+    "req": [
+     "0-3 Care Mistakes, Red G-Cells"
+    ]
+   },
+   {
+    "id": "mothraleo",
+    "req": [
+     "0-3 Care Mistakes, Blue or Empty G-Cells",
+     "4+ Care Mistakes"
+    ]
+   }
+  ],
+  "Power": "14",
+  "Min Weight": "20",
+  "Sleep Time": "20:00",
+  "Energy": "50",
+  "Heart Loss": "38 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "5",
+  "Encounter Time Group": "1",
+  "Encounter Opponent Group": "2"
+ },
+ {
+  "id": "mugendra_m",
+  "name": "Mugendramon: MFS-3",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "skullgrey_g",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "godzillajr",
+    "req": [
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "metalgrey_vi_g",
+    "req": [
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "mechagodzilla_1974",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "185",
+  "Min Weight": "50",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "27",
+  "Encounter Time Group": "6",
+  "Encounter Opponent Group": "10"
+ },
+ {
+  "id": "omega_g",
+  "name": "Omegamon: G-Fusion Mode",
+  "stage": "Stage VI+ (Super Ultimate)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "wargrey_g",
+    "req": [
+     "Jogress with Metal Garurumon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "metalgaruru_g",
+    "req": [
+     "Jogress with War Greymon: G-Erosion Mode"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "200",
+  "Min Weight": "40",
+  "Sleep Time": "23:00",
+  "Energy": "70",
+  "Heart Loss": "66 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "57",
+  "Encounter Time Group": "7",
+  "Encounter Opponent Group": "12"
+ },
+ {
+  "id": "orga",
+  "name": "Orga",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Monster X",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "godzillajr",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Monster X",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Monster X",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "battra",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "aquamothra",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "skullgrey_g",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Monster X",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "metalgrey_vi_g",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Mecha-King Ghidorah",
+     "Jogress with Monster X",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "mechakingghidorah",
+    "req": [
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "monsterx",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "baragon",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "150",
+  "Min Weight": "60",
+  "Sleep Time": "22:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "30",
+  "Encounter Time Group": "4",
+  "Encounter Opponent Group": "10"
+ },
+ {
+  "id": "puni",
+  "name": "Punimon",
+  "stage": "Stage I (Baby I)",
+  "attr": "Free",
+  "from": [],
+  "to": [
+   {
+    "id": "tuno",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "Power": "0",
+  "Min Weight": "5",
+  "Sleep Time": "0:00",
+  "Energy": "0",
+  "Heart Loss": "3 Minutes",
+  "Battle": "No",
+  "Jogress": "No",
+  "Library Number": "32",
+  "Encounter Time Group": "65535",
+  "Encounter Opponent Group": "65535"
+ },
+ {
+  "id": "raptordra",
+  "name": "Raptordramon",
+  "stage": "Stage IV (Adult)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "dorat",
+    "req": [
+     "0-3 Care Mistakes, Blue or Empty G-Cells",
+     "4+ Care Mistakes"
+    ]
+   },
+   {
+    "id": "monodra",
+    "req": [
+     "4+ Care Mistakes, Blue or Empty G-Cells"
+    ]
+   },
+   {
+    "id": "gabu",
+    "req": [
+     "0-3 Care Mistakes, Red G-Cells"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "mechagodzilla_1974",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "baragon",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "metalgrey_vi_g",
+    "req": [
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla",
+     "Jogress with Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "weregaruru",
+    "req": [
+     "Jogress with Tyranomon",
+     "Jogress with Flymon",
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with Garurumon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "atlurkabuteri",
+    "req": [
+     "Jogress with Mothra Leo"
+    ]
+   }
+  ],
+  "Power": "36",
+  "Min Weight": "30",
+  "Sleep Time": "22:00",
+  "Energy": "50",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "40",
+  "Encounter Time Group": "6",
+  "Encounter Opponent Group": "3"
+ },
+ {
+  "id": "skullgrey_g",
+  "name": "Skull Greymon: G-Erosion Mode",
+  "stage": "Stage V (Perfect)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "30% chance of evolution upon death"
+    ]
+   },
+   {
+    "id": "godzillajr",
+    "req": [
+     "30% chance of evolution upon death"
+    ]
+   },
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "30% chance of evolution upon death"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "blackwargrey_g",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Master Tyranomon",
+     "Jogress with Atlur Kabuterimon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "mugendra_m",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "hedorah",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "godzilla_2022",
+    "req": [
+     "Jogress with Godzilla (1954)"
+    ]
+   },
+   {
+    "id": "godzilla_2004",
+    "req": [
+     "Jogress with Godzilla Jr"
+    ]
+   },
+   {
+    "id": "orga",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra",
+     "Jogress with Monster X",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "mechagodzilla",
+    "req": [
+     "Jogress with Mecha-King Ghidorah",
+     "Jogress with Mechagodzilla (1974)"
+    ]
+   },
+   {
+    "id": "metalgaruru_g",
+    "req": [
+     "Jogress with Were Garurumon"
+    ]
+   }
+  ],
+  "Power": "100",
+  "Min Weight": "40",
+  "Sleep Time": "22:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "18",
+  "Encounter Time Group": "7",
+  "Encounter Opponent Group": "7"
+ },
+ {
+  "id": "strikedra",
+  "name": "Strikedramon",
+  "stage": "Stage IV (Adult)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "monodra",
+    "req": [
+     "0-3 Care Mistakes, Blue or Empty G-Cells",
+     "4+ Care Mistakes, Red G-Cells"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "monsterx",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "mechagodzilla_1974",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Strikedramon"
+    ]
+   },
+   {
+    "id": "metalgrey_vi_g",
+    "req": [
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla",
+     "Jogress with Greymon: G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "mastertyrano",
+    "req": [
+     "Jogress with Tyranomon",
+     "Jogress with Flymon"
+    ]
+   },
+   {
+    "id": "atlurkabuteri",
+    "req": [
+     "Jogress with Mothra Leo"
+    ]
+   },
+   {
+    "id": "baragon",
+    "req": [
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "weregaruru",
+    "req": [
+     "Jogress with Raptordramon",
+     "Jogress with Garurumon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   }
+  ],
+  "Power": "36",
+  "Min Weight": "15",
+  "Sleep Time": "22:00",
+  "Energy": "50",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "39",
+  "Encounter Time Group": "7",
+  "Encounter Opponent Group": "4"
+ },
+ {
+  "id": "supergodzilla",
+  "name": "Super Godzilla",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Virus",
+  "from": [
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "Jogress with Mecha-King Ghidorah",
+     "Jogress with King Ghidorah (2001)",
+     "Jogress with King Ghidorah (1991)"
+    ]
+   },
+   {
+    "id": "godzillajr",
+    "req": [
+     "Jogress with Mecha-King Ghidorah",
+     "Jogress with King Ghidorah (2001)",
+     "Jogress with King Ghidorah (1991)"
+    ]
+   },
+   {
+    "id": "mechakingghidorah",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr"
+    ]
+   },
+   {
+    "id": "kingghidorah",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr"
+    ]
+   },
+   {
+    "id": "kingghidorah_2001",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr"
+    ]
+   }
+  ],
+  "to": [],
+  "Power": "185",
+  "Min Weight": "60",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "48 Minutes",
+  "Battle": "Yes",
+  "Jogress": "No",
+  "Library Number": "55",
+  "Encounter Time Group": "4",
+  "Encounter Opponent Group": "9"
+ },
+ {
+  "id": "supermechagodzilla",
+  "name": "Super Mechagodzilla",
+  "stage": "Mode Change",
+  "attr": "Data",
+  "from": [
+   {
+    "id": "mechagodzilla",
+    "req": [
+     "No requirementsMode Change"
+    ]
+   }
+  ],
+  "to": []
+ },
+ {
+  "id": "tuno",
+  "name": "Tsunomon",
+  "stage": "Stage II (Baby II)",
+  "attr": "Free",
+  "from": [
+   {
+    "id": "puni",
+    "req": [
+     "No requirements"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "dorat",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells"
+    ]
+   },
+   {
+    "id": "monodra",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells",
+     "3+ Care Mistakes, Red G-Cells"
+    ]
+   },
+   {
+    "id": "gabu",
+    "req": [
+     "3+ Care Mistakes, Blue or Empty G-Cells"
+    ]
+   }
+  ],
+  "Power": "0",
+  "Min Weight": "10",
+  "Sleep Time": "20:00",
+  "Energy": "50",
+  "Heart Loss": "30 Minutes",
+  "Battle": "No",
+  "Jogress": "No",
+  "Library Number": "33",
+  "Encounter Time Group": "65535",
+  "Encounter Opponent Group": "65535"
+ },
+ {
+  "id": "tyrano",
+  "name": "Tyranomon",
+  "stage": "Stage IV (Adult)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "agu",
+    "req": [
+     "0-3 Care Mistakes, Blue or Empty G-Cells",
+     "4+ Care Mistakes"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Red G-Cells, 80%+ Win Ratio",
+     "Jogress with Minilla",
+     "Jogress with Little Godzilla"
+    ]
+   },
+   {
+    "id": "mastertyrano",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Greymon: G-Erosion Mode",
+     "Jogress with Tyranomon",
+     "Jogress with Flymon",
+     "Jogress with Strikedramon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "battra",
+    "req": [
+     "Jogress with Mothra Leo"
+    ]
+   },
+   {
+    "id": "baragon",
+    "req": [
+     "Jogress with King Ghidorah (1991)",
+     "Jogress with Gigan (2004)"
+    ]
+   },
+   {
+    "id": "weregaruru",
+    "req": [
+     "Jogress with Raptordramon"
+    ]
+   },
+   {
+    "id": "atlurkabuteri",
+    "req": [
+     "Jogress with Garurumon"
+    ]
+   }
+  ],
+  "Power": "40",
+  "Min Weight": "20",
+  "Sleep Time": "22:00",
+  "Energy": "50",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "9",
+  "Encounter Time Group": "3",
+  "Encounter Opponent Group": "3"
+ },
+ {
+  "id": "wargrey_g",
+  "name": "War Greymon: G-Erosion Mode",
+  "stage": "Stage VI (Ultimate)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "godzilla_1954",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "metalgrey_g",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "mastertyrano",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "godzillajr",
+    "req": [
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "metalgrey_vi_g",
+    "req": [
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "omega_g",
+    "req": [
+     "Jogress with Metal Garurumon: G-Erosion Mode"
+    ]
+   }
+  ],
+  "Power": "185",
+  "Min Weight": "20",
+  "Sleep Time": "23:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "Yes",
+  "Jogress": "Yes",
+  "Library Number": "24",
+  "Encounter Time Group": "7",
+  "Encounter Opponent Group": "11"
+ },
+ {
+  "id": "weregaruru",
+  "name": "Were Garurumon",
+  "stage": "Stage V (Perfect)",
+  "attr": "Vaccine",
+  "from": [
+   {
+    "id": "tyrano",
+    "req": [
+     "Jogress with Raptordramon"
+    ]
+   },
+   {
+    "id": "fly",
+    "req": [
+     "Jogress with Raptordramon"
+    ]
+   },
+   {
+    "id": "garuru",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "8 Poops on screen, Blue or Empty G-Cells, 80%+ Win Ratio",
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with Garurumon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "strikedra",
+    "req": [
+     "Jogress with Raptordramon",
+     "Jogress with Garurumon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "raptordra",
+    "req": [
+     "Jogress with Tyranomon",
+     "Jogress with Flymon",
+     "Jogress with Strikedramon",
+     "Jogress with Raptordramon",
+     "Jogress with Garurumon",
+     "Jogress with any Stage IV Digimon from another Pendulum Color version"
+    ]
+   }
+  ],
+  "to": [
+   {
+    "id": "metalgaruru",
+    "req": [
+     "0-2 Care Mistakes, Red G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Mechagodzilla (1974)",
+     "Jogress with Were Garurumon",
+     "Jogress with any Stage V Digimon from another Pendulum Color version"
+    ]
+   },
+   {
+    "id": "kingcaesar",
+    "req": [
+     "0-2 Care Mistakes, Blue or Empty G-Cells, 15+ Battles, 80%+ Win Ratio",
+     "Jogress with Baragon"
+    ]
+   },
+   {
+    "id": "hedorah",
+    "req": [
+     "8 Poops on screen, 80%+ Win Ratio"
+    ]
+   },
+   {
+    "id": "metalgaruru_g",
+    "req": [
+     "Jogress with Godzilla (1954)",
+     "Jogress with Godzilla Jr",
+     "Jogress with Metal Greymon (Vaccine): G-Erosion Mode",
+     "Jogress with Skull Greymon: G-Erosion Mode",
+     "Jogress with Metal Greymon (Virus): G-Erosion Mode"
+    ]
+   },
+   {
+    "id": "dino",
+    "req": [
+     "Jogress with Master Tyranomon",
+     "Jogress with Atlur Kabuterimon"
+    ]
+   },
+   {
+    "id": "megalon",
+    "req": [
+     "Jogress with Battra",
+     "Jogress with Aqua Mothra"
+    ]
+   },
+   {
+    "id": "jetjaguar",
+    "req": [
+     "Jogress with Mecha-King Ghidorah",
+     "Jogress with Monster X"
+    ]
+   }
+  ],
+  "Power": "96",
+  "Min Weight": "18",
+  "Sleep Time": "22:00",
+  "Energy": "60",
+  "Heart Loss": "58 Minutes",
+  "Battle": "No",
+  "Jogress": "Yes",
+  "Library Number": "46",
+  "Encounter Time Group": "3",
+  "Encounter Opponent Group": "6"
+ }
+]
