@@ -788,6 +788,18 @@ $('#pvDel').addEventListener('click', async () => {
 });
 pv.addEventListener('click', e => { if (e.target === pv) pv.close(); });
 
+/* ---------- 回到頂端 ---------- */
+const toTop = document.createElement('button');
+toTop.id = 'toTop';
+toTop.type = 'button';
+toTop.setAttribute('aria-label', '回到頂端');
+toTop.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>';
+document.body.appendChild(toTop);
+toTop.addEventListener('click', () => window.scrollTo({top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'}));
+const onScroll = () => toTop.classList.toggle('show', window.scrollY > 400);
+window.addEventListener('scroll', onScroll, {passive: true});
+onScroll();
+
 /* ---------- 初始化 ---------- */
 renderMonsters();
 renderDex();
