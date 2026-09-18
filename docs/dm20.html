@@ -56,47 +56,50 @@
       <label>本階段照顧失誤（次）<input id="et-cm" type="number" min="0" max="30" inputmode="numeric" value="0"></label>
       <label>本階段訓練次數<input id="et-tr" type="number" min="0" max="99" inputmode="numeric" value="0"></label>
       <label>本階段過食次數<input id="et-of" type="number" min="0" max="20" inputmode="numeric" value="0"></label>
-      <label class="bt-f">最近 15 場贏幾場<input id="et-vic" type="number" min="0" max="15" inputmode="numeric" value="15"></label>
+      <label class="bt-f">成熟期對戰場數<input id="et-bt" type="number" min="0" inputmode="numeric" value="15"></label>
+      <label class="bt-f">勝率（%）<input id="et-win" type="number" min="0" max="100" inputmode="numeric" value="100"></label>
       <label class="life-f" hidden>完全體期間對戰場數<input id="et-life" type="number" min="0" inputmode="numeric" value="0"></label>
     </div>
     <div id="et-out"></div>
   </details>
 
-  <details class="card si" data-alias="失誤 訓練 努力 過食 勝率 雙打合體 M E O">
-    <summary>進化基本規則</summary>
-    <h4>進化時間（睡覺時不計時）</h4>
+  <details class="card si" data-alias="成長時間 條件解說 失誤 訓練 努力 滿腹 過食 睡眠妨礙 勝率 雙打合體 M E O Z">
+    <summary>成長時間與條件</summary>
+    <p class="small sub">20th、美版進化所需時間不包含數碼獸睡覺的時間。</p>
     <div class="tw"><table>
-      <tr><th>目前階段</th><th>到下一階段</th></tr>
-      <tr><td>蛋</td><td>1 分鐘</td></tr>
-      <tr><td>幼年期Ⅰ</td><td>10 分鐘</td></tr>
-      <tr><td>幼年期Ⅱ</td><td>6 小時（復刻版 12 小時）</td></tr>
-      <tr><td>成長期</td><td>24 小時</td></tr>
-      <tr><td>成熟期</td><td>36 小時</td></tr>
-      <tr><td>完全體</td><td>48 小時</td></tr>
+      <tr><th>階段</th><th>時間</th><th>條件</th></tr>
+      <tr><td>幼年期Ⅱ</td><td>10 分鐘</td><td>—</td></tr>
+      <tr><td>成長期</td><td class="wrap-cell">6 小時（20th、美版）<br>12 小時（復刻版）</td><td class="wrap-cell">M：失誤</td></tr>
+      <tr><td>成熟期</td><td>24 小時</td><td class="wrap-cell">M：失誤<br>E：訓練<br>O：滿腹<br>Z：睡眠妨礙</td></tr>
+      <tr><td>完全體</td><td>36 小時</td><td class="wrap-cell">15 場以上勝率</td></tr>
+      <tr><td>究極體</td><td>48 小時</td><td class="wrap-cell">M：失誤</td></tr>
+      <tr><td>合體進化</td><td>—</td><td class="wrap-cell">指定的數碼獸<br>雙人對戰 5 場勝利</td></tr>
     </table></div>
-    <p class="small">20th 與英文版睡覺時間不算進化時間；復刻版（Ver.Revival）睡覺也會計時。</p>
 
-    <h4>三個關鍵：失誤（M）・訓練（E）・過食（O）</h4>
-    <ul class="small">
-      <li><b>照顧失誤</b>：決定成長期、成熟期走哪條路。例：M2- ＝失誤 2 次以下。</li>
-      <li><b>訓練次數</b>：看努力愛心大概估算。4–7 次＝1 顆、8–11 次＝2 顆、12–15 次＝3 顆、16 次以上＝4 顆。</li>
-      <li><b>過食</b>：一直餵肉到牠搖頭拒吃＝1 次；要等牠願意再吃（例如拉過一次便便）才能算下一次。只有成長期失誤 3 次以上時才有影響。</li>
-    </ul>
-
-    <h4>成熟期 → 完全體：看最近 15 場</h4>
+    <h4>條件解說</h4>
     <div class="tw"><table>
-      <tr><th>最近 15 場贏</th><th>進化機率</th></tr>
-      <tr><td>12–15 場（80% 以上）</td><td>100%</td></tr>
-      <tr><td>11 場（70–79%）</td><td>50%</td></tr>
-      <tr><td>6–10 場（40–69%）</td><td>25%</td></tr>
-      <tr><td>5 場以下</td><td>不會進化</td></tr>
+      <tr><th>條件</th><th>解說</th></tr>
+      <tr><td>M：失誤</td><td class="wrap-cell"><b>空腹、虛弱、睡眠呼叫</b>時，在呼叫圖示消失前餵食、訓練、蓋被，沒有的話<b>失誤次數 +1</b>。「+」為以上、「-」為以下。<br>例：M3+＝失誤 3 次以上、M2-＝失誤 2 次以下。</td></tr>
+      <tr><td>E：訓練</td><td class="wrap-cell">訓練次數會顯示成努力值（心數）：<br>訓練 <b>4～7</b> 次：1 心<br>訓練 <b>8～11</b> 次：2 心<br>訓練 <b>12～15</b> 次：3 心<br>訓練 <b>16 次以上</b>：4 心<br>例：E16+＝訓練 16 次以上、E15-＝訓練 15 次以下。</td></tr>
+      <tr><td>O：滿腹</td><td class="wrap-cell">餵食到<b>搖頭拒食</b>的次數；數碼獸大便一顆後可以再次餵食。<br>例：O3+＝滿腹 3 次以上、O2-＝滿腹 2 次以下。<br><span class="sub">只在成長期失誤 3 次以上時才有影響。</span></td></tr>
+      <tr><td>Z：睡眠妨礙</td><td class="wrap-cell">資料集列為成熟期的條件之一。</td></tr>
+      <tr><td>15 場以上勝率</td><td class="wrap-cell">成熟期對戰 15 場以上的勝率會影響進化機率，見下表。</td></tr>
     </table></div>
-    <p class="small">一定要在<b>成熟期</b>打滿 15 場，成長期打的不算；超過 15 場只算最近 15 場，所以狀態畫面的勝率不一定準。單打、雙打、通信、競技場都算，雙打時兩隻都算。</p>
+
+    <h4>15 場以上勝率 → 進化機率</h4>
+    <div class="tw"><table>
+      <tr><th>勝率</th><th>進化機率</th></tr>
+      <tr><td>39% 以下</td><td>0%</td></tr>
+      <tr><td>40～69%</td><td>25%</td></tr>
+      <tr><td>70～79%</td><td>50%</td></tr>
+      <tr><td>80% 以上</td><td>100%</td></tr>
+    </table></div>
+    <p class="small">要在<b>成熟期</b>打滿 15 場，成長期打的不算。單打、雙打、通信、競技場都算，雙打時兩隻都算。</p>
 
     <h4>究極體以上</h4>
     <ul class="small">
       <li>只有特定完全體會進化到究極體；失誤太多（超過 4 次）在進化時會死亡。</li>
-      <li><b>雙打合體</b>：兩隻指定的究極體一起雙打 <b>5 場</b>，第 5 場打完立刻合體成超究極體。另一隻可以是複製怪。如果兩隻都是自己養的，合體後會空出一格可以孵新蛋。</li>
+      <li><b>合體進化</b>：兩隻指定的究極體一起雙人對戰 <b>5 場</b>，第 5 場打完立刻合體成超究極體。另一隻可以是複製怪。如果兩隻都是自己養的，合體後會空出一格可以孵新蛋。</li>
       <li><b>對戰 100 場</b>：翼龍獸、地龍獸在完全體期間失誤 3–4 次、對戰 100 場以上，會變成戰鬥暴龍獸／鋼鐵加魯魯獸（日版 A、B 版與復刻版不行）。</li>
     </ul>
 
@@ -254,10 +257,19 @@
   <h2 class="ptitle">蛋與版本</h2>
   <div class="card si" data-alias="蛋 解鎖 版本">
     <h3>蛋怎麼解鎖</h3>
-    <p class="small">一開始有 5 顆（Ver.1～5）。其他蛋靠相簿登錄數、累計對戰數或通信解鎖。版本限定蛋只會出現在對應配色的機器上。</p>
+    <p class="small">一開始有 5 顆（Ver.1～5）。其他蛋靠相簿登錄數、累計對戰數或通信解鎖。版本限定蛋只會出現在對應配色的機器上。<br>點每顆蛋左邊的空格，可以從相簿加入自己拍的蛋照片（只存在這支手機）。</p>
   </div>
   <div id="eggList"></div>
   <h2 class="ptitle" style="display:block;margin-top:22px">各版本限定</h2>
+  <div class="card si" data-alias="版本分類 日版 美版 原始紅 原始灰 奧米加獸 阿爾法獸 茲巴獸 原始配色 特殊配色">
+    <h3>版本分類</h3>
+    <p class="small sub">日版原始紅＝美版 (A)、原始灰＝(B)，依此類推。</p>
+    <div class="tw"><table class="vtab">
+      <tr><th rowspan="2">日版</th><th colspan="2">原始配色</th><th colspan="3">特殊配色</th></tr>
+      <tr><td>原始紅</td><td>原始灰</td><td>奧米加獸</td><td>阿爾法獸</td><td>茲巴獸</td></tr>
+      <tr><th>美版</th><td>(A)</td><td>(B)</td><td>(C)</td><td>(D)</td><td>(E)</td></tr>
+    </table></div>
+  </div>
   <div id="verList"></div>
 </section>
 

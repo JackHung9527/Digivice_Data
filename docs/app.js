@@ -33,6 +33,7 @@ if (VERS && !VERS.some(v => v.key === curVer)) curVer = VERS[0].key;
 const inVer = m => PENC ? (!m.questOnly && m.ver === curVer) : !m.enemyOnly;
 const EGG_ZH = {};
 (D.eggs || []).forEach(e => EGG_ZH[e.key] = e.zh);
+const nameOf = id => (M[id] && M[id].zh) || EGG_ZH[id] || id;
 let curEgg = store.get('egg', 'all');
 
 /* ---------- 條件標籤 ---------- */
@@ -284,6 +285,7 @@ function evalReq(r, s, cells) {
   if (r.life && s.life < r.life) fail.push(`總對戰要 ${r.life} 場以上（現在 ${s.life}）`);
   if (r.win) {
     if (s.win < 40) fail.push(`勝率至少 40%（現在 ${s.win}%）`);
+    else if (DM20) { if (s.win < 70) chance = 25; else if (s.win < 80) chance = 50; }
     else if (SHAKE) { if (s.win < 70) chance = 40; else if (s.win < 80) chance = 70; }
     else { if (s.win < 60) chance = 25; else if (s.win < 80) chance = 50; }
   }
@@ -614,9 +616,11 @@ function renderEggs() {
     const mons = D.monsters.filter(m => (m.eggs || []).includes(e.key));
     const tops = mons.filter(m => m.stage === 'VI' || m.stage === 'VI+');
     return `<div class="card si" data-alias="${esc(e.en + ' ' + e.zh)}">
+      <div class="mhead">${phSlot(e.key)}<div>
       <h3>${esc(e.zh)}${e.ver ? ` <span class="chip bt">${esc(e.ver)}</span>` : ''}</h3>
       <p class="small"><b>取得：</b>${esc(e.unlock)}</p>
       <p class="small sub">共 ${mons.length} 隻${tops.length ? `・究極體以上：${tops.map(m => `<a href="#" data-go="${m.id}">${esc(m.zh)}</a>`).join('、')}` : ''}</p>
+      </div></div>
       <button type="button" class="btn" data-egg="${e.key}">只看這顆蛋的進化</button>
     </div>`;
   }).join('');
@@ -662,7 +666,7 @@ const imgDB = (() => {
 })();
 const EMPTY_PH = `<span><span class="plus">+</span><span class="lbl">加入圖片</span></span>`;
 function phSlot(id) {
-  return `<button type="button" class="ph" data-ph="${id}" aria-label="${esc(M[id].zh)}的圖片">${EMPTY_PH}</button>`;
+  return `<button type="button" class="ph" data-ph="${id}" aria-label="${esc(nameOf(id))}的圖片">${EMPTY_PH}</button>`;
 }
 function toast(msg) {
   const t = $('#toast');
@@ -674,7 +678,7 @@ function paintSlots(id) {
   const url = phURL[id];
   $$(`[data-ph="${id}"]`).forEach(b => {
     b.classList.toggle('has', !!url);
-    b.innerHTML = url ? `<img src="${url}" alt="${esc(M[id].zh)}">` : EMPTY_PH;
+    b.innerHTML = url ? `<img src="${url}" alt="${esc(nameOf(id))}">` : EMPTY_PH;
   });
   $$(`[data-jc="${id}"]`).forEach(e => e.innerHTML = jcInner(id));
 }
@@ -725,8 +729,9 @@ function pickPhoto(id) { phTarget = id; const f = $('#phFile'); f.value = ''; f.
 function openViewer(id) {
   phTarget = id;
   $('#pvImg').src = phURL[id];
-  $('#pvImg').alt = M[id].zh;
-  $('#pvName').textContent = M[id].zh;
+  $('#pvImg').alt = nameOf(id);
+  $('#pvName').textContent = nameOf(id);
+  $('#pvGo').textContent = M[id] ? '看進化條件' : '看這顆蛋的進化';
   const del = $('#pvDel'); delete del.dataset.arm; del.textContent = '刪除';
   if (!pv.open) pv.showModal();
 }
@@ -769,14 +774,19 @@ $('#phFile').addEventListener('change', async e => {
     setPhoto(id, blob);
     if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
     if (pv.open) openViewer(id);
-    toast(`已把「${M[id].zh}」加入圖鑑`);
+    toast(`已把「${nameOf(id)}」加入圖鑑`);
   } catch (err) {
     toast(`圖片沒有存成功：${(err && err.message) || err}。無痕模式無法存圖。`);
   }
 });
 $('#pvClose').addEventListener('click', () => pv.close());
 $('#pvChange').addEventListener('click', () => pickPhoto(phTarget));
-$('#pvGo').addEventListener('click', () => { const id = phTarget; pv.close(); goMon(id); });
+$('#pvGo').addEventListener('click', () => {
+  const id = phTarget;
+  pv.close();
+  if (M[id]) goMon(id);
+  else if (EGG_ZH[id]) { if (q.value) { q.value = ''; doSearch(); } setStage('all'); setEgg(id); showTab('t-evo'); window.scrollTo(0, 0); }
+});
 $('#pvDel').addEventListener('click', async () => {
   const b = $('#pvDel');
   if (!b.dataset.arm) { b.dataset.arm = '1'; b.textContent = '再按一次確定刪除'; return; }
@@ -784,7 +794,7 @@ $('#pvDel').addEventListener('click', async () => {
   try { await imgDB.del(id); } catch (err) {}
   setPhoto(id, null);
   pv.close();
-  toast(`已刪除「${M[id].zh}」的圖片`);
+  toast(`已刪除「${nameOf(id)}」的圖片`);
 });
 pv.addEventListener('click', e => { if (e.target === pv) pv.close(); });
 
@@ -830,7 +840,7 @@ function fillEt() {
 if (etSel) {
   fillEt();
   restoreForm('et-', store.get('et', DM20
-    ? {cur:'grey', cm:1, tr:16, of:0, vic:12, life:0, egg:'digitama_1'}
+    ? {cur:'grey', cm:1, tr:16, of:0, bt:15, win:85, life:0, egg:'digitama_1'}
     : PENC
     ? {cur:'NSp-kabuteri', ch:1, ef:2, slot:false, cm:0, bt:15, win:85}
     : PEN
@@ -886,7 +896,7 @@ showTab(store.get('tab', TAB_IDS[0]));
   try {
     const keys = await imgDB.keys();
     for (const k of keys) {
-      if (!M[k]) continue;
+      if (!M[k] && !EGG_ZH[k]) continue;
       const blob = await imgDB.get(k);
       if (blob) { phURL[k] = URL.createObjectURL(blob); paintSlots(k); }
     }

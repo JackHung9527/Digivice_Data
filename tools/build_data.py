@@ -626,7 +626,7 @@ def build_dm20():
             elif m := re.fullmatch(r"(\d+) Battles", part):
                 r["bt"] = int(m[1])
             elif m := re.fullmatch(r"(\d+)-(\d+) Victories\*", part):
-                r["vic"] = [int(m[1]), int(m[2])]
+                r["win"] = int(m[1]) * 100 // 15  # 15 場以上勝率（12/15 場＝80%）
             elif m := re.fullmatch(r"hatched from (.+) Egg", part):
                 r["egg"] = egg_key(m[1])
             elif m := re.fullmatch(r"Battle (\d+)\+ times \(Not possible on Japanese Versions A or B\)", part):
