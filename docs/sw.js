@@ -1,5 +1,5 @@
 // 離線快取：先回快取，同時背景更新（下次開啟就是新版）
-const CACHE = 'gz70-v8';
+const CACHE = 'gz70-v9';
 const ASSETS = [
   './',
   './index.html',

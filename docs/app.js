@@ -334,7 +334,6 @@ function etRun() {
   const timed = m.to.map(t => ({t: M[t.id], reqs: t.req.filter(r => !r.jog && !r.jogA && !r.tag)}));
   const needBattle = timed.some(x => x.reqs.some(r => r.bt || r.win || r.life || r.btAs || r.vic));
   $$('.life-f').forEach(e => e.hidden = !timed.some(x => x.reqs.some(r => r.life)));
-  $$('.egg-f').forEach(e => e.hidden = !timed.some(x => x.reqs.some(r => r.egg)));
   $$('.bt-f').forEach(e => e.hidden = !needBattle);
   $$('.cm-f').forEach(e => e.hidden = !timed.some(x => x.reqs.some(r => r.cm)));
   const res = timed.filter(x => x.reqs.length).map(x => {
@@ -834,18 +833,23 @@ if ($('#fragDropList')) $('#fragDropList').innerHTML = D.monsters.filter(m => m.
 
 function fillEt() {
   const keep = etSel.value;
-  etSel.innerHTML = D.monsters.filter(m => inVer(m) && m.to.length).map(monOpt).join('');
+  const egg = DM20 && $('#et-egg') ? $('#et-egg').value : '';
+  etSel.innerHTML = D.monsters.filter(m => inVer(m) && m.to.length && (!egg || (m.eggs || []).includes(egg))).map(monOpt).join('');
   if (hasOpt(etSel, keep)) etSel.value = keep;
 }
 if (etSel) {
-  fillEt();
-  restoreForm('et-', store.get('et', DM20
+  const etInit = store.get('et', DM20
     ? {cur:'grey', cm:1, tr:16, of:0, bt:15, win:85, life:0, egg:'digitama_1'}
     : PENC
     ? {cur:'NSp-kabuteri', ch:1, ef:2, slot:false, cm:0, bt:15, win:85}
     : PEN
     ? {cur:'tyrano', cm:1, gcn:9, bt:15, win:85, life:30, poop:false}
-    : {cur:'littlegodzilla', cm:1, lv:3, vis:0, area:false, frag:false, bt:15, win:85}));
+    : {cur:'littlegodzilla', cm:1, lv:3, vis:0, area:false, frag:false, bt:15, win:85});
+  restoreForm('et-', {egg: etInit.egg});
+  fillEt();
+  restoreForm('et-', etInit);
+  // 元祖20th：換蛋就重排怪獸清單
+  if (DM20) $('#et-egg').addEventListener('input', fillEt);
   $('#evoTool').addEventListener('input', etRun);
   etRun();
 }
