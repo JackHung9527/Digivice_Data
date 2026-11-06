@@ -43,6 +43,7 @@ docs/                 ← 網站本體（直接部署這個資料夾）
 tools/
   build_data.py       英文原始資料 → 中文資料檔（兩台機型）
   make_icons.py       產生圖示
+  check_site.mjs      網站自動檢查（見下方「自動檢查」）
   source/             原始資料（dmgz_en.json、pengz_en.json、pengz_jogress.json、penc_en.json、penc_quest.json）
                       penc_zh.json、dm20_zh.json 為中文名稱對照，可直接修改後重新產生
                       dm20_en.json、dm20_extra.json 為元祖20th 原始資料（進化、競技場、版本限定）
@@ -54,7 +55,17 @@ tools/
 python tools/build_data.py     # 改完中文名稱／關卡／遭遇表後重新產生 data.js
 ```
 
-更新網站內容後，把 `docs/sw.js` 的 `CACHE = 'gz70-v5'` 版本號 +1，手機開啟後才會抓到新版。
+更新網站內容後，把 `docs/sw.js` 的 `CACHE = 'gz70-v<數字>'` 版本號 +1，手機開啟後才會抓到新版。
+
+## 自動檢查
+
+```
+node tools/check_site.mjs      # 全部通過 exit 0；需要 Node 22+ 與本機的 Chrome 或 Edge，不用裝套件
+```
+
+用無頭 Chrome 實際開每個頁面，檢查：JS 錯誤、分頁切換、搜尋、各試算工具、怪獸連結、
+`sw.js` 快取清單與 `docs/` 一致、`build_data.py` 重新產生沒有差異、`docs/` 有改動時 CACHE 版本已 +1（和 `main` 比），
+以及斷網後頁面與字型仍能從離線快取顯示。
 
 ## 部署與安裝到手機
 

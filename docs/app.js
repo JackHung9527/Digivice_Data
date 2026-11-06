@@ -412,7 +412,9 @@ function renderQuest() {
     return list.map(a => {
     const rows = a.rounds.map((r, i) => {
       const boss = i === a.rounds.length - 1;
-      return `<tr><td>${boss ? '<b style="color:var(--gr)">BOSS</b>' : i + 1}</td><td><a href="#" data-go="${r.id}">${esc(M[r.id].zh)}</a></td>` +
+      // 只在關卡出現的對手（questOnly）沒有怪獸卡，不做成連結
+      const who = M[r.id].questOnly ? `${esc(M[r.id].zh)} <span class="sub small">關卡限定</span>` : `<a href="#" data-go="${r.id}">${esc(M[r.id].zh)}</a>`;
+      return `<tr><td>${boss ? '<b style="color:var(--gr)">BOSS</b>' : i + 1}</td><td>${who}</td>` +
         `<td><span class="badge a-${r.attr}">${ATTR[r.attr]}</span></td><td><b>${r.p}</b></td>` +
         (hasPat ? `<td>${patHTML(r.pat)}</td>` : '') +
         (hasHc ? `<td>${r.hc ? `<b style="color:var(--gr)">−${r.hc}</b>` : '<span class="sub">—</span>'}</td>` : '') + `</tr>`;
